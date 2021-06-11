@@ -48,7 +48,7 @@ class TestSmartWaterSubscription(smartWaterSubscriptionPage):
     def test_verify_CustomerDashboard(self):
         self.verify_CustomerDashboard(readData(excel,'SignUp',15,1),readData(excel,'SignUp',15,3),readData(excel,'SignUp',15,4),
                                       readData(excel,'SignUp',15,2),readData(excel,'SignUp',15,5),readData(excel,'SignUp',15,6),
-                                      readData(excel,'SignUp',15,7),readData(excel,'SignUp',15,8))
+                                      readData(excel,'SignUp',15,7),readData(excel,'SignUp',15,8),readData(excel,'SignUp',21,1),readData(excel,'SignUp',21,2))
 
 # py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_ReferAndEarn
     def test_verify_ReferAndEarn(self):
@@ -110,6 +110,15 @@ class TestSmartWaterSubscription(smartWaterSubscriptionPage):
 # py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_changePassword
     def test_verify_changePassword(self):
         self.verify_changePassword(readData(excel,'SignUp',15,1),readData(excel,'SignUp',15,3))
+
+# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_diffPWD
+    def test_verify_diffPWD(self):
+        self.verify_diffPWD(readData(excel,'SignUp',15,1),readData(excel,'SignUp',15,3))
+
+# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_signupWithRefCode
+    def test_verify_signupWithRefCode(self):
+        self.verify_signupWithRefCode(readData(excel,'SignUp',15,9),readData(excel,'SignUp',15,4))
+
 
 
 

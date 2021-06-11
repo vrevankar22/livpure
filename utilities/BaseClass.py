@@ -21,7 +21,7 @@ class BaseClass:
         WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(by_locator)).click()
 
     def clear(self,by_locator):
-        WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(by_locator)).clear()
+        WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(by_locator)).send_keys(Keys.CONTROL + 'a', Keys.BACKSPACE)
 
     def send_keys(self,by_locator,text):
         WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(by_locator)).send_keys(text)

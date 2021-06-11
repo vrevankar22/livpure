@@ -1,3 +1,5 @@
+from selenium.webdriver.common.keys import Keys
+
 from Locators.smartWaterSubscription import SignUpPage
 from utilities.BaseClass import BaseClass
 import time
@@ -18,13 +20,12 @@ class smartWaterSubscriptionPage(BaseClass):
 # Verify All menu link without sign up and login into the account
     def verify_menu_link(self):
         log = self.getLogger()
-        '''self.click(SignUpPage.menu_planLink)
+        self.click(SignUpPage.menu_planLink)
         self.click1(SignUpPage.menu_proceedToPay)
-        signUp = SignUpPage.signUpBtn
         assert self.driver.find_element(By.XPATH,"//a[text()='Sign Up']").is_displayed(),'SignUp page not displayed'
-        log.info('Sign Up page displayed')'''
+        log.info('Sign Up page displayed')
         self.click(SignUpPage.menu_HowItWorkLink)
-        window_before = self.driver.window_handles[-1]
+        window_before = self.driver.window_handles[0]
         self.click1(SignUpPage.desktop_AndroidPS)
         self.driver.switch_to_window(window_before)
         self.click1(SignUpPage.desktop_ApplePS)
@@ -34,11 +35,22 @@ class smartWaterSubscriptionPage(BaseClass):
         assert 'Google Play' in android,'Google Play store not opened'
         log.info('Google Play store opened')
         window_after1 = self.driver.window_handles[-1]
+        self.driver.close()
         self.driver.switch_to_window(window_after1)
         time.sleep(5)
         apple = self.driver.title
         assert self.driver.find_element(By.XPATH,"//a//span[text()='App Store']").is_displayed(), 'App store not opened'
         log.info('App store opened')
+        self.driver.close()
+        self.driver.switch_to_window(window_before)
+        # need to verify refer and earn
+        self.click(SignUpPage.menu_ReferEarnLink)
+        self.click(SignUpPage.menu_invitenow)
+        window_after1 = self.driver.window_handles[1]
+        self.driver.switch_to_window(window_after1)
+        fbTitle = self.driver.title
+        assert 'Facebook' in fbTitle, 'Does not Redirect to FB page'
+        log.info('Redirected to FB page')
 
 # Sign up with valid details
     def SignUp(self,username,email,mobile,password):
@@ -221,19 +233,19 @@ class smartWaterSubscriptionPage(BaseClass):
         log.info("Displayed correct total pay amount")
         # Edit installtion address - Need to write code
         self.click(SignUpPage.payBtn)
-        time.sleep(20)
         window_before = self.driver.window_handles[0]
         self.driver.switch_to_frame(0)
         self.click1(SignUpPage.netBanking)
-        time.sleep(10)
         self.click1(SignUpPage.sbibank)
         self.click1(SignUpPage.paymentBtn)
-        time.sleep(10)
         window_after = self.driver.window_handles[1]
         self.driver.switch_to_window(window_after)
         time.sleep(5)
         self.click(SignUpPage.successBtn)
-        time.sleep(20)
+        kycpage = self.driver.find_element(By.XPATH,"//p[@class='thanksinfo']").text
+        assert 'KYC' in kycpage, 'kyc page not displayed'
+        log.info('KYC page displayed')
+
 
 # Upload KYC document
     def upload_KYCDoc(self,email,password):
@@ -245,6 +257,7 @@ class smartWaterSubscriptionPage(BaseClass):
         self.click(SignUpPage.menu_profileLink)
         self.driver.find_element(By.XPATH,"//span[contains(.,'Kindly upload your eKYC documents to process your order!')]").is_displayed()
         self.click(SignUpPage.uploadkycBtn)
+        # Need to complete kyc - Pending due to OTP
 
 
 
@@ -308,7 +321,7 @@ class smartWaterSubscriptionPage(BaseClass):
         # Cannot continue due to OTP
 
 # Login into the account and verify the customer Dashboard
-    def verify_CustomerDashboard(self,email,password,username,PhNo,Address,City,State,Pincode):
+    def verify_CustomerDashboard(self,email,password,username,PhNo,Address,City,State,Pincode,fbiD,fbpwd):
         log = self.getLogger()
         self.login(email,password)
         assert self.driver.find_element(By.XPATH,"//h2[text()='Welcome "+username+"']").is_displayed(),'Username not displayed'
@@ -339,14 +352,28 @@ class smartWaterSubscriptionPage(BaseClass):
         log.info('Redirected to WhatsApp page')
         self.driver.close()
         self.driver.switch_to_window(window_before)
-        '''self.click(SignUpPage.facebookicon)
-        self.driver.switch_to_window(window_After)'''
+        self.click(SignUpPage.facebookicon)
+        window_After1 = self.driver.window_handles[1]
+        self.driver.switch_to_window(window_After1)
+        self.send_keys(SignUpPage.fbID,fbiD)
+        self.send_keys(SignUpPage.fbPwd,fbpwd)
+        self.click(SignUpPage.fbLogin)
+        fbtext = self.getText((By.XPATH,"(//div[contains(.,'Get Rs.100 instant discount on the plan purchase of LivpureSmart RO')])[10]"))
+        assert RCode in fbtext,'Referral code not displayed on inviting to FB'
+        log.info('Referral code displayed on inviting to FB')
+        self.driver.close()
+        self.driver.switch_to_window(window_before)
         self.click(SignUpPage.knowMore)
         assert self.driver.find_element(By.XPATH,"//button[text()='Invite']"), 'invite page not displayed'
         log.info('invite page displayed')
         self.click(SignUpPage.custDashboard)
         self.click(SignUpPage.invitelink)
         # Pending to verify fb page
+        window_After2 = self.driver.window_handles[1]
+        self.driver.switch_to_window(window_After2)
+        FBtitle = self.driver.title
+        assert 'Facebook' in FBtitle, 'FB not opened'
+        log.info('FB page displayed')
 
 
 # verify refer and Earn
@@ -376,9 +403,16 @@ class smartWaterSubscriptionPage(BaseClass):
         self.driver.switch_to_window(window_after)
         assert self.driver.find_element(By.XPATH,"//div[text()='WhatsApp Web']").is_displayed(),'Whatapp not opened'
         log.info('Whatsapp opened')
+        self.driver.close()
         self.driver.switch_to_window(window_before)
-        '''self.click(SignUpPage.inviteFB)
-        self.driver.switch_to_window(window_after)'''
+        self.click(SignUpPage.inviteFB)
+        window_After1 = self.driver.window_handles[1]
+        self.driver.switch_to_window(window_After1)
+        FBtitle = self.driver.title
+        assert 'Facebook' in FBtitle, 'FB not opened'
+        log.info('FB page displayed')
+        self.driver.close()
+        self.driver.switch_to_window(window_before)
         self.click(SignUpPage.howdoesitwork)
         assert self.driver.find_element(By.XPATH,"//div[@class='popup bgOuter']").is_displayed(),'How does it work popup not displayed'
         log.info('How does it work popup displayed')
@@ -399,7 +433,7 @@ class smartWaterSubscriptionPage(BaseClass):
         self.driver.switch_to_window(window_after)
         # need to verify facebook page
 
-# Verify Referral History page
+# Verify LeaderBoard page
     def verify_LeaderBoard(self,email, password):
         log = self.getLogger()
         self.login(email, password)
@@ -651,15 +685,12 @@ class smartWaterSubscriptionPage(BaseClass):
             log.info('Amount displayed correctly')
 
             self.click1(SignUpPage.payBtn)
-            time.sleep(10)
             window_before1 = self.driver.window_handles[-1]
             window_before = self.driver.window_handles[0]
             self.driver.switch_to_frame(0)
             self.click1(SignUpPage.netBanking)
-            time.sleep(10)
             self.click1(SignUpPage.sbibank)
             self.click1(SignUpPage.paymentBtn)
-            time.sleep(10)
             window_after = self.driver.window_handles[1]
             self.driver.switch_to_window(window_after)
             self.click(SignUpPage.successBtn)
@@ -718,17 +749,13 @@ class smartWaterSubscriptionPage(BaseClass):
                     expectedPayableAmt = expectedPayableAmt + k
             assert finalPrice == int(expectedPayableAmt), 'incorrect amount'
             log.info('Amount displayed correctly')
-
             self.click1(SignUpPage.payBtn)
-            time.sleep(10)
             window_before1 = self.driver.window_handles[-1]
             window_before = self.driver.window_handles[0]
             self.driver.switch_to_frame(0)
             self.click1(SignUpPage.netBanking)
-            time.sleep(10)
             self.click1(SignUpPage.sbibank)
             self.click1(SignUpPage.paymentBtn)
-            time.sleep(10)
             window_after = self.driver.window_handles[1]
             self.driver.switch_to_window(window_after)
             self.click(SignUpPage.successBtn)
@@ -789,15 +816,12 @@ class smartWaterSubscriptionPage(BaseClass):
             log.info('Amount displayed correctly')
 
             self.click1(SignUpPage.payBtn)
-            time.sleep(10)
             window_before1 = self.driver.window_handles[-1]
             window_before = self.driver.window_handles[0]
             self.driver.switch_to_frame(0)
             self.click1(SignUpPage.netBanking)
-            time.sleep(10)
             self.click1(SignUpPage.sbibank)
             self.click1(SignUpPage.paymentBtn)
-            time.sleep(10)
             window_after = self.driver.window_handles[1]
             self.driver.switch_to_window(window_after)
             self.click(SignUpPage.successBtn)
@@ -858,15 +882,12 @@ class smartWaterSubscriptionPage(BaseClass):
             log.info('Amount displayed correctly')
 
             self.click1(SignUpPage.payBtn)
-            time.sleep(10)
             window_before1 = self.driver.window_handles[-1]
             window_before = self.driver.window_handles[0]
             self.driver.switch_to_frame(0)
             self.click1(SignUpPage.netBanking)
-            time.sleep(10)
             self.click1(SignUpPage.sbibank)
             self.click1(SignUpPage.paymentBtn)
-            time.sleep(10)
             window_after = self.driver.window_handles[1]
             self.driver.switch_to_window(window_after)
             self.click(SignUpPage.successBtn)
@@ -920,7 +941,142 @@ class smartWaterSubscriptionPage(BaseClass):
         assert self.driver.find_element(By.XPATH,"//a[text()='Customer Dashboard']").is_displayed(),'Passowrd not Changed'
         log.info('Password changed successfully')
 
-#
+# verify with different password in new and confirm password text box and mandatory field
+    def verify_diffPWD(self,email,password):
+        log = self.getLogger()
+        self.login(email, password)
+        self.click(SignUpPage.changePWDTab)
+        time.sleep(5)
+        self.click(SignUpPage.changePWDBtn)
+        # Verify mandtory message for field
+        self.driver.find_element(By.XPATH,"//label[text()='Please enter the Password']").is_displayed()
+        self.driver.find_element(By.XPATH, "//label[text()='Please enter the New Password']").is_displayed()
+        self.driver.find_element(By.XPATH, "//label[text()='This field is required.']").is_displayed()
+        # verify with incorrect password into old and correct into new and confirm password field
+        self.send_keys(SignUpPage.oldPWD,"@gmail.com")
+        self.send_keys(SignUpPage.newPWD,'Test@1234')
+        self.send_keys(SignUpPage.confirmPWD,'Test@1234')
+        self.click(SignUpPage.changePWDBtn)
+        self.driver.find_element(By.XPATH,"//div[contains(text(),'Please Provide Correct Password')]").is_displayed()
+        # verify with correct old and <5 char into New and match New and Confirm pwd
+        self.send_keys(SignUpPage.oldPWD, password)
+        self.send_keys(SignUpPage.newPWD,'Test')
+        self.send_keys(SignUpPage.confirmPWD,'Test@1234')
+        self.driver.find_element(By.XPATH,"//label[contains(text(),'Please enter at least 5 characters.')]").is_displayed()
+        assert self.driver.find_element(By.XPATH,"//label[contains(text(),'Please enter the same value again.')]")\
+            .is_displayed(),'Mandatory and error message not displayed'
+        log.info("Mandatory and error message displayed")
+
+# Sign up account with referral code and verify Rs 100 discount applied on plan
+    def verify_signupWithRefCode(self,refCode,referUN):
+        log = self.getLogger()
+        username = "Test_" + self.random_generatorString()
+        email = self.random_generator() + "@gmail.com"
+        mobile = "95" + self.random_generatordigits()
+        self.click(SignUpPage.subscribeBtn)
+        self.clickAndSendText(SignUpPage.yourNameTxtBox, username)
+        self.clickAndSendText(SignUpPage.emailTxtBox, email)
+        self.clickAndSendText(SignUpPage.mobileTxtBox, mobile)
+        self.click(SignUpPage.cityDropdown)
+        time.sleep(4)
+        cityList = self.driver.find_elements(By.XPATH, "//div[@class='v-list-item__content']")
+        for city in cityList:
+            if city.text == "Bengaluru":
+                city.click()
+        self.clickAndSendText(SignUpPage.passwordTxtBox,'Test@1234')
+        self.clickAndSendText(SignUpPage.referralBox,'ref')
+        self.driver.find_element(By.XPATH,"//div[text()='Please enter the six digit referral code']").is_displayed()
+        self.clickAndSendText(SignUpPage.referralBox,'refcode1')
+        self.driver.find_element(By.XPATH,"//div[text()='Invalid referral code']").is_displayed()
+        self.clear(SignUpPage.referralBox)
+        self.clickAndSendText(SignUpPage.referralBox,refCode)
+        refmsg = self.driver.find_element(By.XPATH,"//div[contains(text(),'Subscribe and recharge to claim your referral benefits from "+referUN+"')]").text
+        assert 'referral benefits' in refmsg, 'referral benefits message not displayed'
+        log.info('referral benefits message displayed')
+        time.sleep(5)
+        ele = self.driver.find_element(By.XPATH,"//button[@type='submit']//span[contains(.,'Sign Up For 7 Days Trial')]")
+        self.driver.execute_script("arguments[0].click();", ele)
+        time.sleep(5)
+        self.click(SignUpPage.silver6_radio)
+        price = self.driver.find_element(By.XPATH,"(//button[@data-parent='tabsilver'][@data-duration='6']//div[@class='price-month']//span[1])[1]").text
+        actprice = ''
+        for val in price:
+            if val.isdigit():
+                actprice = actprice + val
+        months = self.driver.find_element(By.XPATH,"//button[@data-parent='tabsilver'][@data-duration='6']//p//span[1]").text
+        finalValue = int(actprice) * int(months) - 100
+        self.click1(SignUpPage.proceedToPaySilver)
+        time.sleep(5)
+        self.clickAndSendText(SignUpPage.addressLine1,'109')
+        self.clickAndSendText(SignUpPage.addressLine2,'HAL')
+        self.clickAndSendText(SignUpPage.pincode,'560008')
+        self.click(SignUpPage.areaDropdown)
+        time.sleep(5)
+        self.driver.find_element(By.XPATH,"//div[@class='v-list-item__content']//div[text()='BANGALORE NORTH']").click()
+        self.click1(SignUpPage.IAddcityDropdown)
+        time.sleep(5)
+        self.driver.find_element(By.XPATH, "//div[@class='v-list-item__content']//div[text()='Bengaluru']").click()
+        time.sleep(8)
+        self.click1(SignUpPage.saveAndContinueBtn)
+        TotalPayAmount = self.getText(SignUpPage.totalPayAmount)
+        finalPay = ''
+        for i in TotalPayAmount:
+            if i.isdigit():
+                finalPay = finalPay + i
+        time.sleep(4)
+        assert int(finalPay) == finalValue, "Discount not applied"
+        log.info("Discount applied")
+        self.click1(SignUpPage.payBtn)
+        window_before1 = self.driver.window_handles[-1]
+        window_before = self.driver.window_handles[0]
+        self.driver.switch_to_frame(0)
+        self.click1(SignUpPage.netBanking)
+        self.click1(SignUpPage.sbibank)
+        self.click1(SignUpPage.paymentBtn)
+        window_after = self.driver.window_handles[1]
+        self.driver.switch_to_window(window_after)
+        self.click(SignUpPage.successBtn)
+        self.driver.switch_to_window(window_before1)
+        time.sleep(5)
+        # also verify referral code can be applied for one time
+        self.click(SignUpPage.menu_profileLink)
+        self.click(SignUpPage.planDetailsTab)
+        self.click(SignUpPage.silverplan)
+        self.click(SignUpPage.updateNowBtn)
+        monthtxt = self.driver.find_element(By.XPATH,"(//span[@class='planmonth'])[1]").text
+        expectedtxt1 = ''
+        for i in monthtxt:
+            if i.isdigit():
+                expectedtxt1 = expectedtxt1 + i
+        pricetxt = self.driver.find_element(By.XPATH,"(//div[@class='priceDetails']//div[@class='offerPrice blue'])[1]").text
+        expectedprice1 = ''
+        for j in pricetxt:
+            if j.isdigit():
+                expectedprice1 = expectedprice1 + j
+        finalPrice = int(expectedtxt1) * int(expectedprice1)
+        self.click(SignUpPage.proceedToPayBtn)
+        payableAmt = self.driver.find_element(By.XPATH,"//span[@class='success--text pay-amount']").text
+        expectedPayableAmt = ''
+        for k in payableAmt:
+            if k.isdigit():
+                expectedPayableAmt = expectedPayableAmt + k
+        assert finalPrice == int(expectedPayableAmt), 'Discount applied'
+        log.info('Discount not applied')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

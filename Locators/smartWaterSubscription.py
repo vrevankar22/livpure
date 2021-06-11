@@ -12,6 +12,7 @@ class SignUpPage:
     passwordview = (By.XPATH, "(//i[contains(@class,'v-icon notranslate v-icon--link mdi mdi-eye-off theme--light')])[1]")
     submitSignUpBtn = (By.XPATH,"//button[@type='submit']//span[contains(.,'Sign Up For 7 Days Trial')]")
     emailexistMsg = (By.XPATH,"//div[@class='v-alert__content']")
+    referralBox = (By.XPATH,"//input[@name='referralCode']")
 
 # Login into the account
     loginBtn = (By.XPATH,"//a[text()='Log In']")
@@ -65,6 +66,9 @@ class SignUpPage:
     custDashboard = (By.XPATH,"//a[text()='Customer Dashboard']")
     whatsappicon = (By.XPATH,"//div[@class='large-screen-only']//h2[contains(.,'Referral Code')]//a[@id='wshare']")
     facebookicon = (By.XPATH,"//div[@class='large-screen-only']//h2[contains(.,'Referral Code')]//a[@data-tracking='facebook-share']")
+    fbID = (By.XPATH,"//input[@id='email']")
+    fbPwd = (By.XPATH,"//input[@id='pass']")
+    fbLogin = (By.XPATH,"//input[@value='Log In']")
     knowMore = (By.XPATH,"//a[@onclick='knowMore()'][text()='Know more']")
     invitelink = (By.XPATH,"//a[contains(text(),'Invite')]")
     referEarnBtn = (By.XPATH,"//span[text()='Refer & Earn']")
@@ -104,12 +108,16 @@ class SignUpPage:
 # Menu Tabs
     menu_productLink = (By.XPATH,"//ul[@class='menu-list']//a[text()='Plans']")
     menu_planLink = (By.XPATH,"//ul[@class='menu-list']//a[text()='Plans']")
-    menu_HowItWorkLink = (By.XPATH,"//ul[@class='menu-list']//a[@data-scroll='#how-works']")
-    menu_ReferEarnLink = (By.XPATH,"//ul[@class='menu-list']//a[text()='Refer & Earn']")
-    menu_profileLink = (By.XPATH,"//ul[@class='menu-list']//a[text()='Profile']")
     menu_proceedToPay = (By.XPATH,"//button[@id='silver']")
+
+    menu_HowItWorkLink = (By.XPATH,"//ul[@class='menu-list']//a[@data-scroll='#how-works']")
     desktop_AndroidPS = (By.XPATH,"//div[@class='appLinks_Zero desktopOnly']//img[@alt='Android Play Store']")
     desktop_ApplePS = (By.XPATH,"//div[@class='appLinks_Zero desktopOnly']//img[@alt='Apple Play Store']")
+
+    menu_ReferEarnLink = (By.XPATH,"//ul[@class='menu-list']//a[text()='Refer & Earn']")
+    menu_invitenow = (By.XPATH,"//h2[text()='Refer Friends & Earn']//following-sibling::a[text()='Invite Now']")
+
+    menu_profileLink = (By.XPATH,"//ul[@class='menu-list']//a[text()='Profile']")
 
 # upload KYC page
     uploadkycBtn = (By.XPATH,"//a[contains(.,'Upload Ekyc')]")
