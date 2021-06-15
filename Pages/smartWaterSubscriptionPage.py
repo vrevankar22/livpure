@@ -1,5 +1,5 @@
 from selenium.webdriver.common.keys import Keys
-
+from selenium.common.exceptions import *
 from Locators.smartWaterSubscription import SignUpPage
 from utilities.BaseClass import BaseClass
 import time
@@ -18,7 +18,7 @@ class smartWaterSubscriptionPage(BaseClass):
         self.click(SignUpPage.submitLoginBtn)
 
 # Verify All menu link without sign up and login into the account
-    def verify_menu_link(self):
+    def verify_menu_link(self,liter,voucher,extraVoucher):
         log = self.getLogger()
         self.click(SignUpPage.menu_planLink)
         self.click1(SignUpPage.menu_proceedToPay)
@@ -27,27 +27,43 @@ class smartWaterSubscriptionPage(BaseClass):
         self.click(SignUpPage.menu_HowItWorkLink)
         window_before = self.driver.window_handles[0]
         self.click1(SignUpPage.desktop_AndroidPS)
-        self.driver.switch_to_window(window_before)
+        self.driver.switch_to.window(window_before)
         self.click1(SignUpPage.desktop_ApplePS)
         window_after = self.driver.window_handles[1]
-        self.driver.switch_to_window(window_after)
+        self.driver.switch_to.window(window_after)
         android = self.driver.title
         assert 'Google Play' in android,'Google Play store not opened'
         log.info('Google Play store opened')
         window_after1 = self.driver.window_handles[-1]
         self.driver.close()
-        self.driver.switch_to_window(window_after1)
+        self.driver.switch_to.window(window_after1)
         time.sleep(5)
         apple = self.driver.title
         assert self.driver.find_element(By.XPATH,"//a//span[text()='App Store']").is_displayed(), 'App store not opened'
         log.info('App store opened')
         self.driver.close()
-        self.driver.switch_to_window(window_before)
+        self.driver.switch_to.window(window_before)
         # need to verify refer and earn
         self.click(SignUpPage.menu_ReferEarnLink)
+        try:
+            self.driver.find_element(By.XPATH, "(//img[@alt='LivpureSmart Whatapp Icon'])[1]").click()
+            window_after1 = self.driver.window_handles[1]
+            self.driver.switch_to.window(window_after1)
+            fbTitle = self.driver.title
+            assert 'Facebook' in fbTitle, 'Does not Redirect to FB page'
+            log.info('Redirected to FB page')
+            self.driver.close()
+            self.driver.switch_to.window(window_before)
+            self.click((By.XPATH,"//span[@class='close1']"))
+        except NoSuchElementException:
+            log.info('This smart electric Scooter refer now pop up message not displayed')
+        time.sleep(5)
+        self.driver.find_element(By.XPATH,"//p[@class='bannerPara']//b[contains(.,'"+str(liter)+"L free water*')]").is_displayed()
+        self.driver.find_element(By.XPATH,"//p[@class='bannerPara']//b[contains(.,'"+str(voucher)+" Shopping Voucher')]").is_displayed()
+        self.driver.find_element(By.XPATH,"(//b[contains(.,'"+str(extraVoucher)+"')])[1]").is_displayed()
         self.click(SignUpPage.menu_invitenow)
         window_after1 = self.driver.window_handles[1]
-        self.driver.switch_to_window(window_after1)
+        self.driver.switch_to.window(window_after1)
         fbTitle = self.driver.title
         assert 'Facebook' in fbTitle, 'Does not Redirect to FB page'
         log.info('Redirected to FB page')
@@ -146,6 +162,42 @@ class smartWaterSubscriptionPage(BaseClass):
         assert mobile.is_displayed(), "Enter a valid mobile number message not displayed"
         log.info("Enter a valid mobile number message displayed")
 
+# Verify referral code diplays for not paid registered account
+    def verify_referralCode(self,email,password,voucher):
+        log = self.getLogger()
+        self.login(email,password)
+        # verify Referral code diplays for not paid registered account - In Customer dashboard
+        self.click(SignUpPage.menu_profileLink)
+        referralCode = self.driver.find_element(By.XPATH,"(//h2[@class='heading02 text-right'])[2]").text
+        RC = referralCode.split(':')[-1]
+        RCode = RC.strip()
+        refCode1 = self.driver.find_element(By.XPATH, "//input[@class='RefCode']").get_attribute("value")
+        assert refCode1 == RCode, 'Referral code does not show for not paid registered account'
+        log.info('Referral code diplays for not paid registered account')
+
+        # verify Referral code diplays for not paid registered account - In Refer and Earn
+        self.click(SignUpPage.menu_ReferEarnLink)
+        try:
+            self.driver.find_element(By.XPATH, "(//img[@alt='LivpureSmart Whatapp Icon'])[3]").click()
+            window_before = self.driver.window_handles[0]
+            window_after1 = self.driver.window_handles[1]
+            self.driver.switch_to.window(window_after1)
+            fbTitle = self.driver.title
+            assert 'Facebook' in fbTitle, 'Does not Redirect to FB page'
+            log.info('Redirected to FB page')
+            self.driver.close()
+            self.driver.switch_to.window(window_before)
+            self.click((By.XPATH, "//span[@class='close1']"))
+        except NoSuchElementException:
+            log.info('This smart electric Scooter refer now pop up message not displayed')
+        time.sleep(5)
+        self.driver.find_element(By.XPATH, "(//h2[contains(.,'GET RS "+str(voucher)+" SHOPPING VOUCHER SHARE REFERRAL CODE...')])[1]").is_displayed()
+        REcode = self.driver.find_element(By.XPATH, "(//h2[@class='heading02 text-center'])[1]").text
+        REcode1 = REcode.split(' ')[-1]
+        REC = REcode1.strip()
+        assert REC == RCode, 'Referral Code not displayed in Refer and Earn Page'
+        log.info('Referral Code displayed in Refer and Earn Page')
+
 # Login, select the plan, update the installation address - Do not upload KYC Doc
     def verify_processTillkycPage(self,username,password,ltr_month,email,mobile,flatNo,street,pinCode):
         log = self.getLogger()
@@ -156,21 +208,12 @@ class smartWaterSubscriptionPage(BaseClass):
         assert check_pwd_encrypt.is_displayed(), 'Password not Encrypted'
         log.info("Password displayed in encrypted form")
         time.sleep(3)
-        # Bug in the below line
         self.click(SignUpPage.passwordview)
         check_pwd = self.driver.find_element(By.XPATH, "//input[@name='password'][@type='text']")
         assert check_pwd.is_displayed(), 'password not displayed on view'
         log.info("Password displayed on view")
         time.sleep(10)
         self.click(SignUpPage.submitLoginBtn)
-        # verify Referral code diplays for not paid registered account
-        self.click(SignUpPage.menu_profileLink)
-        referralCode = self.driver.find_element(By.XPATH, "(//h2[@class='heading02 text-right'])[2]").text
-        RC = referralCode.split(':')[-1]
-        RCode = RC.strip()
-        refCode1 = self.driver.find_element(By.XPATH, "//input[@class='RefCode']").get_attribute("value")
-        assert refCode1 == RCode,'Referral code does not show for not paid registered account'
-        log.info('Referral code diplays for not paid registered account')
         self.click(SignUpPage.menu_profileLink)
         self.driver.find_element(By.XPATH,"//label[text()='Please subscribe a plan to enjoy the services!']").is_displayed()
         self.click((By.XPATH,"//a[text()='Subscribe Now']"))
@@ -232,16 +275,19 @@ class smartWaterSubscriptionPage(BaseClass):
         assert int(finalPay) == finalValue, "Incorrect Total Pay Amount"
         log.info("Displayed correct total pay amount")
         # Edit installtion address - Need to write code
+        time.sleep(5)
         self.click(SignUpPage.payBtn)
         window_before = self.driver.window_handles[0]
-        self.driver.switch_to_frame(0)
+        self.driver.switch_to.frame(0)
         self.click1(SignUpPage.netBanking)
         self.click1(SignUpPage.sbibank)
         self.click1(SignUpPage.paymentBtn)
         window_after = self.driver.window_handles[1]
-        self.driver.switch_to_window(window_after)
+        self.driver.switch_to.window(window_after)
         time.sleep(5)
         self.click(SignUpPage.successBtn)
+        self.driver.switch_to.window(window_before)
+        self.driver.switch_to.default_content()
         kycpage = self.driver.find_element(By.XPATH,"//p[@class='thanksinfo']").text
         assert 'KYC' in kycpage, 'kyc page not displayed'
         log.info('KYC page displayed')
@@ -375,16 +421,20 @@ class smartWaterSubscriptionPage(BaseClass):
         assert 'Facebook' in FBtitle, 'FB not opened'
         log.info('FB page displayed')
 
-
 # verify refer and Earn
-    def verify_ReferAndEarn(self,email,password,referRs,refCode):
+    def verify_ReferAndEarn(self,email,password,referRs,refCode,liter):
         log = self.getLogger()
         self.login(email,password)
         self.click(SignUpPage.referEarnBtn)
+        self.driver.find_element(By.XPATH,"(//b[contains(.,'"+str(liter)+"L free water*')])[1]").is_displayed()
+        self.driver.find_element(By.XPATH,"(//b[contains(.,'₹ "+str(referRs)+" Shopping Voucher')])[1]").is_displayed()
         invitePage = self.getText((By.XPATH,"//h4[@class='refTit']['Refer now & Earn up to Rs. "+str(referRs)+"']"))
         assert str(referRs) in invitePage,'invite page and message not displayed'
         log.info('invite page and message displayed')
         time.sleep(5)
+        self.driver.find_element(By.XPATH,"(//b[contains(.,'"+str(liter)+"L free water*')])[2]").is_displayed()
+        assert self.driver.find_element(By.XPATH,"(//b[contains(.,'₹ "+str(referRs)+" Shopping Voucher')])[2]").is_displayed(),'Fail'
+        log.info('Pass')
         self.click(SignUpPage.inviteRefCode)
         refCode1 = self.driver.find_element(By.XPATH,"//input[@class='RefCode']").get_attribute("value")
         assert refCode1 == refCode, 'referral Code are not same from Customer dashboard and invite page'
@@ -420,27 +470,24 @@ class smartWaterSubscriptionPage(BaseClass):
         assert self.driver.find_element(By.XPATH,"//div[@class='term_condition_panel']").is_displayed(), 'TC page not displayed'
         log.info('TC page displayed')
 
-# Verify Referral History page
-    def verify_ReferralHistory(self,email, password):
-        log = self.getLogger()
-        self.login(email, password)
-        self.click(SignUpPage.referEarnBtn)
-        self.click(SignUpPage.ReferralHistory)
-        assert self.driver.find_element(By.XPATH,"//div[@class='amountvoucher']").is_displayed(),'Referral History page not displayed'
-        log.info('Referral History page displayed')
-        self.click(SignUpPage.inviteNowBtn)
-        window_after = self.driver.window_handles[1]
-        self.driver.switch_to_window(window_after)
-        # need to verify facebook page
-
 # Verify LeaderBoard page
-    def verify_LeaderBoard(self,email, password):
+    def verify_LeaderBoard(self,email,password):
         log = self.getLogger()
-        self.login(email, password)
+        self.login(email,password)
+        time.sleep(5)
         self.click(SignUpPage.referEarnBtn)
+        time.sleep(5)
         self.click(SignUpPage.leaderBoard)
+        time.sleep(5)
         assert self.driver.find_element(By.XPATH,"//div[@class='LeadBdgradintBg']").is_displayed(),'LeaderBoard not displayed'
         log.info('LeaderBoard displayed')
+        time.sleep(5)
+        cm = date.today()
+        cmonth = cm.strftime("%b")
+        monthtxt = self.driver.find_element(By.XPATH,"//div[@id='Pmonths']").text
+        assert cmonth.casefold() == monthtxt.casefold(), 'Leaderboard not displayed for the current month'
+        log.info('Leaderboard displayed for the current month')
+
 
 # Login into the account and verify the subscribed Plan details
     def verify_PlanDetails(self,email,password):
@@ -687,7 +734,7 @@ class smartWaterSubscriptionPage(BaseClass):
             self.click1(SignUpPage.payBtn)
             window_before1 = self.driver.window_handles[-1]
             window_before = self.driver.window_handles[0]
-            self.driver.switch_to_frame(0)
+            self.driver.switch_to.frame(0)
             self.click1(SignUpPage.netBanking)
             self.click1(SignUpPage.sbibank)
             self.click1(SignUpPage.paymentBtn)
@@ -752,7 +799,7 @@ class smartWaterSubscriptionPage(BaseClass):
             self.click1(SignUpPage.payBtn)
             window_before1 = self.driver.window_handles[-1]
             window_before = self.driver.window_handles[0]
-            self.driver.switch_to_frame(0)
+            self.driver.switch_to.frame(0)
             self.click1(SignUpPage.netBanking)
             self.click1(SignUpPage.sbibank)
             self.click1(SignUpPage.paymentBtn)
@@ -818,7 +865,7 @@ class smartWaterSubscriptionPage(BaseClass):
             self.click1(SignUpPage.payBtn)
             window_before1 = self.driver.window_handles[-1]
             window_before = self.driver.window_handles[0]
-            self.driver.switch_to_frame(0)
+            self.driver.switch_to.frame(0)
             self.click1(SignUpPage.netBanking)
             self.click1(SignUpPage.sbibank)
             self.click1(SignUpPage.paymentBtn)
@@ -884,7 +931,7 @@ class smartWaterSubscriptionPage(BaseClass):
             self.click1(SignUpPage.payBtn)
             window_before1 = self.driver.window_handles[-1]
             window_before = self.driver.window_handles[0]
-            self.driver.switch_to_frame(0)
+            self.driver.switch_to.frame(0)
             self.click1(SignUpPage.netBanking)
             self.click1(SignUpPage.sbibank)
             self.click1(SignUpPage.paymentBtn)
@@ -962,6 +1009,7 @@ class smartWaterSubscriptionPage(BaseClass):
         self.send_keys(SignUpPage.oldPWD, password)
         self.send_keys(SignUpPage.newPWD,'Test')
         self.send_keys(SignUpPage.confirmPWD,'Test@1234')
+        self.click(SignUpPage.oldPWD)
         self.driver.find_element(By.XPATH,"//label[contains(text(),'Please enter at least 5 characters.')]").is_displayed()
         assert self.driver.find_element(By.XPATH,"//label[contains(text(),'Please enter the same value again.')]")\
             .is_displayed(),'Mandatory and error message not displayed'
@@ -971,10 +1019,12 @@ class smartWaterSubscriptionPage(BaseClass):
     def verify_signupWithRefCode(self,refCode,referUN):
         log = self.getLogger()
         username = "Test_" + self.random_generatorString()
+        XLUtils.writeData(excel,'SignUp',25,1,username)
         email = self.random_generator() + "@gmail.com"
+        XLUtils.writeData(excel, 'SignUp',25,2,email)
         mobile = "95" + self.random_generatordigits()
         self.click(SignUpPage.subscribeBtn)
-        self.clickAndSendText(SignUpPage.yourNameTxtBox, username)
+        self.clickAndSendText(SignUpPage.yourNameTxtBox,username)
         self.clickAndSendText(SignUpPage.emailTxtBox, email)
         self.clickAndSendText(SignUpPage.mobileTxtBox, mobile)
         self.click(SignUpPage.cityDropdown)
@@ -1029,7 +1079,7 @@ class smartWaterSubscriptionPage(BaseClass):
         self.click1(SignUpPage.payBtn)
         window_before1 = self.driver.window_handles[-1]
         window_before = self.driver.window_handles[0]
-        self.driver.switch_to_frame(0)
+        self.driver.switch_to.frame(0)
         self.click1(SignUpPage.netBanking)
         self.click1(SignUpPage.sbibank)
         self.click1(SignUpPage.paymentBtn)
@@ -1062,6 +1112,77 @@ class smartWaterSubscriptionPage(BaseClass):
                 expectedPayableAmt = expectedPayableAmt + k
         assert finalPrice == int(expectedPayableAmt), 'Discount applied'
         log.info('Discount not applied')
+
+# Verify Referral History page
+    def verify_ReferralHistory(self,email,password,amount):
+        log = self.getLogger()
+        self.login(email, password)
+        self.click(SignUpPage.menu_profileLink)
+        self.click(SignUpPage.referEarnBtn)
+        self.click(SignUpPage.ReferralHistory)
+        assert self.driver.find_element(By.XPATH,"//div[@class='amountvoucher']//span[contains(.,'Rs. "+str(amount)+"')]").is_displayed(), 'Referral History page not displayed'
+        log.info('Referral History page displayed')
+        self.click(SignUpPage.inviteNowBtn)
+        window_after = self.driver.window_handles[1]
+        self.driver.switch_to_window(window_after)
+        # need to verify facebook page
+        fbTitle = self.driver.title
+        assert 'Facebook' in fbTitle,'Does not Redirect to FB page'
+        log.info('Redirected to FB page')
+
+# verify the referred username displays in the Referral History tab
+    def verify_referredUNInReferralHistory(self,email,password,username,liter):
+        log = self.getLogger()
+        self.login(email,password)
+        self.click(SignUpPage.referEarnBtn)
+        self.click(SignUpPage.ReferralHistory)
+        assert self.driver.find_element(By.XPATH,"//b[@class='phoNum'][text()='"+username+"']").is_displayed(),'Referred username not displayed in History'
+        log.info('Referred username displayed in History')
+        # Bug in this
+        cd = date.today()
+        a = cd.strftime("%d %b %Y")
+        signUptext = self.driver.find_element(By.XPATH,"//b[@class='phoNum'][text()='"+username+"']//following::p[@class='signInfo']").text
+        new = signUptext.split(' ')[-3:]
+        b = ' '.join(new)
+        assert a == b, 'Signed up date not displayed'
+        log.info('Signed up date displayed')
+        # verify Free water
+        count = self.driver.find_elements(By.XPATH,"//div[@class='referral_Item bg']")
+        waterText = self.driver.find_element(By.XPATH,"//div[@id='ReferralsHistory']//div[@class='d-flex vouWatC water']//div[2]").text
+        val = waterText.split(' ')[0]
+        freewater = len(count) * liter
+        assert int(val) == freewater, 'Incorrect Free water liter'
+        log.info('Correct free water liter displayed')
+        # verify Voucher
+        count1 = self.driver.find_elements(By.XPATH,"//div[@id='ReferralsHistory']//div[contains(.,'Free Water and Voucher Won!')]")
+        voucher = self.driver.find_element(By.XPATH,
+                                           "//div[@id='ReferralsHistory']//div[@class='d-flex vouWatC Voucher rightborder']//div[2]").text
+        assert len(count1) == int(voucher), 'Incorrect Voucher count'
+        log.info('Voucher count displayed')
+        # verify watsapp and call icon
+        time.sleep(3)
+        window_before = self.driver.window_handles[0]
+        self.click((By.XPATH,"(//b[@class='phoNum'][text()='"+username+"']//following::div[@class='shareAct']//a[@id='wshare'])[1]"))
+        window_after = self.driver.window_handles[1]
+        self.driver.switch_to.window(window_after)
+        whatsapp = self.driver.title
+        assert whatsapp == 'WhatsApp', 'Not redirected to WhatsApp page'
+        log.info('Redirected to WhatsApp page')
+        self.driver.close()
+        self.driver.switch_to_window(window_before)
+        self.click((By.XPATH,"(//b[@class='phoNum'][text()='"+username+"']//following::div[@class='shareAct']//img[@alt='Livpuresmart Call Icon'])[1]"))
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

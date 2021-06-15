@@ -1,13 +1,20 @@
 import pytest
+import allure
+from pytest import mark
 
 from Pages.smartWaterSubscriptionPage import smartWaterSubscriptionPage
 from utilities.XLUtils import *
 
+# pytest --alluredir=Report/ -v -s
+
+# @allure.severity(allure.severity_level.NORMAL)
 class TestSmartWaterSubscription(smartWaterSubscriptionPage):
 
 # py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_menu_link
+    # @allure.severity(allure.severity_level.NORMAL)
     def test_verify_menu_link(self):
-        self.verify_menu_link()
+        self.verify_menu_link(readData(excel,'SignUp',18,2),readData(excel,'SignUp',18,1),
+                    readData(excel,'SignUp',18,3))
 
 # py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_signUp
     def test_signUp(self):
@@ -15,7 +22,6 @@ class TestSmartWaterSubscription(smartWaterSubscriptionPage):
                     readData(excel,'SignUp',2,3),readData(excel,'SignUp',2,5))
 
 # py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verifyMandatoryField
-    @pytest.mark.depends(on=['test_signUp'])
     def test_verifyMandatoryField(self):
         self.verifyMandatoryField(readData(excel,'SignUp',2,1),readData(excel,'SignUp',2,2),
                                   readData(excel,'SignUp',2,3),readData(excel,'SignUp',2,5))
@@ -24,13 +30,21 @@ class TestSmartWaterSubscription(smartWaterSubscriptionPage):
     def test_verify_invalid_details(self):
         self.verify_invalid_details()
 
-# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::verify_processTillkycPage
-    @pytest.mark.depends(on=['test_signUp'])
+# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_referralCode
+    @mark.depends(on=['test_signUp'])
+    def test_verify_referralCode(self):
+        self.verify_referralCode(readData(excel,'SignUp',2,2),readData(excel,'SignUp',2,5),readData(excel,'SignUp',18,1))
+
+# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_processTillkycPage
+    @mark.depends(on=['test_signUp'])
     def test_verify_processTillkycPage(self):
         self.verify_processTillkycPage(readData(excel,'SignUp',2,1),readData(excel,'SignUp',2,5),readData(excel,'SignUp',2,10),readData(excel,'SignUp',2,2),
                         readData(excel,'SignUp',2,3),readData(excel,'SignUp',2,16),readData(excel,'SignUp',3,16),readData(excel,'SignUp',4,16))
 
-# upload_KYCDoc
+# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_upload_KYCDoc
+    @mark.depends(on=['verify_processTillkycPage'])
+    def test_upload_KYCDoc(self):
+        self.upload_KYCDoc(readData(excel,'SignUp',2,2),readData(excel,'SignUp',2,5))
 
 # py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_login_invalidcredentials
     def test_login_invalidcredentials(self):
@@ -53,13 +67,9 @@ class TestSmartWaterSubscription(smartWaterSubscriptionPage):
 # py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_ReferAndEarn
     def test_verify_ReferAndEarn(self):
         self.verify_ReferAndEarn(readData(excel,'SignUp',15,1),readData(excel,'SignUp',15,3),
-                                 readData(excel,'SignUp',18,1),readData(excel,'SignUp',15,9))
+                                 readData(excel,'SignUp',18,1),readData(excel,'SignUp',15,9),readData(excel,'SignUp',18,2))
 
-# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_ReferralHistory
-    def test_verify_ReferralHistory(self):
-        self.verify_ReferralHistory(readData(excel,'SignUp',15,1),readData(excel,'SignUp',15,3))
-
-# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_ReferralHistory
+# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_LeaderBoard
     def test_verify_LeaderBoard(self):
         self.verify_LeaderBoard(readData(excel,'SignUp',15,1),readData(excel,'SignUp',15,3))
 
@@ -118,6 +128,21 @@ class TestSmartWaterSubscription(smartWaterSubscriptionPage):
 # py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_signupWithRefCode
     def test_verify_signupWithRefCode(self):
         self.verify_signupWithRefCode(readData(excel,'SignUp',15,9),readData(excel,'SignUp',15,4))
+
+# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_ReferralHistory
+    @mark.depends(on=['test_verify_signupWithRefCode'])
+    def test_verify_ReferralHistory(self):
+        self.verify_ReferralHistory(readData(excel,'SignUp',25,2),readData(excel,'SignUp',25,3),readData(excel,'SignUp',18,1))
+
+# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_referredUNInReferralHistory
+    # bug in this, edit it after the fix
+    @mark.depends(on=['test_verify_signupWithRefCode','test_verify_ReferralHistory'])
+    def test_verify_referredUNInReferralHistory(self):
+        self.verify_referredUNInReferralHistory(readData(excel,'SignUp',15,1),readData(excel,'SignUp',15,3),
+                                                readData(excel,'SignUp',25,1),readData(excel,'SignUp',18,2))
+
+
+
 
 
 
