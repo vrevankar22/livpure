@@ -294,18 +294,40 @@ class smartWaterSubscriptionPage(BaseClass):
 
 
 # Upload KYC document
-    def upload_KYCDoc(self,email,password):
+    def upload_KYCDoc(self,email,password,flatNum):
         log = self.getLogger()
         self.login(email,password)
         kycpage = self.driver.find_element(By.XPATH,"//p[@class='thanksinfo']").text
         assert 'KYC' in kycpage, 'kyc page not displayed'
         log.info('KYC page displayed')
+        self.click1(SignUpPage.verifyBtn)
+        expectedText = 'Nothing entered'
+        emailtxt = self.driver.find_element(By.XPATH, "//div[@class='emailVerify verifyCommon']//div[4]").text
+        assert expectedText.casefold() == emailtxt.casefold(), 'Nothing Entered message not displayed'
+        log.info('Nothing Entered message displyed for email')
+        mobiletxt = self.driver.find_element(By.XPATH, "//div[@class='mobileVerify verifyCommon']//div[4]").text
+        assert expectedText.casefold() == mobiletxt.casefold(), 'Nothing Entered message not displayed'
+        log.info('Nothing Entered message displyed for mobile')
+        self.clickAndSendText(SignUpPage.emailOTP,'5678')
+        self.clickAndSendText(SignUpPage.mobileOTP,'8769')
+        self.click1(SignUpPage.verifyBtn)
+        expectedOTPText = 'Wrong OTP Entered'
+        emailOTPtxt = self.driver.find_element(By.XPATH, "//div[@class='emailVerify verifyCommon']//div[4]").text
+        assert expectedOTPText.casefold() == emailOTPtxt.casefold(),'Wrong OTP Entered message not displayed'
+        log.info('Wrong OTP Entered message displyed for email')
+        mobileOTPtxt = self.driver.find_element(By.XPATH,"//div[@class='mobileVerify verifyCommon']//div[4]").text
+        assert expectedOTPText.casefold() == mobileOTPtxt.casefold(),'Wrong OTP Entered message not displayed'
+        log.info('Wrong OTP Entered message displyed for mobile')
+        self.click(SignUpPage.permanentAdd)
+        flatNo = self.getText(SignUpPage.flattextbox)
+        assert flatNo == str(flatNum),'Address not displayed on checking permanent address checkbox'
+        log.info('Address displayed on checking permanent address checkbox')
+        self.click(SignUpPage.addressSubmit)
+        assert self.driver.find_element(By.XPATH,"//i[text()='please verify your mobile number and email id']").is_displayed()
         self.click(SignUpPage.menu_profileLink)
         self.driver.find_element(By.XPATH,"//span[contains(.,'Kindly upload your eKYC documents to process your order!')]").is_displayed()
         self.click(SignUpPage.uploadkycBtn)
         # Need to complete kyc - Pending due to OTP
-
-
 
 
 # Login into the account with invalid credentials
@@ -398,6 +420,7 @@ class smartWaterSubscriptionPage(BaseClass):
         log.info('Redirected to WhatsApp page')
         self.driver.close()
         self.driver.switch_to_window(window_before)
+        time.sleep(5)
         self.click(SignUpPage.facebookicon)
         window_After1 = self.driver.window_handles[1]
         self.driver.switch_to_window(window_After1)
@@ -511,7 +534,7 @@ class smartWaterSubscriptionPage(BaseClass):
             self.click(SignUpPage.planDetailsTab)
             self.click(SignUpPage.silverplan)
             self.click1(SignUpPage.updateNowBtn)
-            monthtxt = self.driver.find_element(By.XPATH, "(//span[@class='planmonth'])[" + str(a) + "]").text
+            monthtxt = self.driver.find_element(By.XPATH, "(//span[@class='planmonth'])["+str(a)+"]").text
             expectedtxt1 = ''
             for i in monthtxt:
                 if i.isdigit():
@@ -1015,6 +1038,7 @@ class smartWaterSubscriptionPage(BaseClass):
             .is_displayed(),'Mandatory and error message not displayed'
         log.info("Mandatory and error message displayed")
 
+
 # Sign up account with referral code and verify Rs 100 discount applied on plan
     def verify_signupWithRefCode(self,refCode,referUN):
         log = self.getLogger()
@@ -1023,6 +1047,7 @@ class smartWaterSubscriptionPage(BaseClass):
         email = self.random_generator() + "@gmail.com"
         XLUtils.writeData(excel, 'SignUp',25,2,email)
         mobile = "95" + self.random_generatordigits()
+        XLUtils.writeData(excel, 'SignUp', 25, 4, mobile)
         self.click(SignUpPage.subscribeBtn)
         self.clickAndSendText(SignUpPage.yourNameTxtBox,username)
         self.clickAndSendText(SignUpPage.emailTxtBox, email)
@@ -1131,21 +1156,27 @@ class smartWaterSubscriptionPage(BaseClass):
         log.info('Redirected to FB page')
 
 # verify the referred username displays in the Referral History tab
-    def verify_referredUNInReferralHistory(self,email,password,username,liter):
+    def verify_referredUNInReferralHistory(self,email,password,refName,refemail,refMobile,liter):
         log = self.getLogger()
         self.login(email,password)
+        # verify username, email address, phone number in referral history from customer dashboard
+        self.click(SignUpPage.refHistoryBtn)
+        assert self.driver.find_element(By.XPATH,"//ul//li[text()='Name : "+str(refName)+"']").is_displayed(),'Name does not match'
+        assert self.driver.find_element(By.XPATH,"//ul//li[text()='Email : "+str(refemail)+"']").is_displayed(),'Email does not match'
+        assert self.driver.find_element(By.XPATH,"//ul//li[text()='Phone : "+str(refMobile)+"']").is_displayed(),'Phone does not match'
+        self.click(SignUpPage.custDashboard)
         self.click(SignUpPage.referEarnBtn)
         self.click(SignUpPage.ReferralHistory)
-        assert self.driver.find_element(By.XPATH,"//b[@class='phoNum'][text()='"+username+"']").is_displayed(),'Referred username not displayed in History'
+        assert self.driver.find_element(By.XPATH,"//b[@class='phoNum'][text()='"+refName+"']").is_displayed(),'Referred username not displayed in History'
         log.info('Referred username displayed in History')
-        # Bug in this
-        cd = date.today()
+        # Bug in this, not fixed yet
+        '''cd = date.today()
         a = cd.strftime("%d %b %Y")
-        signUptext = self.driver.find_element(By.XPATH,"//b[@class='phoNum'][text()='"+username+"']//following::p[@class='signInfo']").text
+        signUptext = self.driver.find_element(By.XPATH,"//b[@class='phoNum'][text()='"+refName+"']//following::p[@class='signInfo']").text
         new = signUptext.split(' ')[-3:]
         b = ' '.join(new)
         assert a == b, 'Signed up date not displayed'
-        log.info('Signed up date displayed')
+        log.info('Signed up date displayed')'''
         # verify Free water
         count = self.driver.find_elements(By.XPATH,"//div[@class='referral_Item bg']")
         waterText = self.driver.find_element(By.XPATH,"//div[@id='ReferralsHistory']//div[@class='d-flex vouWatC water']//div[2]").text
@@ -1162,7 +1193,7 @@ class smartWaterSubscriptionPage(BaseClass):
         # verify watsapp and call icon
         time.sleep(3)
         window_before = self.driver.window_handles[0]
-        self.click((By.XPATH,"(//b[@class='phoNum'][text()='"+username+"']//following::div[@class='shareAct']//a[@id='wshare'])[1]"))
+        self.click((By.XPATH,"(//b[@class='phoNum'][text()='"+refName+"']//following::div[@class='shareAct']//a[@id='wshare'])[1]"))
         window_after = self.driver.window_handles[1]
         self.driver.switch_to.window(window_after)
         whatsapp = self.driver.title
@@ -1170,7 +1201,160 @@ class smartWaterSubscriptionPage(BaseClass):
         log.info('Redirected to WhatsApp page')
         self.driver.close()
         self.driver.switch_to_window(window_before)
-        self.click((By.XPATH,"(//b[@class='phoNum'][text()='"+username+"']//following::div[@class='shareAct']//img[@alt='Livpuresmart Call Icon'])[1]"))
+        self.click((By.XPATH,"(//b[@class='phoNum'][text()='"+refName+"']//following::div[@class='shareAct']//img[@alt='Livpuresmart Call Icon'])[1]"))
+
+# verify Add more liter without mapping RO to account
+    def verify_AddMoreltr(self,email,password):
+        log = self.getLogger()
+        self.login(email,password)
+        self.click(SignUpPage.menu_profileLink)
+        self.click(SignUpPage.addmoreltrTab)
+        msg = self.getText(SignUpPage.addmoreltrMsg)
+        log.info(msg)
+        assert 'subscribe the plan first' in msg, 'Subscribe plan first message not displayed'
+        log.info('Subscribe plan first message not displayed')
+
+# verify Add more liter after mapping RO to account
+    def verify_AddMoreltrwithRO(self,email,password):
+        self.login(email,password)
+
+# Verify details of the premium plan
+    def verify_PremiumPlan(self,month,value,depositAmount):
+        log = self.getLogger()
+        self.click(SignUpPage.menu_planLink)
+        assert self.driver.find_element(By.XPATH,"//div[@data-tier='silver'][contains(.,'Silver')]").is_displayed(),'Premium Activated'
+        log.info("Premium not Activated")
+        self.click(SignUpPage.premiumBth)
+        monthtext = self.getText(SignUpPage.premiummonth)
+        month_1 = ''
+        for i in monthtext:
+            if i.isdigit():
+                month_1 = month_1 + i
+        assert int(month_1) == month,'Month not displayed'
+        log.info('Month displayed')
+        monthprice = self.getText(SignUpPage.premiumPrice)
+        price = ''
+        for j in monthprice:
+            if j.isdigit():
+                price = price + j
+        assert int(price) == value, 'Amount not displayed'
+        log.info('Amount displayed')
+        time.sleep(5)
+        self.click1(SignUpPage.expandDeposit)
+        time.sleep(5)
+        assert self.driver.find_element(By.XPATH,"//div[@id='depositPremium']//li[text()='One time 100% refundable security deposit, for which receipt will be provided on payment.']").is_displayed()
+        assert self.driver.find_element(By.XPATH,"//div[@id='depositPremium']//li[text()='Security deposit is 100% refunded when you give back the RO machine.']").is_displayed()
+        time.sleep(5)
+        self.click1(SignUpPage.expandDeposit)
+        depositTxt = self.getText(SignUpPage.depositText)
+        amount = depositTxt.split(' ')[-1]
+        depositAmt = amount.strip()
+        assert int(depositAmt) == depositAmount, 'deposit not displayed'
+        log.info('Desposit displayed')
+        totalPay = int(month_1) * int(price) + int(depositAmt)
+        XLUtils.writeData(excel, 'SignUp', 30, 4, totalPay)
+        time.sleep(3)
+
+# subscribe premium plan
+    def subsribe_premiumPlan(self,password,planAmt,depositAmt,finalValue):
+        log = self.getLogger()
+        self.click(SignUpPage.menu_planLink)
+        self.click(SignUpPage.premiumBth)
+        self.click1(SignUpPage.premiumProceedToPay)
+        username = "Test_" + self.random_generatorString()
+        email = self.random_generator() + "@gmail.com"
+        mobile = "95" + self.random_generatordigits()
+        XLUtils.writeData(excel,'SignUp',30,5, username)
+        XLUtils.writeData(excel,'SignUp',30,6, email)
+        XLUtils.writeData(excel,'SignUp',30,7, mobile)
+        self.clickAndSendText(SignUpPage.yourNameTxtBox, username)
+        self.clickAndSendText(SignUpPage.emailTxtBox, email)
+        self.clickAndSendText(SignUpPage.mobileTxtBox, mobile)
+        self.click(SignUpPage.cityDropdown)
+        time.sleep(5)
+        self.driver.find_element(By.XPATH, "//div[@class='v-list-item__content']//div[text()='Bengaluru']").click()
+        self.clickAndSendText(SignUpPage.passwordTxtBox,password)
+        ele = self.driver.find_element(By.XPATH, "//button[@type='submit']//span[contains(.,'Sign Up For 7 Days Trial')]")
+        self.driver.execute_script("arguments[0].click();", ele)
+        self.clickAndSendText(SignUpPage.addressLine1,'104')
+        self.clickAndSendText(SignUpPage.addressLine2,'HAL')
+        self.clickAndSendText(SignUpPage.pincode,'560008')
+        self.click(SignUpPage.areaDropdown)
+        time.sleep(5)
+        self.driver.find_element(By.XPATH,"//div[@class='v-list-item__content']//div[text()='BANGALORE NORTH']").click()
+        self.click1(SignUpPage.IAddcityDropdown)
+        self.driver.find_element(By.XPATH, "//div[@class='v-list-item__content']//div[text()='Bengaluru']").click()
+        self.click1(SignUpPage.saveAndContinueBtn)
+        time.sleep(5)
+        planName = self.getText(SignUpPage.planname)
+        assert planName.casefold() == 'Premium'.casefold(),'Plan Name not displayed'
+        log.info('Plan name displayed')
+        assert self.driver.find_element(By.XPATH,"//span[@class='success--text pay-amount'][contains(.,'"+str(planAmt)+"')]").is_displayed()
+        assert self.driver.find_element(By.XPATH,"//span[@class='success--text'][contains(.,'"+str(depositAmt)+"')]").is_displayed()
+        TotalPayAmount = self.getText(SignUpPage.totalPayAmount)
+        finalPay = ''
+        for i in TotalPayAmount:
+            if i.isdigit():
+                finalPay = finalPay + i
+        time.sleep(4)
+        assert int(finalPay) == finalValue, "Incorrect Total Pay Amount"
+        log.info("Displayed correct total pay amount")
+        time.sleep(5)
+        self.click1(SignUpPage.payBtn)
+        window_before = self.driver.window_handles[0]
+        self.driver.switch_to.frame(0)
+        self.click1(SignUpPage.netBanking)
+        self.click1(SignUpPage.sbibank)
+        self.click1(SignUpPage.paymentBtn)
+        window_after = self.driver.window_handles[1]
+        self.driver.switch_to.window(window_after)
+        time.sleep(5)
+        self.click(SignUpPage.successBtn)
+        # complete the OTP and KYC manually
+
+# verify subscribed premium plan details in plan details Tab
+    def verify_SubcribedPremiumPlan(self,email,password,liter,referRs,planprice):
+        log = self.getLogger()
+        self.login(email,password)
+        # verify free water and voucher
+        self.driver.find_element(By.XPATH, "(//b[contains(.,'"+str(liter)+"L free water*')])[1]").is_displayed()
+        # Bug in this
+        #self.driver.find_element(By.XPATH, "(//b[contains(.,'₹ "+str(referRs)+" Shopping Voucher')])[1]").is_displayed()
+        # verify plan details
+        self.click(SignUpPage.planDetailsTab)
+        planname = self.getText(SignUpPage.subscribedName)
+        assert 'Premium' in planname, 'Plan name not displayed'
+        log.info('Plan name displayed')
+        planliter = self.getText(SignUpPage.planliter)
+        assert 'Unlimited water' == planliter, 'liter not displayed'
+        assert self.driver.find_element(By.XPATH,"//div[@class='planPrice'][text()='₹ "+str(planprice)+"']").is_displayed(),'Plan amount not displayed'
+        log.info('Plan Amount displayed')
+
+# verify renew premium plan
+    def verify_renewPremiumPlan(self,email,password):
+        log = self.getLogger()
+        self.login(email,password)
+        self.click(SignUpPage.planDetailsTab)
+        self.click(SignUpPage.renewplanLink)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -66,6 +66,7 @@ class SignUpPage:
     custDashboard = (By.XPATH,"//a[text()='Customer Dashboard']")
     whatsappicon = (By.XPATH,"//div[@class='large-screen-only']//h2[contains(.,'Referral Code')]//a[@id='wshare']")
     facebookicon = (By.XPATH,"//div[@class='large-screen-only']//h2[contains(.,'Referral Code')]//a[@data-tracking='facebook-share']")
+    refHistoryBtn = (By.XPATH,"(//a[@class='btn'])[7]")
     fbID = (By.XPATH,"//input[@id='email']")
     fbPwd = (By.XPATH,"//input[@id='pass']")
     fbLogin = (By.XPATH,"//input[@value='Log In']")
@@ -105,6 +106,10 @@ class SignUpPage:
     profileicon = (By.XPATH,"(//div[@class='user-account'])[1]")
     logout = (By.XPATH,"(//a[text()='Logout'])[1]")
 
+# Add more liter
+    addmoreltrTab = (By.XPATH,"//a[text()='Add More Litres']")
+    addmoreltrMsg = (By.XPATH,"//div[@class='ifoMsg']")
+
 # Menu Tabs
     menu_productLink = (By.XPATH,"//ul[@class='menu-list']//a[text()='Plans']")
     menu_planLink = (By.XPATH,"//ul[@class='menu-list']//a[text()='Plans']")
@@ -122,6 +127,25 @@ class SignUpPage:
 # upload KYC page
     uploadkycBtn = (By.XPATH,"//a[contains(.,'Upload Ekyc')]")
     verifyBtn = (By.XPATH,"//button[@id='verify']")
+    emailOTP = (By.XPATH,"//input[@id='email']")
+    mobileOTP = (By.XPATH,"//input[@id='phone']")
+    permanentAdd = (By.XPATH,"//span[@class='addcheckmark']")
+    flattextbox = (By.XPATH,"//input[@id='flatNo']")
+    addressSubmit = (By.XPATH,"//input[@id='submit']")
+
+# Premium
+    premiumBth = (By.XPATH,"//label[@for='switch'][contains(.,'Premium')]")
+    premiummonth = (By.XPATH,"//div[@id='premium']//p[@class='monthnew']")
+    premiumPrice = (By.XPATH,"//div[@id='premium']//div[@class='price-month']")
+    expandDeposit = (By.XPATH,"//div[@id='depositPremium']//span[@class='plusIco']")
+    depositText = (By.XPATH,"//div[@id='depositPremium']//h2[@class='accordionItemHeading']")
+    premiumProceedToPay = (By.XPATH,"//button[@id='premiumplan']")
+    planname = (By.XPATH,"//span[@class='review-address-text'][contains(.,'Premium')]")
+    subscribedName = (By.XPATH,"//span[contains(.,'Premium Plan')]")
+    planliter = (By.XPATH,"//p[@class='literDetail'][contains(.,'Unlimited water')]")
+
+
+
 
 
 

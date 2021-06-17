@@ -1,1066 +1,303 @@
-2021-06-14 11:20:52,483 :INFO : SignUp : SignUp page selected by default
-2021-06-14 11:21:08,969 :INFO : SignUp : Password displayed in encrypted form
-2021-06-14 11:21:09,073 :INFO : SignUp : Password displayed on view
-2021-06-14 11:21:31,592 :INFO : SignUp : Signed Up successfully
-2021-06-14 11:26:45,471 :INFO : SignUp : SignUp page selected by default
-2021-06-14 11:27:01,971 :INFO : SignUp : Password displayed in encrypted form
-2021-06-14 11:27:02,068 :INFO : SignUp : Password displayed on view
-2021-06-14 11:27:24,686 :INFO : SignUp : Signed Up successfully
-2021-06-14 11:34:28,356 :INFO : SignUp : SignUp page selected by default
-2021-06-14 11:34:45,135 :INFO : SignUp : Password displayed in encrypted form
-2021-06-14 11:34:45,236 :INFO : SignUp : Password displayed on view
-2021-06-14 11:35:08,198 :INFO : SignUp : Signed Up successfully
-2021-06-14 11:35:44,340 :INFO : SignUp : SignUp page selected by default
-2021-06-14 11:36:01,235 :INFO : SignUp : Password displayed in encrypted form
-2021-06-14 11:36:01,407 :INFO : SignUp : Password displayed on view
-2021-06-14 11:36:24,967 :INFO : SignUp : Signed Up successfully
-2021-06-14 12:10:37,738 :INFO : SignUp : SignUp page selected by default
-2021-06-14 12:10:54,338 :INFO : SignUp : Password displayed in encrypted form
-2021-06-14 12:10:54,426 :INFO : SignUp : Password displayed on view
-2021-06-14 12:11:17,628 :INFO : SignUp : Signed Up successfully
-2021-06-14 12:26:27,322 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-14 12:26:35,243 :INFO : verify_menu_link : Google Play store opened
-2021-06-14 12:26:40,453 :INFO : verify_menu_link : App store opened
-2021-06-14 12:26:46,814 :INFO : verify_menu_link : Redirected to FB page
-2021-06-14 12:27:03,828 :INFO : SignUp : SignUp page selected by default
-2021-06-14 12:36:56,063 :INFO : SignUp : SignUp page selected by default
-2021-06-14 12:37:12,574 :INFO : SignUp : Password displayed in encrypted form
-2021-06-14 12:37:12,719 :INFO : SignUp : Password displayed on view
-2021-06-14 12:37:36,521 :INFO : SignUp : Signed Up successfully
-2021-06-14 12:47:56,558 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-14 12:48:02,683 :INFO : verify_menu_link : Google Play store opened
-2021-06-14 12:48:07,900 :INFO : verify_menu_link : App store opened
-2021-06-14 12:48:12,891 :INFO : verify_menu_link : Redirected to FB page
-2021-06-14 12:48:25,646 :INFO : SignUp : SignUp page selected by default
-2021-06-14 12:48:42,579 :INFO : SignUp : Password displayed in encrypted form
-2021-06-14 12:48:42,751 :INFO : SignUp : Password displayed on view
-2021-06-14 12:49:06,142 :INFO : SignUp : Signed Up successfully
-2021-06-14 13:02:33,799 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-14 13:02:40,384 :INFO : verify_menu_link : Google Play store opened
-2021-06-14 13:02:45,651 :INFO : verify_menu_link : App store opened
-2021-06-14 13:02:50,973 :INFO : verify_menu_link : Redirected to FB page
-2021-06-14 13:03:03,831 :INFO : SignUp : SignUp page selected by default
-2021-06-14 13:03:20,472 :INFO : SignUp : Password displayed in encrypted form
-2021-06-14 13:03:20,587 :INFO : SignUp : Password displayed on view
-2021-06-14 13:03:43,703 :INFO : SignUp : Signed Up successfully
-2021-06-14 13:38:41,859 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-14 13:38:50,200 :INFO : verify_menu_link : Google Play store opened
-2021-06-14 13:38:55,368 :INFO : verify_menu_link : App store opened
-2021-06-14 13:39:00,805 :INFO : verify_menu_link : Redirected to FB page
-2021-06-14 13:39:15,588 :INFO : SignUp : SignUp page selected by default
-2021-06-14 13:39:32,128 :INFO : SignUp : Password displayed in encrypted form
-2021-06-14 13:39:32,215 :INFO : SignUp : Password displayed on view
-2021-06-14 13:39:55,903 :INFO : SignUp : Signed Up successfully
-2021-06-14 13:58:16,193 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-14 13:58:22,018 :INFO : verify_menu_link : Google Play store opened
-2021-06-14 13:58:32,056 :INFO : verify_menu_link : App store opened
-2021-06-14 13:58:37,117 :INFO : verify_menu_link : Redirected to FB page
-2021-06-14 13:58:49,483 :INFO : SignUp : SignUp page selected by default
-2021-06-14 13:59:05,767 :INFO : SignUp : Password displayed in encrypted form
-2021-06-14 13:59:05,857 :INFO : SignUp : Password displayed on view
-2021-06-14 13:59:29,243 :INFO : SignUp : Signed Up successfully
-2021-06-14 14:05:53,082 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-14 14:05:59,429 :INFO : verify_menu_link : Google Play store opened
-2021-06-14 14:06:04,577 :INFO : verify_menu_link : App store opened
-2021-06-14 14:06:09,114 :INFO : verify_menu_link : Redirected to FB page
-2021-06-14 15:35:10,642 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-14 15:35:33,972 :INFO : verify_menu_link : Google Play store opened
-2021-06-14 15:35:42,872 :INFO : verify_menu_link : App store opened
-2021-06-14 15:35:52,328 :INFO : verify_menu_link : Redirected to FB page
-2021-06-14 15:38:44,600 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-14 15:39:02,871 :INFO : verify_menu_link : Google Play store opened
-2021-06-14 15:39:09,970 :INFO : verify_menu_link : App store opened
-2021-06-14 15:39:16,552 :INFO : verify_menu_link : Redirected to FB page
-2021-06-14 15:42:26,721 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-14 15:42:44,137 :INFO : verify_menu_link : Google Play store opened
-2021-06-14 15:42:49,310 :INFO : verify_menu_link : App store opened
-2021-06-14 15:42:58,033 :INFO : verify_menu_link : Redirected to FB page
-2021-06-14 15:44:46,016 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-14 15:45:00,420 :INFO : verify_menu_link : Google Play store opened
-2021-06-14 15:45:05,660 :INFO : verify_menu_link : App store opened
-2021-06-14 15:45:12,384 :INFO : verify_menu_link : Redirected to FB page
-2021-06-14 15:46:33,069 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-14 15:46:53,034 :INFO : verify_menu_link : Google Play store opened
-2021-06-14 15:46:59,992 :INFO : verify_menu_link : App store opened
-2021-06-14 15:47:09,984 :INFO : verify_menu_link : Redirected to FB page
-2021-06-14 16:08:47,378 :INFO : verify_SilverPlanPrice : verify plan price for Silver
-2021-06-14 16:09:50,479 :INFO : verify_SilverPlanPrice : verify plan price for Silver
-2021-06-14 16:10:01,656 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-14 16:10:02,652 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-14 16:10:03,736 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-14 16:10:11,562 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-14 16:10:11,617 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-14 16:10:11,681 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan Page
-2021-06-14 16:13:05,848 :INFO : verify_SilverPlanPrice : verify plan price for Silver
-2021-06-14 16:13:24,346 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-14 16:13:25,154 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-14 16:13:25,893 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-14 16:13:30,489 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-14 16:13:30,543 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-14 16:13:30,592 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan Page
-2021-06-14 16:20:38,493 :INFO : verify_SilverPlanPrice : verify plan price for Silver
-2021-06-14 16:20:49,598 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-14 16:20:50,330 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-14 16:20:51,077 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-14 16:20:56,385 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-14 16:20:56,436 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-14 16:20:56,491 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan Page
-2021-06-14 16:55:03,186 :INFO : SignUp : SignUp page selected by default
-2021-06-14 16:55:19,309 :INFO : SignUp : Password displayed in encrypted form
-2021-06-14 16:55:19,390 :INFO : SignUp : Password displayed on view
-2021-06-14 16:55:43,594 :INFO : SignUp : Signed Up successfully
-2021-06-14 17:07:16,261 :INFO : SignUp : SignUp page selected by default
-2021-06-14 17:07:33,502 :INFO : SignUp : Password displayed in encrypted form
-2021-06-14 17:07:33,604 :INFO : SignUp : Password displayed on view
-2021-06-14 17:07:57,026 :INFO : SignUp : Signed Up successfully
-2021-06-14 17:08:19,739 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-14 17:08:19,772 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-14 17:08:19,793 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-14 17:08:19,815 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-14 17:08:19,836 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-14 17:08:48,678 :INFO : verifyMandatoryField : already registered with us message displayed
-2021-06-14 17:17:39,717 :INFO : verify_ForgotPassword_valid : OTP Verification page displayed
-2021-06-14 17:17:39,845 :INFO : verify_ForgotPassword_valid : Please enter the otp message displayed
-2021-06-14 17:17:39,874 :INFO : verify_ForgotPassword_valid : Please enter the new password message not displayed
-2021-06-15 11:10:14,118 :INFO : verify_signupWithRefCode : referral benefits message displayed
-2021-06-15 11:11:04,155 :INFO : verify_signupWithRefCode : Discount applied
-2021-06-15 11:11:19,997 :INFO : verify_signupWithRefCode : Discount not applied
-2021-06-15 11:15:34,922 :INFO : verify_ReferralHistory : Referral History page displayed
-2021-06-15 11:15:38,668 :INFO : verify_ReferralHistory : Redirected to FB page
-2021-06-15 11:17:08,237 :INFO : verify_ReferralHistory : Referral History page displayed
-2021-06-15 11:17:12,178 :INFO : verify_ReferralHistory : Redirected to FB page
-2021-06-15 11:40:59,850 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
-2021-06-15 11:40:59,861 :INFO : verify_referredUNInReferralHistory : [<selenium.webdriver.remote.webelement.WebElement (session="25e81eed4b764e1edf8ea3a35e5a7510", element="e574d4b0-5258-4fb6-bd4d-24b6f0d59261")>, <selenium.webdriver.remote.webelement.WebElement (session="25e81eed4b764e1edf8ea3a35e5a7510", element="09610b92-0d87-457b-baaf-ea485d91c365")>, <selenium.webdriver.remote.webelement.WebElement (session="25e81eed4b764e1edf8ea3a35e5a7510", element="9940905f-e994-444b-b542-9a475ff75911")>, <selenium.webdriver.remote.webelement.WebElement (session="25e81eed4b764e1edf8ea3a35e5a7510", element="113e91cf-1472-4ec8-a3c7-bfd48fd6247e")>, <selenium.webdriver.remote.webelement.WebElement (session="25e81eed4b764e1edf8ea3a35e5a7510", element="af18960f-bc12-4594-9bd9-7bacb52c4a62")>, <selenium.webdriver.remote.webelement.WebElement (session="25e81eed4b764e1edf8ea3a35e5a7510", element="a73f13fc-a151-4e41-9338-453918227f49")>, <selenium.webdriver.remote.webelement.WebElement (session="25e81eed4b764e1edf8ea3a35e5a7510", element="5e744d92-6b42-43bc-bb30-71e51cdd57d7")>, <selenium.webdriver.remote.webelement.WebElement (session="25e81eed4b764e1edf8ea3a35e5a7510", element="26fd6bfe-ced9-46c0-9cb2-97f494138c05")>]
-2021-06-15 11:43:14,601 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
-2021-06-15 11:43:14,615 :INFO : verify_referredUNInReferralHistory : 8
-2021-06-15 12:56:20,215 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
-2021-06-15 12:58:21,950 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
-2021-06-15 13:01:58,174 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
-2021-06-15 13:03:15,449 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
-2021-06-15 13:03:15,510 :INFO : verify_referredUNInReferralHistory : Correct free water liter displayed
-2021-06-15 13:16:41,642 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
-2021-06-15 13:16:41,676 :INFO : verify_referredUNInReferralHistory : Correct free water liter displayed
-2021-06-15 13:16:41,711 :INFO : verify_referredUNInReferralHistory : Voucher count displayed
-2021-06-15 13:26:16,647 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
-2021-06-15 13:26:16,692 :INFO : verify_referredUNInReferralHistory : Correct free water liter displayed
-2021-06-15 13:26:16,735 :INFO : verify_referredUNInReferralHistory : Voucher count displayed
-2021-06-15 13:29:47,591 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
-2021-06-15 13:29:47,633 :INFO : verify_referredUNInReferralHistory : Correct free water liter displayed
-2021-06-15 13:29:47,702 :INFO : verify_referredUNInReferralHistory : Voucher count displayed
-2021-06-15 13:29:56,723 :INFO : verify_referredUNInReferralHistory : Redirected to WhatsApp page
-2021-06-15 13:41:38,184 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-15 13:41:45,081 :INFO : verify_menu_link : Google Play store opened
-2021-06-15 13:41:50,302 :INFO : verify_menu_link : App store opened
-2021-06-15 13:43:49,000 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-15 13:43:55,695 :INFO : verify_menu_link : Google Play store opened
-2021-06-15 13:44:00,864 :INFO : verify_menu_link : App store opened
-2021-06-15 14:32:26,304 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-15 14:32:40,010 :INFO : verify_menu_link : Google Play store opened
-2021-06-15 14:32:45,296 :INFO : verify_menu_link : App store opened
-2021-06-15 14:32:53,196 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 14:34:22,720 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-15 14:34:28,454 :INFO : verify_menu_link : Google Play store opened
-2021-06-15 14:34:33,676 :INFO : verify_menu_link : App store opened
-2021-06-15 14:34:38,134 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 14:34:40,161 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 14:35:47,373 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-15 14:35:52,579 :INFO : verify_menu_link : Google Play store opened
-2021-06-15 14:35:57,786 :INFO : verify_menu_link : App store opened
-2021-06-15 14:36:03,673 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 14:36:05,738 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 14:36:18,179 :INFO : SignUp : SignUp page selected by default
-2021-06-15 14:36:34,809 :INFO : SignUp : Password displayed in encrypted form
-2021-06-15 14:36:34,962 :INFO : SignUp : Password displayed on view
-2021-06-15 14:36:59,278 :INFO : SignUp : Signed Up successfully
-2021-06-15 14:37:23,999 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 14:37:24,061 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 14:37:24,119 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 14:37:24,180 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 14:37:24,239 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 14:37:52,826 :INFO : verifyMandatoryField : already registered with us message displayed
-2021-06-15 14:38:08,550 :INFO : verify_invalid_details : Special characters are not allowed message displayed
-2021-06-15 14:38:08,594 :INFO : verify_invalid_details : Enter a valid email address message displayed
-2021-06-15 14:38:08,635 :INFO : verify_invalid_details : Enter a valid mobile number message displayed
-2021-06-15 14:38:21,473 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 14:38:24,739 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 14:38:38,911 :INFO : verify_processTillkycPage : Referral code diplays for not paid registered account
-2021-06-15 14:38:40,676 :INFO : verify_processTillkycPage : liters per month value displayed
-2021-06-15 14:38:40,795 :INFO : verify_processTillkycPage : Actualprice 400,6,2400
-2021-06-15 14:38:48,186 :INFO : verify_processTillkycPage : Username displayed correctly in installation address page
-2021-06-15 14:38:48,186 :INFO : verify_processTillkycPage : Email displayed correctly in installation address page
-2021-06-15 14:38:48,187 :INFO : verify_processTillkycPage : Mobile number displayed correctly in installation address page
-2021-06-15 14:38:58,673 :INFO : verify_processTillkycPage : Enter valid code message displayed
-2021-06-15 14:39:29,751 :INFO : verify_processTillkycPage : Reveiew and Pay page displayed
-2021-06-15 14:39:38,865 :INFO : verify_processTillkycPage : Displayed correct total pay amount
-2021-06-15 14:40:19,277 :INFO : login_invalidcredentials : Invalid username and password message displayed
-2021-06-15 14:40:20,563 :INFO : login_invalidcredentials : Invalid username and password message displayed
-2021-06-15 14:40:21,553 :INFO : login_invalidcredentials : Invalid username and password message displayed
-2021-06-15 14:40:30,872 :INFO : verify_ForgotPassword_Invalid : Please provide correct email id alert message displayed
-2021-06-15 14:40:31,506 :INFO : verify_ForgotPassword_Invalid : Please provide correct email id alert message displayed
-2021-06-15 14:40:46,586 :INFO : verify_ForgotPassword_valid : OTP Verification page displayed
-2021-06-15 14:40:46,681 :INFO : verify_ForgotPassword_valid : Please enter the otp message displayed
-2021-06-15 14:40:46,691 :INFO : verify_ForgotPassword_valid : Please enter the new password message not displayed
-2021-06-15 14:41:12,652 :INFO : verify_CustomerDashboard : Username displayed
-2021-06-15 14:41:12,674 :INFO : verify_CustomerDashboard : Email displayed
-2021-06-15 14:41:12,697 :INFO : verify_CustomerDashboard : Phone No displayed
-2021-06-15 14:41:12,717 :INFO : verify_CustomerDashboard : Address displayed
-2021-06-15 14:41:12,743 :INFO : verify_CustomerDashboard : City displayed
-2021-06-15 14:41:12,762 :INFO : verify_CustomerDashboard : State displayed
-2021-06-15 14:41:12,779 :INFO : verify_CustomerDashboard : Pincode displayed
-2021-06-15 14:41:17,798 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
-2021-06-15 14:41:29,380 :INFO : verify_CustomerDashboard : Referral code displayed on inviting to FB
-2021-06-15 14:41:29,572 :INFO : verify_CustomerDashboard : invite page displayed
-2021-06-15 14:41:32,542 :INFO : verify_CustomerDashboard : FB page displayed
-2021-06-15 14:41:48,928 :INFO : verify_ReferAndEarn : invite page and message displayed
-2021-06-15 14:41:54,090 :INFO : verify_ReferAndEarn : referral Code are same from Customer dashboard and invite page
-2021-06-15 14:41:54,499 :INFO : verify_ReferAndEarn : Tooltip displayed for Copy Icon
-2021-06-15 14:41:54,717 :INFO : verify_ReferAndEarn : Copied: BF0ID2
-2021-06-15 14:42:03,805 :INFO : verify_ReferAndEarn : Whatsapp opened
-2021-06-15 14:42:07,699 :INFO : verify_ReferAndEarn : FB page displayed
-2021-06-15 14:42:07,961 :INFO : verify_ReferAndEarn : How does it work popup displayed
-2021-06-15 14:42:09,906 :INFO : verify_ReferAndEarn : TC page displayed
-2021-06-15 14:42:47,095 :INFO : verify_PlanDetails : Renew Plan link redirected to plan page
-2021-06-15 14:42:59,578 :INFO : verify_SilverPlanPrice : verify plan price for Silver
-2021-06-15 14:43:13,323 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 14:43:14,037 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 14:43:14,713 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 14:43:17,319 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 14:43:17,362 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 14:43:17,406 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 14:43:36,438 :INFO : verify_GoldPlanPrice : verify plan price for Gold
-2021-06-15 14:43:47,075 :INFO : verify_GoldPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 14:43:47,704 :INFO : verify_GoldPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 14:43:48,468 :INFO : verify_GoldPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 14:43:51,314 :INFO : verify_GoldPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 14:43:51,355 :INFO : verify_GoldPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 14:43:51,408 :INFO : verify_GoldPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 14:43:58,667 :INFO : verify_PlatinumPlanPrice : verify plan price for Platinum
-2021-06-15 14:44:07,833 :INFO : verify_PlatinumPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 14:44:08,659 :INFO : verify_PlatinumPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 14:44:09,468 :INFO : verify_PlatinumPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 14:44:12,576 :INFO : verify_PlatinumPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 14:44:12,621 :INFO : verify_PlatinumPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 14:44:12,669 :INFO : verify_PlatinumPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 14:44:20,260 :INFO : verify_TitaniumPlanPrice : verify plan price for Titanium
-2021-06-15 14:44:35,738 :INFO : verify_TitaniumPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 14:44:36,432 :INFO : verify_TitaniumPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 14:44:37,246 :INFO : verify_TitaniumPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 14:44:40,774 :INFO : verify_TitaniumPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 14:44:40,819 :INFO : verify_TitaniumPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 14:44:40,863 :INFO : verify_TitaniumPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 14:44:50,541 :INFO : verify_SilverChangePlan : Check for the Silver Plan change
-2021-06-15 14:45:14,563 :INFO : verify_SilverChangePlan : Amount displayed correctly
-2021-06-15 14:45:25,639 :INFO : verify_SilverChangePlan : Recharge History displayed
-2021-06-15 14:45:25,701 :INFO : verify_SilverChangePlan : Recharge date displayed
-2021-06-15 14:45:25,736 :INFO : verify_SilverChangePlan : Amount displayed
-2021-06-15 14:45:38,337 :INFO : verify_SilverChangePlan : Amount displayed correctly
-2021-06-15 14:45:49,256 :INFO : verify_SilverChangePlan : Recharge History displayed
-2021-06-15 14:45:49,323 :INFO : verify_SilverChangePlan : Recharge date displayed
-2021-06-15 14:45:49,385 :INFO : verify_SilverChangePlan : Amount displayed
-2021-06-15 14:46:02,541 :INFO : verify_SilverChangePlan : Amount displayed correctly
-2021-06-15 14:46:12,502 :INFO : verify_SilverChangePlan : Recharge History displayed
-2021-06-15 14:46:12,563 :INFO : verify_SilverChangePlan : Recharge date displayed
-2021-06-15 14:46:12,624 :INFO : verify_SilverChangePlan : Amount displayed
-2021-06-15 14:46:24,555 :INFO : verify_GoldChangePlan : Check for the Gold Plan change
-2021-06-15 14:46:49,958 :INFO : verify_GoldChangePlan : Amount displayed correctly
-2021-06-15 14:47:01,227 :INFO : verify_GoldChangePlan : Recharge History displayed
-2021-06-15 14:47:01,261 :INFO : verify_GoldChangePlan : Recharge date displayed
-2021-06-15 14:47:01,286 :INFO : verify_GoldChangePlan : Amount displayed
-2021-06-15 14:47:15,078 :INFO : verify_GoldChangePlan : Amount displayed correctly
-2021-06-15 14:47:25,782 :INFO : verify_GoldChangePlan : Recharge History displayed
-2021-06-15 14:47:25,844 :INFO : verify_GoldChangePlan : Recharge date displayed
-2021-06-15 14:47:25,908 :INFO : verify_GoldChangePlan : Amount displayed
-2021-06-15 14:47:39,330 :INFO : verify_GoldChangePlan : Amount displayed correctly
-2021-06-15 14:47:49,429 :INFO : verify_GoldChangePlan : Recharge History displayed
-2021-06-15 14:47:49,500 :INFO : verify_GoldChangePlan : Recharge date displayed
-2021-06-15 14:47:49,558 :INFO : verify_GoldChangePlan : Amount displayed
-2021-06-15 14:47:57,844 :INFO : verify_PlatinumChangePlan : Check for the Platinum Plan change
-2021-06-15 14:48:17,801 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
-2021-06-15 14:48:28,404 :INFO : verify_PlatinumChangePlan : Recharge History displayed
-2021-06-15 14:48:28,509 :INFO : verify_PlatinumChangePlan : Recharge date displayed
-2021-06-15 14:48:28,573 :INFO : verify_PlatinumChangePlan : Amount displayed
-2021-06-15 14:48:44,890 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
-2021-06-15 14:48:55,311 :INFO : verify_PlatinumChangePlan : Recharge History displayed
-2021-06-15 14:48:55,379 :INFO : verify_PlatinumChangePlan : Recharge date displayed
-2021-06-15 14:48:55,445 :INFO : verify_PlatinumChangePlan : Amount displayed
-2021-06-15 14:49:08,253 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
-2021-06-15 14:49:19,021 :INFO : verify_PlatinumChangePlan : Recharge History displayed
-2021-06-15 14:49:19,061 :INFO : verify_PlatinumChangePlan : Recharge date displayed
-2021-06-15 14:49:19,103 :INFO : verify_PlatinumChangePlan : Amount displayed
-2021-06-15 14:49:27,778 :INFO : verify_TitaniumChangePlan : Check for the Titanium Plan change
-2021-06-15 14:49:47,173 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
-2021-06-15 14:49:57,244 :INFO : verify_TitaniumChangePlan : Recharge History displayed
-2021-06-15 14:49:57,308 :INFO : verify_TitaniumChangePlan : Recharge date displayed
-2021-06-15 14:49:57,376 :INFO : verify_TitaniumChangePlan : Amount displayed
-2021-06-15 14:50:12,209 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
-2021-06-15 14:50:24,132 :INFO : verify_TitaniumChangePlan : Recharge History displayed
-2021-06-15 14:50:24,202 :INFO : verify_TitaniumChangePlan : Recharge date displayed
-2021-06-15 14:50:24,265 :INFO : verify_TitaniumChangePlan : Amount displayed
-2021-06-15 14:50:38,209 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
-2021-06-15 14:50:49,198 :INFO : verify_TitaniumChangePlan : Recharge History displayed
-2021-06-15 14:50:49,237 :INFO : verify_TitaniumChangePlan : Recharge date displayed
-2021-06-15 14:50:49,264 :INFO : verify_TitaniumChangePlan : Amount displayed
-2021-06-15 14:51:20,484 :INFO : verify_changePassword : Password cannot be same message displayed
-2021-06-15 14:51:22,074 :INFO : verify_changePassword : Password reset successful message displayed
-2021-06-15 14:51:31,444 :INFO : verify_changePassword : Password changed successfully
-2021-06-15 14:52:27,504 :INFO : verify_signupWithRefCode : referral benefits message displayed
-2021-06-15 14:53:26,573 :INFO : verify_signupWithRefCode : Discount applied
-2021-06-15 14:53:45,858 :INFO : verify_signupWithRefCode : Discount not applied
-2021-06-15 14:54:49,588 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
-2021-06-15 14:54:49,632 :INFO : verify_referredUNInReferralHistory : Correct free water liter displayed
-2021-06-15 14:54:49,681 :INFO : verify_referredUNInReferralHistory : Voucher count displayed
-2021-06-15 14:54:59,179 :INFO : verify_referredUNInReferralHistory : Redirected to WhatsApp page
-2021-06-15 14:59:00,865 :INFO : verify_LeaderBoard : LeaderBoard displayed
-2021-06-15 15:10:34,458 :INFO : upload_KYCDoc : KYC page displayed
-2021-06-15 15:12:20,647 :INFO : verify_diffPWD : Mandatory and error message displayed
-2021-06-15 15:14:39,854 :INFO : verify_diffPWD : Mandatory and error message displayed
-2021-06-15 15:15:38,147 :INFO : verify_diffPWD : Mandatory and error message displayed
-2021-06-15 15:18:13,760 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 15:18:16,984 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 15:18:33,628 :INFO : verify_processTillkycPage : Referral code diplays for not paid registered account
-2021-06-15 15:19:35,831 :INFO : SignUp : SignUp page selected by default
-2021-06-15 15:19:52,632 :INFO : SignUp : Password displayed in encrypted form
-2021-06-15 15:19:52,757 :INFO : SignUp : Password displayed on view
-2021-06-15 15:20:16,757 :INFO : SignUp : Signed Up successfully
-2021-06-15 15:20:35,481 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 15:20:38,732 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 15:20:53,505 :INFO : verify_processTillkycPage : Referral code diplays for not paid registered account
-2021-06-15 15:20:55,349 :INFO : verify_processTillkycPage : liters per month value displayed
-2021-06-15 15:20:55,495 :INFO : verify_processTillkycPage : Actualprice 400,6,2400
-2021-06-15 15:21:03,044 :INFO : verify_processTillkycPage : Username displayed correctly in installation address page
-2021-06-15 15:21:03,044 :INFO : verify_processTillkycPage : Email displayed correctly in installation address page
-2021-06-15 15:21:03,044 :INFO : verify_processTillkycPage : Mobile number displayed correctly in installation address page
-2021-06-15 15:21:13,514 :INFO : verify_processTillkycPage : Enter valid code message displayed
-2021-06-15 15:21:44,837 :INFO : verify_processTillkycPage : Reveiew and Pay page displayed
-2021-06-15 15:21:53,961 :INFO : verify_processTillkycPage : Displayed correct total pay amount
-2021-06-15 15:27:17,852 :INFO : SignUp : SignUp page selected by default
-2021-06-15 15:27:34,406 :INFO : SignUp : Password displayed in encrypted form
-2021-06-15 15:27:34,504 :INFO : SignUp : Password displayed on view
-2021-06-15 15:27:57,894 :INFO : SignUp : Signed Up successfully
-2021-06-15 15:30:41,227 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 15:30:44,466 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 15:30:59,409 :INFO : verify_processTillkycPage : Referral code diplays for not paid registered account
-2021-06-15 15:31:01,220 :INFO : verify_processTillkycPage : liters per month value displayed
-2021-06-15 15:31:01,372 :INFO : verify_processTillkycPage : Actualprice 400,6,2400
-2021-06-15 15:31:08,321 :INFO : verify_processTillkycPage : Username displayed correctly in installation address page
-2021-06-15 15:31:08,321 :INFO : verify_processTillkycPage : Email displayed correctly in installation address page
-2021-06-15 15:31:08,322 :INFO : verify_processTillkycPage : Mobile number displayed correctly in installation address page
-2021-06-15 15:31:18,985 :INFO : verify_processTillkycPage : Enter valid code message displayed
-2021-06-15 15:31:50,014 :INFO : verify_processTillkycPage : Reveiew and Pay page displayed
-2021-06-15 15:31:59,145 :INFO : verify_processTillkycPage : Displayed correct total pay amount
-2021-06-15 15:32:12,418 :INFO : verify_processTillkycPage : KYC page displayed
-2021-06-15 15:37:39,573 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-15 15:37:52,266 :INFO : verify_menu_link : Google Play store opened
-2021-06-15 15:37:57,594 :INFO : verify_menu_link : App store opened
-2021-06-15 15:38:04,710 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 15:38:06,981 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 15:38:15,419 :INFO : SignUp : SignUp page selected by default
-2021-06-15 15:38:32,252 :INFO : SignUp : Password displayed in encrypted form
-2021-06-15 15:38:32,402 :INFO : SignUp : Password displayed on view
-2021-06-15 15:38:58,955 :INFO : SignUp : Signed Up successfully
-2021-06-15 15:39:27,747 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 15:39:27,803 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 15:39:27,860 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 15:39:27,920 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 15:39:27,979 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 15:39:56,564 :INFO : verifyMandatoryField : already registered with us message displayed
-2021-06-15 15:40:17,268 :INFO : verify_invalid_details : Special characters are not allowed message displayed
-2021-06-15 15:40:17,324 :INFO : verify_invalid_details : Enter a valid email address message displayed
-2021-06-15 15:40:17,378 :INFO : verify_invalid_details : Enter a valid mobile number message displayed
-2021-06-15 15:40:35,839 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 15:40:39,120 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 15:40:55,158 :INFO : verify_processTillkycPage : Referral code diplays for not paid registered account
-2021-06-15 15:40:56,996 :INFO : verify_processTillkycPage : liters per month value displayed
-2021-06-15 15:40:57,119 :INFO : verify_processTillkycPage : Actualprice 400,6,2400
-2021-06-15 15:41:04,769 :INFO : verify_processTillkycPage : Username displayed correctly in installation address page
-2021-06-15 15:41:04,769 :INFO : verify_processTillkycPage : Email displayed correctly in installation address page
-2021-06-15 15:41:04,769 :INFO : verify_processTillkycPage : Mobile number displayed correctly in installation address page
-2021-06-15 15:41:15,211 :INFO : verify_processTillkycPage : Enter valid code message displayed
-2021-06-15 15:41:48,964 :INFO : verify_processTillkycPage : Reveiew and Pay page displayed
-2021-06-15 15:41:58,081 :INFO : verify_processTillkycPage : Displayed correct total pay amount
-2021-06-15 15:42:11,043 :INFO : verify_processTillkycPage : KYC page displayed
-2021-06-15 15:42:20,845 :INFO : upload_KYCDoc : KYC page displayed
-2021-06-15 15:42:37,527 :INFO : login_invalidcredentials : Invalid username and password message displayed
-2021-06-15 15:42:38,741 :INFO : login_invalidcredentials : Invalid username and password message displayed
-2021-06-15 15:42:39,773 :INFO : login_invalidcredentials : Invalid username and password message displayed
-2021-06-15 15:42:48,748 :INFO : verify_ForgotPassword_Invalid : Please provide correct email id alert message displayed
-2021-06-15 15:42:49,473 :INFO : verify_ForgotPassword_Invalid : Please provide correct email id alert message displayed
-2021-06-15 15:43:07,995 :INFO : verify_ForgotPassword_valid : OTP Verification page displayed
-2021-06-15 15:43:08,087 :INFO : verify_ForgotPassword_valid : Please enter the otp message displayed
-2021-06-15 15:43:08,097 :INFO : verify_ForgotPassword_valid : Please enter the new password message not displayed
-2021-06-15 15:43:26,146 :INFO : verify_CustomerDashboard : Username displayed
-2021-06-15 15:43:26,171 :INFO : verify_CustomerDashboard : Email displayed
-2021-06-15 15:43:26,189 :INFO : verify_CustomerDashboard : Phone No displayed
-2021-06-15 15:43:26,207 :INFO : verify_CustomerDashboard : Address displayed
-2021-06-15 15:43:26,224 :INFO : verify_CustomerDashboard : City displayed
-2021-06-15 15:43:26,244 :INFO : verify_CustomerDashboard : State displayed
-2021-06-15 15:43:26,263 :INFO : verify_CustomerDashboard : Pincode displayed
-2021-06-15 15:43:29,901 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
-2021-06-15 15:43:39,756 :INFO : verify_CustomerDashboard : Referral code displayed on inviting to FB
-2021-06-15 15:43:39,957 :INFO : verify_CustomerDashboard : invite page displayed
-2021-06-15 15:43:42,191 :INFO : verify_CustomerDashboard : FB page displayed
-2021-06-15 15:43:52,563 :INFO : verify_ReferAndEarn : invite page and message displayed
-2021-06-15 15:43:57,787 :INFO : verify_ReferAndEarn : referral Code are same from Customer dashboard and invite page
-2021-06-15 15:43:58,190 :INFO : verify_ReferAndEarn : Tooltip displayed for Copy Icon
-2021-06-15 15:43:58,386 :INFO : verify_ReferAndEarn : Copied: BF0ID2
-2021-06-15 15:44:05,176 :INFO : verify_ReferAndEarn : Whatsapp opened
-2021-06-15 15:44:09,080 :INFO : verify_ReferAndEarn : FB page displayed
-2021-06-15 15:44:09,364 :INFO : verify_ReferAndEarn : How does it work popup displayed
-2021-06-15 15:44:10,704 :INFO : verify_ReferAndEarn : TC page displayed
-2021-06-15 15:44:38,630 :INFO : verify_PlanDetails : Renew Plan link redirected to plan page
-2021-06-15 15:44:53,035 :INFO : verify_SilverPlanPrice : verify plan price for Silver
-2021-06-15 15:45:03,027 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 15:45:03,699 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 15:45:04,442 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 15:45:09,178 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 15:45:09,236 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 15:45:09,293 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 15:45:22,592 :INFO : verify_GoldPlanPrice : verify plan price for Gold
-2021-06-15 15:45:34,538 :INFO : verify_GoldPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 15:45:35,800 :INFO : verify_GoldPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 15:45:36,468 :INFO : verify_GoldPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 15:45:40,531 :INFO : verify_GoldPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 15:45:40,577 :INFO : verify_GoldPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 15:45:40,625 :INFO : verify_GoldPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 15:45:59,215 :INFO : verify_PlatinumPlanPrice : verify plan price for Platinum
-2021-06-15 15:46:10,349 :INFO : verify_PlatinumPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 15:46:12,178 :INFO : verify_PlatinumPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 15:46:13,027 :INFO : verify_PlatinumPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 15:46:16,837 :INFO : verify_PlatinumPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 15:46:16,917 :INFO : verify_PlatinumPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 15:46:16,985 :INFO : verify_PlatinumPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 15:46:26,899 :INFO : verify_TitaniumPlanPrice : verify plan price for Titanium
-2021-06-15 15:46:37,823 :INFO : verify_TitaniumPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 15:46:38,668 :INFO : verify_TitaniumPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 15:46:39,369 :INFO : verify_TitaniumPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 15:46:41,938 :INFO : verify_TitaniumPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 15:46:41,984 :INFO : verify_TitaniumPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 15:46:42,032 :INFO : verify_TitaniumPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 15:46:54,839 :INFO : verify_SilverChangePlan : Check for the Silver Plan change
-2021-06-15 15:47:19,328 :INFO : verify_SilverChangePlan : Amount displayed correctly
-2021-06-15 15:47:30,298 :INFO : verify_SilverChangePlan : Recharge History displayed
-2021-06-15 15:47:30,369 :INFO : verify_SilverChangePlan : Recharge date displayed
-2021-06-15 15:47:30,442 :INFO : verify_SilverChangePlan : Amount displayed
-2021-06-15 15:47:44,706 :INFO : verify_SilverChangePlan : Amount displayed correctly
-2021-06-15 15:47:56,651 :INFO : verify_SilverChangePlan : Recharge History displayed
-2021-06-15 15:47:56,731 :INFO : verify_SilverChangePlan : Recharge date displayed
-2021-06-15 15:47:56,799 :INFO : verify_SilverChangePlan : Amount displayed
-2021-06-15 15:48:09,819 :INFO : verify_SilverChangePlan : Amount displayed correctly
-2021-06-15 15:48:20,208 :INFO : verify_SilverChangePlan : Recharge History displayed
-2021-06-15 15:48:20,274 :INFO : verify_SilverChangePlan : Recharge date displayed
-2021-06-15 15:48:20,332 :INFO : verify_SilverChangePlan : Amount displayed
-2021-06-15 15:48:31,224 :INFO : verify_GoldChangePlan : Check for the Gold Plan change
-2021-06-15 15:48:58,950 :INFO : verify_GoldChangePlan : Amount displayed correctly
-2021-06-15 15:49:09,819 :INFO : verify_GoldChangePlan : Recharge History displayed
-2021-06-15 15:49:09,885 :INFO : verify_GoldChangePlan : Recharge date displayed
-2021-06-15 15:49:09,923 :INFO : verify_GoldChangePlan : Amount displayed
-2021-06-15 15:49:22,459 :INFO : verify_GoldChangePlan : Amount displayed correctly
-2021-06-15 15:49:33,074 :INFO : verify_GoldChangePlan : Recharge History displayed
-2021-06-15 15:49:33,135 :INFO : verify_GoldChangePlan : Recharge date displayed
-2021-06-15 15:49:33,196 :INFO : verify_GoldChangePlan : Amount displayed
-2021-06-15 15:49:47,542 :INFO : verify_GoldChangePlan : Amount displayed correctly
-2021-06-15 15:49:57,643 :INFO : verify_GoldChangePlan : Recharge History displayed
-2021-06-15 15:49:57,699 :INFO : verify_GoldChangePlan : Recharge date displayed
-2021-06-15 15:49:57,730 :INFO : verify_GoldChangePlan : Amount displayed
-2021-06-15 15:50:04,147 :INFO : verify_PlatinumChangePlan : Check for the Platinum Plan change
-2021-06-15 15:50:26,793 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
-2021-06-15 15:50:37,105 :INFO : verify_PlatinumChangePlan : Recharge History displayed
-2021-06-15 15:50:37,214 :INFO : verify_PlatinumChangePlan : Recharge date displayed
-2021-06-15 15:50:37,295 :INFO : verify_PlatinumChangePlan : Amount displayed
-2021-06-15 15:50:51,989 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
-2021-06-15 15:51:03,133 :INFO : verify_PlatinumChangePlan : Recharge History displayed
-2021-06-15 15:51:03,197 :INFO : verify_PlatinumChangePlan : Recharge date displayed
-2021-06-15 15:51:03,261 :INFO : verify_PlatinumChangePlan : Amount displayed
-2021-06-15 15:51:16,253 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
-2021-06-15 15:51:26,989 :INFO : verify_PlatinumChangePlan : Recharge History displayed
-2021-06-15 15:51:27,060 :INFO : verify_PlatinumChangePlan : Recharge date displayed
-2021-06-15 15:51:27,126 :INFO : verify_PlatinumChangePlan : Amount displayed
-2021-06-15 15:51:35,382 :INFO : verify_TitaniumChangePlan : Check for the Titanium Plan change
-2021-06-15 15:51:59,843 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
-2021-06-15 15:52:10,057 :INFO : verify_TitaniumChangePlan : Recharge History displayed
-2021-06-15 15:52:10,123 :INFO : verify_TitaniumChangePlan : Recharge date displayed
-2021-06-15 15:52:10,187 :INFO : verify_TitaniumChangePlan : Amount displayed
-2021-06-15 15:52:22,942 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
-2021-06-15 15:52:33,865 :INFO : verify_TitaniumChangePlan : Recharge History displayed
-2021-06-15 15:52:33,936 :INFO : verify_TitaniumChangePlan : Recharge date displayed
-2021-06-15 15:52:34,004 :INFO : verify_TitaniumChangePlan : Amount displayed
-2021-06-15 15:52:50,813 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
-2021-06-15 15:53:02,159 :INFO : verify_TitaniumChangePlan : Recharge History displayed
-2021-06-15 15:53:02,230 :INFO : verify_TitaniumChangePlan : Recharge date displayed
-2021-06-15 15:53:02,297 :INFO : verify_TitaniumChangePlan : Amount displayed
-2021-06-15 15:53:13,908 :INFO : verify_changePassword : Password cannot be same message displayed
-2021-06-15 15:53:15,065 :INFO : verify_changePassword : Password reset successful message displayed
-2021-06-15 15:53:24,874 :INFO : verify_changePassword : Password changed successfully
-2021-06-15 15:53:56,306 :INFO : verify_diffPWD : Mandatory and error message displayed
-2021-06-15 15:54:41,183 :INFO : verify_signupWithRefCode : referral benefits message displayed
-2021-06-15 15:55:31,493 :INFO : verify_signupWithRefCode : Discount applied
-2021-06-15 15:55:46,331 :INFO : verify_signupWithRefCode : Discount not applied
-2021-06-15 15:56:14,266 :INFO : verify_ReferralHistory : Referral History page displayed
-2021-06-15 15:56:18,687 :INFO : verify_ReferralHistory : Redirected to FB page
-2021-06-15 15:56:34,434 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
-2021-06-15 15:56:34,527 :INFO : verify_referredUNInReferralHistory : Correct free water liter displayed
-2021-06-15 15:56:34,566 :INFO : verify_referredUNInReferralHistory : Voucher count displayed
-2021-06-15 15:56:43,768 :INFO : verify_referredUNInReferralHistory : Redirected to WhatsApp page
-2021-06-15 16:53:03,493 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-15 16:53:10,057 :INFO : verify_menu_link : Google Play store opened
-2021-06-15 16:53:15,280 :INFO : verify_menu_link : App store opened
-2021-06-15 16:53:20,702 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 16:54:23,459 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-15 16:54:30,619 :INFO : verify_menu_link : Google Play store opened
-2021-06-15 16:54:35,828 :INFO : verify_menu_link : App store opened
-2021-06-15 16:54:40,739 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 16:57:02,635 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-15 16:57:11,359 :INFO : verify_menu_link : Google Play store opened
-2021-06-15 16:57:16,572 :INFO : verify_menu_link : App store opened
-2021-06-15 16:57:21,090 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 16:57:28,421 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 16:58:18,096 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-15 16:58:24,214 :INFO : verify_menu_link : Google Play store opened
-2021-06-15 16:58:29,416 :INFO : verify_menu_link : App store opened
-2021-06-15 16:58:34,090 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 16:58:41,484 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 17:37:36,924 :INFO : SignUp : SignUp page selected by default
-2021-06-15 17:37:53,293 :INFO : SignUp : Password displayed in encrypted form
-2021-06-15 17:37:53,384 :INFO : SignUp : Password displayed on view
-2021-06-15 17:38:17,431 :INFO : SignUp : Signed Up successfully
-2021-06-15 18:10:37,665 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 18:10:40,828 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 18:10:55,384 :INFO : verify_processTillkycPage : Referral code diplays for not paid registered account
-2021-06-15 18:13:36,595 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 18:13:39,762 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 18:13:53,729 :INFO : verify_processTillkycPage : Referral code diplays for not paid registered account
-2021-06-15 18:13:59,206 :INFO : verify_processTillkycPage : Redirected to FB page
-2021-06-15 18:14:49,683 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 18:14:52,823 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 18:15:07,355 :INFO : verify_processTillkycPage : Referral code diplays for not paid registered account
-2021-06-15 18:15:12,094 :INFO : verify_processTillkycPage : Redirected to FB page
-2021-06-15 18:15:17,303 :INFO : verify_processTillkycPage : Referral Code displayed in Refer and Earn Page
-2021-06-15 18:18:02,337 :INFO : SignUp : SignUp page selected by default
-2021-06-15 18:18:18,532 :INFO : SignUp : Password displayed in encrypted form
-2021-06-15 18:18:18,621 :INFO : SignUp : Password displayed on view
-2021-06-15 18:18:45,393 :INFO : SignUp : Signed Up successfully
-2021-06-15 18:19:15,331 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 18:19:18,469 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 18:19:32,728 :INFO : verify_processTillkycPage : Referral code diplays for not paid registered account
-2021-06-15 18:19:37,767 :INFO : verify_processTillkycPage : Redirected to FB page
-2021-06-15 18:19:43,009 :INFO : verify_processTillkycPage : Referral Code displayed in Refer and Earn Page
-2021-06-15 18:19:44,753 :INFO : verify_processTillkycPage : liters per month value displayed
-2021-06-15 18:19:44,866 :INFO : verify_processTillkycPage : Actualprice 400,6,2400
-2021-06-15 18:19:51,673 :INFO : verify_processTillkycPage : Username displayed correctly in installation address page
-2021-06-15 18:19:51,673 :INFO : verify_processTillkycPage : Email displayed correctly in installation address page
-2021-06-15 18:19:51,673 :INFO : verify_processTillkycPage : Mobile number displayed correctly in installation address page
-2021-06-15 18:20:02,115 :INFO : verify_processTillkycPage : Enter valid code message displayed
-2021-06-15 18:20:33,491 :INFO : verify_processTillkycPage : Reveiew and Pay page displayed
-2021-06-15 18:20:42,598 :INFO : verify_processTillkycPage : Displayed correct total pay amount
-2021-06-15 18:20:54,708 :INFO : verify_processTillkycPage : KYC page displayed
-2021-06-15 18:29:13,412 :INFO : verify_LeaderBoard : LeaderBoard displayed
-2021-06-15 18:34:22,129 :INFO : verify_LeaderBoard : LeaderBoard displayed
-2021-06-15 18:35:32,999 :INFO : verify_LeaderBoard : LeaderBoard displayed
-2021-06-15 18:35:38,001 :INFO : verify_LeaderBoard : Jun
-2021-06-15 18:35:38,068 :INFO : verify_LeaderBoard : JUN
-2021-06-15 18:37:00,253 :INFO : verify_LeaderBoard : LeaderBoard displayed
-2021-06-15 18:37:05,303 :INFO : verify_LeaderBoard : Leaderboard displayed for the current month
-2021-06-15 18:40:38,519 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-15 18:40:46,309 :INFO : verify_menu_link : Google Play store opened
-2021-06-15 18:40:51,482 :INFO : verify_menu_link : App store opened
-2021-06-15 18:40:59,109 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 18:41:06,233 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 18:41:20,239 :INFO : SignUp : SignUp page selected by default
-2021-06-15 18:41:36,332 :INFO : SignUp : Password displayed in encrypted form
-2021-06-15 18:41:36,421 :INFO : SignUp : Password displayed on view
-2021-06-15 18:42:02,089 :INFO : SignUp : Signed Up successfully
-2021-06-15 18:42:26,942 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 18:42:26,980 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 18:42:27,011 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 18:42:27,030 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 18:42:27,050 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 18:42:56,528 :INFO : verifyMandatoryField : already registered with us message displayed
-2021-06-15 18:43:13,714 :INFO : verify_invalid_details : Special characters are not allowed message displayed
-2021-06-15 18:43:13,736 :INFO : verify_invalid_details : Enter a valid email address message displayed
-2021-06-15 18:43:13,756 :INFO : verify_invalid_details : Enter a valid mobile number message displayed
-2021-06-15 18:43:28,633 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 18:43:31,741 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 18:43:46,412 :INFO : verify_processTillkycPage : Referral code diplays for not paid registered account
-2021-06-15 18:43:53,159 :INFO : verify_processTillkycPage : Redirected to FB page
-2021-06-15 18:43:58,422 :INFO : verify_processTillkycPage : Referral Code displayed in Refer and Earn Page
-2021-06-15 18:44:00,456 :INFO : verify_processTillkycPage : liters per month value displayed
-2021-06-15 18:44:00,566 :INFO : verify_processTillkycPage : Actualprice 400,6,2400
-2021-06-15 18:44:07,785 :INFO : verify_processTillkycPage : Username displayed correctly in installation address page
-2021-06-15 18:44:07,786 :INFO : verify_processTillkycPage : Email displayed correctly in installation address page
-2021-06-15 18:44:07,786 :INFO : verify_processTillkycPage : Mobile number displayed correctly in installation address page
-2021-06-15 18:44:18,212 :INFO : verify_processTillkycPage : Enter valid code message displayed
-2021-06-15 18:44:49,470 :INFO : verify_processTillkycPage : Reveiew and Pay page displayed
-2021-06-15 18:44:58,546 :INFO : verify_processTillkycPage : Displayed correct total pay amount
-2021-06-15 18:45:33,791 :INFO : login_invalidcredentials : Invalid username and password message displayed
-2021-06-15 18:45:34,967 :INFO : login_invalidcredentials : Invalid username and password message displayed
-2021-06-15 18:45:36,131 :INFO : login_invalidcredentials : Invalid username and password message displayed
-2021-06-15 18:45:47,639 :INFO : verify_ForgotPassword_Invalid : Please provide correct email id alert message displayed
-2021-06-15 18:45:48,423 :INFO : verify_ForgotPassword_Invalid : Please provide correct email id alert message displayed
-2021-06-15 18:45:59,383 :INFO : verify_ForgotPassword_valid : OTP Verification page displayed
-2021-06-15 18:45:59,483 :INFO : verify_ForgotPassword_valid : Please enter the otp message displayed
-2021-06-15 18:45:59,492 :INFO : verify_ForgotPassword_valid : Please enter the new password message not displayed
-2021-06-15 18:46:15,444 :INFO : verify_CustomerDashboard : Username displayed
-2021-06-15 18:46:15,468 :INFO : verify_CustomerDashboard : Email displayed
-2021-06-15 18:46:15,491 :INFO : verify_CustomerDashboard : Phone No displayed
-2021-06-15 18:46:15,508 :INFO : verify_CustomerDashboard : Address displayed
-2021-06-15 18:46:15,528 :INFO : verify_CustomerDashboard : City displayed
-2021-06-15 18:46:15,546 :INFO : verify_CustomerDashboard : State displayed
-2021-06-15 18:46:15,564 :INFO : verify_CustomerDashboard : Pincode displayed
-2021-06-15 18:46:21,996 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
-2021-06-15 18:46:33,504 :INFO : verify_CustomerDashboard : Referral code displayed on inviting to FB
-2021-06-15 18:46:33,717 :INFO : verify_CustomerDashboard : invite page displayed
-2021-06-15 18:46:36,383 :INFO : verify_CustomerDashboard : FB page displayed
-2021-06-15 18:47:17,236 :INFO : verify_LeaderBoard : LeaderBoard displayed
-2021-06-15 18:47:22,292 :INFO : verify_LeaderBoard : Leaderboard displayed for the current month
-2021-06-15 18:47:36,658 :INFO : verify_PlanDetails : Renew Plan link redirected to plan page
-2021-06-15 18:47:45,629 :INFO : verify_SilverPlanPrice : verify plan price for Silver
-2021-06-15 18:47:54,587 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 18:47:55,345 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 18:47:55,984 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 18:47:58,710 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 18:47:58,759 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 18:47:58,805 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 18:48:08,842 :INFO : verify_GoldPlanPrice : verify plan price for Gold
-2021-06-15 18:48:21,765 :INFO : verify_GoldPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 18:48:22,466 :INFO : verify_GoldPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 18:48:23,201 :INFO : verify_GoldPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 18:48:25,546 :INFO : verify_GoldPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 18:48:25,587 :INFO : verify_GoldPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 18:48:25,627 :INFO : verify_GoldPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 18:48:38,329 :INFO : verify_PlatinumPlanPrice : verify plan price for Platinum
-2021-06-15 18:48:48,760 :INFO : verify_PlatinumPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 18:48:49,485 :INFO : verify_PlatinumPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 18:48:50,171 :INFO : verify_PlatinumPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 18:48:53,168 :INFO : verify_PlatinumPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 18:48:53,208 :INFO : verify_PlatinumPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 18:48:53,247 :INFO : verify_PlatinumPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 18:49:01,829 :INFO : verify_TitaniumPlanPrice : verify plan price for Titanium
-2021-06-15 18:49:10,552 :INFO : verify_TitaniumPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 18:49:11,233 :INFO : verify_TitaniumPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 18:49:11,869 :INFO : verify_TitaniumPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 18:49:14,834 :INFO : verify_TitaniumPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 18:49:14,882 :INFO : verify_TitaniumPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 18:49:14,923 :INFO : verify_TitaniumPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 18:49:27,102 :INFO : verify_SilverChangePlan : Check for the Silver Plan change
-2021-06-15 18:49:50,252 :INFO : verify_SilverChangePlan : Amount displayed correctly
-2021-06-15 18:49:59,752 :INFO : verify_SilverChangePlan : Recharge History displayed
-2021-06-15 18:49:59,774 :INFO : verify_SilverChangePlan : Recharge date displayed
-2021-06-15 18:49:59,798 :INFO : verify_SilverChangePlan : Amount displayed
-2021-06-15 18:50:12,610 :INFO : verify_SilverChangePlan : Amount displayed correctly
-2021-06-15 18:50:23,040 :INFO : verify_SilverChangePlan : Recharge History displayed
-2021-06-15 18:50:23,064 :INFO : verify_SilverChangePlan : Recharge date displayed
-2021-06-15 18:50:23,085 :INFO : verify_SilverChangePlan : Amount displayed
-2021-06-15 18:50:36,689 :INFO : verify_SilverChangePlan : Amount displayed correctly
-2021-06-15 18:50:46,539 :INFO : verify_SilverChangePlan : Recharge History displayed
-2021-06-15 18:50:46,566 :INFO : verify_SilverChangePlan : Recharge date displayed
-2021-06-15 18:50:46,586 :INFO : verify_SilverChangePlan : Amount displayed
-2021-06-15 18:50:55,616 :INFO : verify_GoldChangePlan : Check for the Gold Plan change
-2021-06-15 18:51:15,147 :INFO : verify_GoldChangePlan : Amount displayed correctly
-2021-06-15 18:51:25,526 :INFO : verify_GoldChangePlan : Recharge History displayed
-2021-06-15 18:51:25,547 :INFO : verify_GoldChangePlan : Recharge date displayed
-2021-06-15 18:51:25,567 :INFO : verify_GoldChangePlan : Amount displayed
-2021-06-15 18:51:37,738 :INFO : verify_GoldChangePlan : Amount displayed correctly
-2021-06-15 18:51:47,431 :INFO : verify_GoldChangePlan : Recharge History displayed
-2021-06-15 18:51:47,454 :INFO : verify_GoldChangePlan : Recharge date displayed
-2021-06-15 18:51:47,475 :INFO : verify_GoldChangePlan : Amount displayed
-2021-06-15 18:51:59,914 :INFO : verify_GoldChangePlan : Amount displayed correctly
-2021-06-15 18:52:09,973 :INFO : verify_GoldChangePlan : Recharge History displayed
-2021-06-15 18:52:10,008 :INFO : verify_GoldChangePlan : Recharge date displayed
-2021-06-15 18:52:10,033 :INFO : verify_GoldChangePlan : Amount displayed
-2021-06-15 18:52:22,082 :INFO : verify_PlatinumChangePlan : Check for the Platinum Plan change
-2021-06-15 18:52:43,161 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
-2021-06-15 18:52:53,167 :INFO : verify_PlatinumChangePlan : Recharge History displayed
-2021-06-15 18:52:53,202 :INFO : verify_PlatinumChangePlan : Recharge date displayed
-2021-06-15 18:52:53,226 :INFO : verify_PlatinumChangePlan : Amount displayed
-2021-06-15 18:53:05,784 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
-2021-06-15 18:53:15,747 :INFO : verify_PlatinumChangePlan : Recharge History displayed
-2021-06-15 18:53:15,768 :INFO : verify_PlatinumChangePlan : Recharge date displayed
-2021-06-15 18:53:15,790 :INFO : verify_PlatinumChangePlan : Amount displayed
-2021-06-15 18:53:30,849 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
-2021-06-15 18:53:40,488 :INFO : verify_PlatinumChangePlan : Recharge History displayed
-2021-06-15 18:53:40,518 :INFO : verify_PlatinumChangePlan : Recharge date displayed
-2021-06-15 18:53:40,539 :INFO : verify_PlatinumChangePlan : Amount displayed
-2021-06-15 18:53:49,680 :INFO : verify_TitaniumChangePlan : Check for the Titanium Plan change
-2021-06-15 18:54:13,244 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
-2021-06-15 18:54:22,914 :INFO : verify_TitaniumChangePlan : Recharge History displayed
-2021-06-15 18:54:22,942 :INFO : verify_TitaniumChangePlan : Recharge date displayed
-2021-06-15 18:54:22,963 :INFO : verify_TitaniumChangePlan : Amount displayed
-2021-06-15 18:54:36,648 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
-2021-06-15 18:54:46,689 :INFO : verify_TitaniumChangePlan : Recharge History displayed
-2021-06-15 18:54:46,712 :INFO : verify_TitaniumChangePlan : Recharge date displayed
-2021-06-15 18:54:46,733 :INFO : verify_TitaniumChangePlan : Amount displayed
-2021-06-15 18:55:00,382 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
-2021-06-15 18:55:10,641 :INFO : verify_TitaniumChangePlan : Recharge History displayed
-2021-06-15 18:55:10,662 :INFO : verify_TitaniumChangePlan : Recharge date displayed
-2021-06-15 18:55:10,683 :INFO : verify_TitaniumChangePlan : Amount displayed
-2021-06-15 18:55:27,266 :INFO : verify_changePassword : Password cannot be same message displayed
-2021-06-15 18:55:28,086 :INFO : verify_changePassword : Password reset successful message displayed
-2021-06-15 18:55:37,684 :INFO : verify_changePassword : Password changed successfully
-2021-06-15 18:55:56,040 :INFO : verify_diffPWD : Mandatory and error message displayed
-2021-06-15 18:56:13,762 :INFO : verify_signupWithRefCode : referral benefits message displayed
-2021-06-15 18:57:02,942 :INFO : verify_signupWithRefCode : Discount applied
-2021-06-15 18:57:18,288 :INFO : verify_signupWithRefCode : Discount not applied
-2021-06-15 18:57:38,200 :INFO : verify_ReferralHistory : Referral History page displayed
-2021-06-15 18:57:41,448 :INFO : verify_ReferralHistory : Redirected to FB page
-2021-06-15 18:57:54,591 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
-2021-06-15 18:57:54,639 :INFO : verify_referredUNInReferralHistory : Correct free water liter displayed
-2021-06-15 18:57:54,684 :INFO : verify_referredUNInReferralHistory : Voucher count displayed
-2021-06-15 18:58:03,541 :INFO : verify_referredUNInReferralHistory : Redirected to WhatsApp page
-2021-06-15 19:06:35,229 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-15 19:06:41,520 :INFO : verify_menu_link : Google Play store opened
-2021-06-15 19:06:46,831 :INFO : verify_menu_link : App store opened
-2021-06-15 19:06:53,024 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 19:07:00,618 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 19:07:09,931 :INFO : SignUp : SignUp page selected by default
-2021-06-15 19:07:26,355 :INFO : SignUp : Password displayed in encrypted form
-2021-06-15 19:07:26,439 :INFO : SignUp : Password displayed on view
-2021-06-15 19:07:50,524 :INFO : SignUp : Signed Up successfully
-2021-06-15 19:08:14,704 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 19:08:14,730 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 19:08:14,749 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 19:08:14,769 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 19:08:14,789 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 19:08:42,503 :INFO : verifyMandatoryField : already registered with us message displayed
-2021-06-15 19:08:58,029 :INFO : verify_invalid_details : Special characters are not allowed message displayed
-2021-06-15 19:08:58,066 :INFO : verify_invalid_details : Enter a valid email address message displayed
-2021-06-15 19:08:58,091 :INFO : verify_invalid_details : Enter a valid mobile number message displayed
-2021-06-15 19:09:09,553 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 19:09:12,693 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 19:09:26,899 :INFO : verify_processTillkycPage : Referral code diplays for not paid registered account
-2021-06-15 19:09:32,061 :INFO : verify_processTillkycPage : Redirected to FB page
-2021-06-15 19:09:37,246 :INFO : verify_processTillkycPage : Referral Code displayed in Refer and Earn Page
-2021-06-15 19:09:39,333 :INFO : verify_processTillkycPage : liters per month value displayed
-2021-06-15 19:09:39,442 :INFO : verify_processTillkycPage : Actualprice 400,6,2400
-2021-06-15 19:09:46,997 :INFO : verify_processTillkycPage : Username displayed correctly in installation address page
-2021-06-15 19:09:46,997 :INFO : verify_processTillkycPage : Email displayed correctly in installation address page
-2021-06-15 19:09:46,997 :INFO : verify_processTillkycPage : Mobile number displayed correctly in installation address page
-2021-06-15 19:09:57,401 :INFO : verify_processTillkycPage : Enter valid code message displayed
-2021-06-15 19:10:27,404 :INFO : verify_processTillkycPage : Reveiew and Pay page displayed
-2021-06-15 19:10:36,505 :INFO : verify_processTillkycPage : Displayed correct total pay amount
-2021-06-15 19:11:17,388 :INFO : login_invalidcredentials : Invalid username and password message displayed
-2021-06-15 19:11:18,574 :INFO : login_invalidcredentials : Invalid username and password message displayed
-2021-06-15 19:11:19,670 :INFO : login_invalidcredentials : Invalid username and password message displayed
-2021-06-15 19:11:30,582 :INFO : verify_ForgotPassword_Invalid : Please provide correct email id alert message displayed
-2021-06-15 19:11:31,648 :INFO : verify_ForgotPassword_Invalid : Please provide correct email id alert message displayed
-2021-06-15 19:11:43,235 :INFO : verify_ForgotPassword_valid : OTP Verification page displayed
-2021-06-15 19:11:43,408 :INFO : verify_ForgotPassword_valid : Please enter the otp message displayed
-2021-06-15 19:11:43,420 :INFO : verify_ForgotPassword_valid : Please enter the new password message not displayed
-2021-06-15 19:11:55,423 :INFO : verify_CustomerDashboard : Username displayed
-2021-06-15 19:11:55,450 :INFO : verify_CustomerDashboard : Email displayed
-2021-06-15 19:11:55,529 :INFO : verify_CustomerDashboard : Phone No displayed
-2021-06-15 19:11:55,553 :INFO : verify_CustomerDashboard : Address displayed
-2021-06-15 19:11:55,580 :INFO : verify_CustomerDashboard : City displayed
-2021-06-15 19:11:55,612 :INFO : verify_CustomerDashboard : State displayed
-2021-06-15 19:11:55,654 :INFO : verify_CustomerDashboard : Pincode displayed
-2021-06-15 19:12:00,254 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
-2021-06-15 19:12:12,832 :INFO : verify_CustomerDashboard : Referral code displayed on inviting to FB
-2021-06-15 19:12:13,022 :INFO : verify_CustomerDashboard : invite page displayed
-2021-06-15 19:12:15,827 :INFO : verify_CustomerDashboard : FB page displayed
-2021-06-15 19:12:29,676 :INFO : verify_ReferAndEarn : invite page and message displayed
-2021-06-15 19:13:12,373 :INFO : verify_LeaderBoard : LeaderBoard displayed
-2021-06-15 19:13:17,428 :INFO : verify_LeaderBoard : Leaderboard displayed for the current month
-2021-06-15 19:13:30,922 :INFO : verify_PlanDetails : Renew Plan link redirected to plan page
-2021-06-15 19:13:40,791 :INFO : verify_SilverPlanPrice : verify plan price for Silver
-2021-06-15 19:13:49,573 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 19:13:50,630 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 19:13:51,294 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 19:13:54,739 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 19:13:54,781 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 19:13:54,823 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 19:14:06,174 :INFO : verify_GoldPlanPrice : verify plan price for Gold
-2021-06-15 19:14:15,906 :INFO : verify_GoldPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 19:14:16,752 :INFO : verify_GoldPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 19:14:17,359 :INFO : verify_GoldPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 19:14:20,158 :INFO : verify_GoldPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 19:14:20,200 :INFO : verify_GoldPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 19:14:20,241 :INFO : verify_GoldPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 19:14:30,212 :INFO : verify_PlatinumPlanPrice : verify plan price for Platinum
-2021-06-15 19:14:39,288 :INFO : verify_PlatinumPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 19:14:39,851 :INFO : verify_PlatinumPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 19:14:40,699 :INFO : verify_PlatinumPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 19:14:43,694 :INFO : verify_PlatinumPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 19:14:43,742 :INFO : verify_PlatinumPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 19:14:43,780 :INFO : verify_PlatinumPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 19:14:53,005 :INFO : verify_TitaniumPlanPrice : verify plan price for Titanium
-2021-06-15 19:15:02,207 :INFO : verify_TitaniumPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 19:15:03,039 :INFO : verify_TitaniumPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 19:15:03,663 :INFO : verify_TitaniumPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 19:15:06,502 :INFO : verify_TitaniumPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 19:15:06,545 :INFO : verify_TitaniumPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 19:15:06,587 :INFO : verify_TitaniumPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 19:15:16,928 :INFO : verify_SilverChangePlan : Check for the Silver Plan change
-2021-06-15 19:15:36,726 :INFO : verify_SilverChangePlan : Amount displayed correctly
-2021-06-15 19:15:46,518 :INFO : verify_SilverChangePlan : Recharge History displayed
-2021-06-15 19:15:46,540 :INFO : verify_SilverChangePlan : Recharge date displayed
-2021-06-15 19:15:46,562 :INFO : verify_SilverChangePlan : Amount displayed
-2021-06-15 19:16:01,011 :INFO : verify_SilverChangePlan : Amount displayed correctly
-2021-06-15 19:16:10,885 :INFO : verify_SilverChangePlan : Recharge History displayed
-2021-06-15 19:16:10,908 :INFO : verify_SilverChangePlan : Recharge date displayed
-2021-06-15 19:16:10,929 :INFO : verify_SilverChangePlan : Amount displayed
-2021-06-15 19:16:23,330 :INFO : verify_SilverChangePlan : Amount displayed correctly
-2021-06-15 19:16:33,006 :INFO : verify_SilverChangePlan : Recharge History displayed
-2021-06-15 19:16:33,034 :INFO : verify_SilverChangePlan : Recharge date displayed
-2021-06-15 19:16:33,055 :INFO : verify_SilverChangePlan : Amount displayed
-2021-06-15 19:16:44,617 :INFO : verify_GoldChangePlan : Check for the Gold Plan change
-2021-06-15 19:17:08,632 :INFO : verify_GoldChangePlan : Amount displayed correctly
-2021-06-15 19:17:19,303 :INFO : verify_GoldChangePlan : Recharge History displayed
-2021-06-15 19:17:19,330 :INFO : verify_GoldChangePlan : Recharge date displayed
-2021-06-15 19:17:19,352 :INFO : verify_GoldChangePlan : Amount displayed
-2021-06-15 19:17:33,508 :INFO : verify_GoldChangePlan : Amount displayed correctly
-2021-06-15 19:17:43,373 :INFO : verify_GoldChangePlan : Recharge History displayed
-2021-06-15 19:17:43,395 :INFO : verify_GoldChangePlan : Recharge date displayed
-2021-06-15 19:17:43,416 :INFO : verify_GoldChangePlan : Amount displayed
-2021-06-15 19:17:55,932 :INFO : verify_GoldChangePlan : Amount displayed correctly
-2021-06-15 19:18:05,976 :INFO : verify_GoldChangePlan : Recharge History displayed
-2021-06-15 19:18:05,999 :INFO : verify_GoldChangePlan : Recharge date displayed
-2021-06-15 19:18:06,025 :INFO : verify_GoldChangePlan : Amount displayed
-2021-06-15 19:18:16,366 :INFO : verify_PlatinumChangePlan : Check for the Platinum Plan change
-2021-06-15 19:18:36,686 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
-2021-06-15 19:18:46,476 :INFO : verify_PlatinumChangePlan : Recharge History displayed
-2021-06-15 19:18:46,513 :INFO : verify_PlatinumChangePlan : Recharge date displayed
-2021-06-15 19:18:46,541 :INFO : verify_PlatinumChangePlan : Amount displayed
-2021-06-15 19:18:59,944 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
-2021-06-15 19:19:10,104 :INFO : verify_PlatinumChangePlan : Recharge History displayed
-2021-06-15 19:19:10,126 :INFO : verify_PlatinumChangePlan : Recharge date displayed
-2021-06-15 19:19:10,148 :INFO : verify_PlatinumChangePlan : Amount displayed
-2021-06-15 19:19:22,711 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
-2021-06-15 19:19:32,262 :INFO : verify_PlatinumChangePlan : Recharge History displayed
-2021-06-15 19:19:32,293 :INFO : verify_PlatinumChangePlan : Recharge date displayed
-2021-06-15 19:19:32,320 :INFO : verify_PlatinumChangePlan : Amount displayed
-2021-06-15 19:19:41,733 :INFO : verify_TitaniumChangePlan : Check for the Titanium Plan change
-2021-06-15 19:20:07,884 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
-2021-06-15 19:20:18,278 :INFO : verify_TitaniumChangePlan : Recharge History displayed
-2021-06-15 19:20:18,301 :INFO : verify_TitaniumChangePlan : Recharge date displayed
-2021-06-15 19:20:18,323 :INFO : verify_TitaniumChangePlan : Amount displayed
-2021-06-15 19:20:32,718 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
-2021-06-15 19:20:43,101 :INFO : verify_TitaniumChangePlan : Recharge History displayed
-2021-06-15 19:20:43,123 :INFO : verify_TitaniumChangePlan : Recharge date displayed
-2021-06-15 19:20:43,145 :INFO : verify_TitaniumChangePlan : Amount displayed
-2021-06-15 19:20:55,562 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
-2021-06-15 19:21:06,279 :INFO : verify_TitaniumChangePlan : Recharge History displayed
-2021-06-15 19:21:06,315 :INFO : verify_TitaniumChangePlan : Recharge date displayed
-2021-06-15 19:21:06,341 :INFO : verify_TitaniumChangePlan : Amount displayed
-2021-06-15 19:21:20,484 :INFO : verify_changePassword : Password cannot be same message displayed
-2021-06-15 19:21:21,402 :INFO : verify_changePassword : Password reset successful message displayed
-2021-06-15 19:21:29,709 :INFO : verify_changePassword : Password changed successfully
-2021-06-15 19:21:50,832 :INFO : verify_diffPWD : Mandatory and error message displayed
-2021-06-15 19:22:07,368 :INFO : verify_signupWithRefCode : referral benefits message displayed
-2021-06-15 19:22:56,714 :INFO : verify_signupWithRefCode : Discount applied
-2021-06-15 19:23:13,263 :INFO : verify_signupWithRefCode : Discount not applied
-2021-06-15 19:23:40,333 :INFO : verify_ReferralHistory : Referral History page displayed
-2021-06-15 19:23:45,257 :INFO : verify_ReferralHistory : Redirected to FB page
-2021-06-15 19:23:58,771 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
-2021-06-15 19:23:58,864 :INFO : verify_referredUNInReferralHistory : Correct free water liter displayed
-2021-06-15 19:23:58,934 :INFO : verify_referredUNInReferralHistory : Voucher count displayed
-2021-06-15 19:24:09,456 :INFO : verify_referredUNInReferralHistory : Redirected to WhatsApp page
-2021-06-15 19:25:08,033 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 19:25:11,261 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 19:25:27,620 :INFO : verify_processTillkycPage : Referral code diplays for not paid registered account
-2021-06-15 19:25:34,368 :INFO : verify_processTillkycPage : Redirected to FB page
-2021-06-15 19:25:39,707 :INFO : verify_processTillkycPage : Referral Code displayed in Refer and Earn Page
-2021-06-15 19:25:41,445 :INFO : verify_processTillkycPage : liters per month value displayed
-2021-06-15 19:25:41,586 :INFO : verify_processTillkycPage : Actualprice 400,6,2400
-2021-06-15 19:28:50,821 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 19:28:54,080 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 19:29:09,601 :INFO : verify_processTillkycPage : Referral code diplays for not paid registered account
-2021-06-15 19:29:19,601 :INFO : verify_processTillkycPage : Redirected to FB page
-2021-06-15 19:29:24,907 :INFO : verify_processTillkycPage : Referral Code displayed in Refer and Earn Page
-2021-06-15 19:29:27,347 :INFO : verify_processTillkycPage : liters per month value displayed
-2021-06-15 19:29:27,483 :INFO : verify_processTillkycPage : Actualprice 400,6,2400
-2021-06-15 19:29:35,575 :INFO : verify_processTillkycPage : Username displayed correctly in installation address page
-2021-06-15 19:29:35,575 :INFO : verify_processTillkycPage : Email displayed correctly in installation address page
-2021-06-15 19:32:28,568 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 19:32:31,776 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 19:32:49,901 :INFO : verify_processTillkycPage : Referral code diplays for not paid registered account
-2021-06-15 19:32:59,541 :INFO : verify_processTillkycPage : Redirected to FB page
-2021-06-15 19:33:04,836 :INFO : verify_processTillkycPage : Referral Code displayed in Refer and Earn Page
-2021-06-15 19:33:06,845 :INFO : verify_processTillkycPage : liters per month value displayed
-2021-06-15 19:33:06,962 :INFO : verify_processTillkycPage : Actualprice 400,6,2400
-2021-06-15 19:33:16,320 :INFO : verify_processTillkycPage : Username displayed correctly in installation address page
-2021-06-15 19:33:16,320 :INFO : verify_processTillkycPage : Email displayed correctly in installation address page
-2021-06-15 19:39:12,456 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 19:39:15,635 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 19:39:34,086 :INFO : verify_processTillkycPage : liters per month value displayed
-2021-06-15 19:39:34,222 :INFO : verify_processTillkycPage : Actualprice 400,6,2400
-2021-06-15 19:39:43,700 :INFO : verify_processTillkycPage : Username displayed correctly in installation address page
-2021-06-15 19:39:43,700 :INFO : verify_processTillkycPage : Email displayed correctly in installation address page
-2021-06-15 19:43:24,909 :INFO : SignUp : SignUp page selected by default
-2021-06-15 19:43:41,483 :INFO : SignUp : Password displayed in encrypted form
-2021-06-15 19:43:41,601 :INFO : SignUp : Password displayed on view
-2021-06-15 19:44:06,275 :INFO : SignUp : Signed Up successfully
-2021-06-15 19:44:26,348 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 19:44:29,564 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 19:44:44,474 :INFO : verify_processTillkycPage : liters per month value displayed
-2021-06-15 19:44:44,608 :INFO : verify_processTillkycPage : Actualprice 400,6,2400
-2021-06-15 19:44:52,070 :INFO : verify_processTillkycPage : Username displayed correctly in installation address page
-2021-06-15 19:44:52,070 :INFO : verify_processTillkycPage : Email displayed correctly in installation address page
-2021-06-15 19:44:52,070 :INFO : verify_processTillkycPage : Mobile number displayed correctly in installation address page
-2021-06-15 19:45:02,533 :INFO : verify_processTillkycPage : Enter valid code message displayed
-2021-06-15 19:45:33,436 :INFO : verify_processTillkycPage : Reveiew and Pay page displayed
-2021-06-15 19:45:42,551 :INFO : verify_processTillkycPage : Displayed correct total pay amount
-2021-06-15 19:45:59,918 :INFO : verify_processTillkycPage : KYC page displayed
-2021-06-15 19:52:39,051 :INFO : verify_referralCode : Referral code diplays for not paid registered account
-2021-06-15 19:52:46,764 :INFO : verify_referralCode : Redirected to FB page
-2021-06-15 19:52:52,087 :INFO : verify_referralCode : Referral Code displayed in Refer and Earn Page
-2021-06-15 19:54:48,780 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-15 19:55:02,640 :INFO : verify_menu_link : Google Play store opened
-2021-06-15 19:55:11,443 :INFO : verify_menu_link : App store opened
-2021-06-15 19:55:22,807 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 19:55:30,792 :INFO : verify_menu_link : Redirected to FB page
-2021-06-15 19:55:49,865 :INFO : SignUp : SignUp page selected by default
-2021-06-15 19:56:06,443 :INFO : SignUp : Password displayed in encrypted form
-2021-06-15 19:56:06,576 :INFO : SignUp : Password displayed on view
-2021-06-15 19:56:33,937 :INFO : SignUp : Signed Up successfully
-2021-06-15 19:56:59,220 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 19:56:59,263 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 19:56:59,298 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 19:56:59,338 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 19:56:59,397 :INFO : verifyMandatoryField : Mandatory message displayed
-2021-06-15 19:57:27,689 :INFO : verifyMandatoryField : already registered with us message displayed
-2021-06-15 19:57:43,937 :INFO : verify_invalid_details : Special characters are not allowed message displayed
-2021-06-15 19:57:43,986 :INFO : verify_invalid_details : Enter a valid email address message displayed
-2021-06-15 19:57:44,034 :INFO : verify_invalid_details : Enter a valid mobile number message displayed
-2021-06-15 19:57:57,001 :INFO : verify_referralCode : Referral code diplays for not paid registered account
-2021-06-15 19:58:06,114 :INFO : verify_referralCode : Redirected to FB page
-2021-06-15 19:58:11,457 :INFO : verify_referralCode : Referral Code displayed in Refer and Earn Page
-2021-06-15 19:58:23,478 :INFO : verify_processTillkycPage : Password displayed in encrypted form
-2021-06-15 19:58:26,606 :INFO : verify_processTillkycPage : Password displayed on view
-2021-06-15 19:58:42,674 :INFO : verify_processTillkycPage : liters per month value displayed
-2021-06-15 19:58:42,822 :INFO : verify_processTillkycPage : Actualprice 400,6,2400
-2021-06-15 19:58:49,663 :INFO : verify_processTillkycPage : Username displayed correctly in installation address page
-2021-06-15 19:58:49,664 :INFO : verify_processTillkycPage : Email displayed correctly in installation address page
-2021-06-15 19:58:49,664 :INFO : verify_processTillkycPage : Mobile number displayed correctly in installation address page
-2021-06-15 19:59:00,298 :INFO : verify_processTillkycPage : Enter valid code message displayed
-2021-06-15 19:59:32,035 :INFO : verify_processTillkycPage : Reveiew and Pay page displayed
-2021-06-15 19:59:41,137 :INFO : verify_processTillkycPage : Displayed correct total pay amount
-2021-06-15 19:59:58,867 :INFO : verify_processTillkycPage : KYC page displayed
-2021-06-15 20:00:15,998 :INFO : upload_KYCDoc : KYC page displayed
-2021-06-15 20:00:36,345 :INFO : login_invalidcredentials : Invalid username and password message displayed
-2021-06-15 20:00:37,507 :INFO : login_invalidcredentials : Invalid username and password message displayed
-2021-06-15 20:00:38,602 :INFO : login_invalidcredentials : Invalid username and password message displayed
-2021-06-15 20:00:50,193 :INFO : verify_ForgotPassword_Invalid : Please provide correct email id alert message displayed
-2021-06-15 20:00:50,815 :INFO : verify_ForgotPassword_Invalid : Please provide correct email id alert message displayed
-2021-06-15 20:01:10,676 :INFO : verify_ForgotPassword_valid : OTP Verification page displayed
-2021-06-15 20:01:10,783 :INFO : verify_ForgotPassword_valid : Please enter the otp message displayed
-2021-06-15 20:01:10,794 :INFO : verify_ForgotPassword_valid : Please enter the new password message not displayed
-2021-06-15 20:01:31,817 :INFO : verify_CustomerDashboard : Username displayed
-2021-06-15 20:01:31,843 :INFO : verify_CustomerDashboard : Email displayed
-2021-06-15 20:01:31,871 :INFO : verify_CustomerDashboard : Phone No displayed
-2021-06-15 20:01:31,893 :INFO : verify_CustomerDashboard : Address displayed
-2021-06-15 20:01:31,915 :INFO : verify_CustomerDashboard : City displayed
-2021-06-15 20:01:31,939 :INFO : verify_CustomerDashboard : State displayed
-2021-06-15 20:01:31,969 :INFO : verify_CustomerDashboard : Pincode displayed
-2021-06-15 20:01:38,020 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
-2021-06-15 20:01:50,443 :INFO : verify_CustomerDashboard : Referral code displayed on inviting to FB
-2021-06-15 20:01:50,666 :INFO : verify_CustomerDashboard : invite page displayed
-2021-06-15 20:01:54,875 :INFO : verify_CustomerDashboard : FB page displayed
-2021-06-15 20:02:10,870 :INFO : verify_ReferAndEarn : invite page and message displayed
-2021-06-15 20:02:59,786 :INFO : verify_LeaderBoard : LeaderBoard displayed
-2021-06-15 20:03:04,826 :INFO : verify_LeaderBoard : Leaderboard displayed for the current month
-2021-06-15 20:03:22,595 :INFO : verify_PlanDetails : Renew Plan link redirected to plan page
-2021-06-15 20:03:31,637 :INFO : verify_SilverPlanPrice : verify plan price for Silver
-2021-06-15 20:03:41,217 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 20:03:41,843 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 20:03:42,706 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 20:03:45,458 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 20:03:45,507 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 20:03:45,574 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 20:03:54,701 :INFO : verify_GoldPlanPrice : verify plan price for Gold
-2021-06-15 20:04:05,103 :INFO : verify_GoldPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 20:04:05,723 :INFO : verify_GoldPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 20:04:06,531 :INFO : verify_GoldPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 20:04:09,297 :INFO : verify_GoldPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 20:04:09,346 :INFO : verify_GoldPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 20:04:09,414 :INFO : verify_GoldPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 20:04:18,314 :INFO : verify_PlatinumPlanPrice : verify plan price for Platinum
-2021-06-15 20:04:27,854 :INFO : verify_PlatinumPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 20:04:28,555 :INFO : verify_PlatinumPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 20:04:29,347 :INFO : verify_PlatinumPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 20:04:32,604 :INFO : verify_PlatinumPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 20:04:32,656 :INFO : verify_PlatinumPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 20:04:32,714 :INFO : verify_PlatinumPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 20:04:42,044 :INFO : verify_TitaniumPlanPrice : verify plan price for Titanium
-2021-06-15 20:04:51,811 :INFO : verify_TitaniumPlanPrice : month 12 and Price is matching in Plan details Page
-2021-06-15 20:04:52,588 :INFO : verify_TitaniumPlanPrice : month 6 and Price is matching in Plan details Page
-2021-06-15 20:04:53,364 :INFO : verify_TitaniumPlanPrice : month 1 and price is matching in Plan details Page
-2021-06-15 20:04:57,007 :INFO : verify_TitaniumPlanPrice : month 12 and Price is matching in Plan Page
-2021-06-15 20:04:57,050 :INFO : verify_TitaniumPlanPrice : month 6 and Price is matching in Plan Page
-2021-06-15 20:04:57,099 :INFO : verify_TitaniumPlanPrice : month 1 and price is matching in Plan Page
-2021-06-15 20:05:10,963 :INFO : verify_SilverChangePlan : Check for the Silver Plan change
-2021-06-15 20:05:41,535 :INFO : verify_SilverChangePlan : Amount displayed correctly
-2021-06-15 20:05:52,783 :INFO : verify_SilverChangePlan : Recharge History displayed
-2021-06-15 20:05:52,829 :INFO : verify_SilverChangePlan : Recharge date displayed
-2021-06-15 20:05:52,853 :INFO : verify_SilverChangePlan : Amount displayed
-2021-06-15 20:06:07,403 :INFO : verify_SilverChangePlan : Amount displayed correctly
-2021-06-15 20:06:18,222 :INFO : verify_SilverChangePlan : Recharge History displayed
-2021-06-15 20:06:18,267 :INFO : verify_SilverChangePlan : Recharge date displayed
-2021-06-15 20:06:18,303 :INFO : verify_SilverChangePlan : Amount displayed
-2021-06-15 20:06:31,805 :INFO : verify_SilverChangePlan : Amount displayed correctly
-2021-06-15 20:06:42,893 :INFO : verify_SilverChangePlan : Recharge History displayed
-2021-06-15 20:06:42,930 :INFO : verify_SilverChangePlan : Recharge date displayed
-2021-06-15 20:06:42,953 :INFO : verify_SilverChangePlan : Amount displayed
-2021-06-15 20:06:56,722 :INFO : verify_GoldChangePlan : Check for the Gold Plan change
-2021-06-15 20:07:26,404 :INFO : verify_GoldChangePlan : Amount displayed correctly
-2021-06-15 20:07:37,672 :INFO : verify_GoldChangePlan : Recharge History displayed
-2021-06-15 20:07:37,739 :INFO : verify_GoldChangePlan : Recharge date displayed
-2021-06-15 20:07:37,804 :INFO : verify_GoldChangePlan : Amount displayed
-2021-06-15 20:07:53,596 :INFO : verify_GoldChangePlan : Amount displayed correctly
-2021-06-15 20:08:04,157 :INFO : verify_GoldChangePlan : Recharge History displayed
-2021-06-15 20:08:04,197 :INFO : verify_GoldChangePlan : Recharge date displayed
-2021-06-15 20:08:04,231 :INFO : verify_GoldChangePlan : Amount displayed
-2021-06-15 20:08:16,986 :INFO : verify_GoldChangePlan : Amount displayed correctly
-2021-06-15 20:08:27,600 :INFO : verify_GoldChangePlan : Recharge History displayed
-2021-06-15 20:08:27,641 :INFO : verify_GoldChangePlan : Recharge date displayed
-2021-06-15 20:08:27,675 :INFO : verify_GoldChangePlan : Amount displayed
-2021-06-15 20:08:36,510 :INFO : verify_PlatinumChangePlan : Check for the Platinum Plan change
-2021-06-15 20:09:00,407 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
-2021-06-15 20:09:10,809 :INFO : verify_PlatinumChangePlan : Recharge History displayed
-2021-06-15 20:09:10,853 :INFO : verify_PlatinumChangePlan : Recharge date displayed
-2021-06-15 20:09:10,896 :INFO : verify_PlatinumChangePlan : Amount displayed
-2021-06-15 20:09:23,084 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
-2021-06-15 20:09:33,957 :INFO : verify_PlatinumChangePlan : Recharge History displayed
-2021-06-15 20:09:33,993 :INFO : verify_PlatinumChangePlan : Recharge date displayed
-2021-06-15 20:09:34,026 :INFO : verify_PlatinumChangePlan : Amount displayed
-2021-06-15 20:09:49,162 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
-2021-06-15 20:10:00,115 :INFO : verify_PlatinumChangePlan : Recharge History displayed
-2021-06-15 20:10:00,169 :INFO : verify_PlatinumChangePlan : Recharge date displayed
-2021-06-15 20:10:00,233 :INFO : verify_PlatinumChangePlan : Amount displayed
-2021-06-15 20:10:12,417 :INFO : verify_TitaniumChangePlan : Check for the Titanium Plan change
-2021-06-15 20:10:40,416 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
-2021-06-15 20:10:51,875 :INFO : verify_TitaniumChangePlan : Recharge History displayed
-2021-06-15 20:10:51,917 :INFO : verify_TitaniumChangePlan : Recharge date displayed
-2021-06-15 20:10:51,958 :INFO : verify_TitaniumChangePlan : Amount displayed
-2021-06-15 20:11:04,445 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
-2021-06-15 20:11:15,286 :INFO : verify_TitaniumChangePlan : Recharge History displayed
-2021-06-15 20:11:15,350 :INFO : verify_TitaniumChangePlan : Recharge date displayed
-2021-06-15 20:11:15,405 :INFO : verify_TitaniumChangePlan : Amount displayed
-2021-06-15 20:11:28,490 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
-2021-06-15 20:11:39,473 :INFO : verify_TitaniumChangePlan : Recharge History displayed
-2021-06-15 20:11:39,497 :INFO : verify_TitaniumChangePlan : Recharge date displayed
-2021-06-15 20:11:39,521 :INFO : verify_TitaniumChangePlan : Amount displayed
-2021-06-15 20:12:00,465 :INFO : verify_changePassword : Password cannot be same message displayed
-2021-06-15 20:12:01,726 :INFO : verify_changePassword : Password reset successful message displayed
-2021-06-15 20:12:10,429 :INFO : verify_changePassword : Password changed successfully
-2021-06-15 20:12:41,140 :INFO : verify_diffPWD : Mandatory and error message displayed
-2021-06-15 20:13:06,524 :INFO : verify_signupWithRefCode : referral benefits message displayed
-2021-06-15 20:14:01,263 :INFO : verify_signupWithRefCode : Discount applied
-2021-06-15 20:14:17,220 :INFO : verify_signupWithRefCode : Discount not applied
-2021-06-15 20:14:30,376 :INFO : verify_ReferralHistory : Referral History page displayed
-2021-06-15 20:14:33,687 :INFO : verify_ReferralHistory : Redirected to FB page
-2021-06-15 20:14:45,523 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
-2021-06-15 20:14:45,581 :INFO : verify_referredUNInReferralHistory : Correct free water liter displayed
-2021-06-15 20:14:45,627 :INFO : verify_referredUNInReferralHistory : Voucher count displayed
-2021-06-15 20:14:54,525 :INFO : verify_referredUNInReferralHistory : Redirected to WhatsApp page
-2021-06-15 20:32:26,919 :INFO : verify_ReferAndEarn : invite page and message displayed
-2021-06-15 20:32:32,200 :INFO : verify_ReferAndEarn : referral Code are same from Customer dashboard and invite page
-2021-06-15 20:32:32,622 :INFO : verify_ReferAndEarn : Tooltip displayed for Copy Icon
-2021-06-15 20:32:32,706 :INFO : verify_ReferAndEarn : Copied: BF0ID2
-2021-06-15 20:32:36,927 :INFO : verify_ReferAndEarn : Whatsapp opened
-2021-06-15 20:32:40,842 :INFO : verify_ReferAndEarn : FB page displayed
-2021-06-15 20:32:41,019 :INFO : verify_ReferAndEarn : How does it work popup displayed
-2021-06-15 20:32:42,233 :INFO : verify_ReferAndEarn : TC page displayed
-2021-06-15 20:33:05,500 :INFO : verify_menu_link : Sign Up page displayed
-2021-06-15 20:35:33,132 :INFO : verify_ReferAndEarn : invite page and message displayed
-2021-06-15 20:38:04,839 :INFO : verify_ReferAndEarn : invite page and message displayed
-2021-06-15 20:46:20,472 :INFO : verify_ReferAndEarn : invite page and message displayed
-2021-06-15 20:48:54,125 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
+2021-06-16 17:18:03,606 :INFO : verify_PremiumPlan : Premium not Activated
+2021-06-16 17:18:03,821 :INFO : verify_PremiumPlan : Month displayed
+2021-06-16 17:18:03,863 :INFO : verify_PremiumPlan : Amount displayed
+2021-06-16 17:18:19,161 :INFO : verify_PremiumPlan : Desposit displayed
+2021-06-16 17:27:40,245 :INFO : verify_PremiumPlan : Premium not Activated
+2021-06-16 17:27:40,401 :INFO : verify_PremiumPlan : Month displayed
+2021-06-16 17:27:40,438 :INFO : verify_PremiumPlan : Amount displayed
+2021-06-16 17:27:55,770 :INFO : verify_PremiumPlan : Desposit displayed
+2021-06-16 17:28:40,014 :INFO : verify_PremiumPlan : Premium not Activated
+2021-06-16 17:28:40,202 :INFO : verify_PremiumPlan : Month displayed
+2021-06-16 17:28:40,240 :INFO : verify_PremiumPlan : Amount displayed
+2021-06-16 17:28:55,516 :INFO : verify_PremiumPlan : Desposit displayed
+2021-06-16 17:30:32,588 :INFO : subsribe_premiumPlan : Plan name displayed
+2021-06-16 17:33:27,968 :INFO : subsribe_premiumPlan : Plan name displayed
+2021-06-16 17:38:08,255 :INFO : subsribe_premiumPlan : Plan name displayed
+2021-06-16 17:38:12,341 :INFO : subsribe_premiumPlan : Displayed correct total pay amount
+2021-06-16 17:40:05,659 :INFO : subsribe_premiumPlan : Plan name displayed
+2021-06-16 17:40:09,738 :INFO : subsribe_premiumPlan : Displayed correct total pay amount
+2021-06-16 17:46:30,531 :INFO : verify_menu_link : Sign Up page displayed
+2021-06-16 17:46:36,990 :INFO : verify_menu_link : Google Play store opened
+2021-06-16 17:46:42,232 :INFO : verify_menu_link : App store opened
+2021-06-16 17:46:48,512 :INFO : verify_menu_link : Redirected to FB page
+2021-06-16 17:46:55,062 :INFO : verify_menu_link : Redirected to FB page
+2021-06-16 17:47:06,835 :INFO : SignUp : SignUp page selected by default
+2021-06-16 17:48:28,054 :INFO : verify_menu_link : Sign Up page displayed
+2021-06-16 17:48:38,357 :INFO : verify_menu_link : Google Play store opened
+2021-06-16 17:48:43,523 :INFO : verify_menu_link : App store opened
+2021-06-16 17:48:49,142 :INFO : verify_menu_link : Redirected to FB page
+2021-06-16 17:48:55,568 :INFO : verify_menu_link : Redirected to FB page
+2021-06-16 17:49:08,369 :INFO : SignUp : SignUp page selected by default
+2021-06-16 17:49:24,812 :INFO : SignUp : Password displayed in encrypted form
+2021-06-16 17:49:24,897 :INFO : SignUp : Password displayed on view
+2021-06-16 17:49:48,622 :INFO : SignUp : Signed Up successfully
+2021-06-16 17:50:14,355 :INFO : verifyMandatoryField : Mandatory message displayed
+2021-06-16 17:50:14,378 :INFO : verifyMandatoryField : Mandatory message displayed
+2021-06-16 17:50:14,397 :INFO : verifyMandatoryField : Mandatory message displayed
+2021-06-16 17:50:14,418 :INFO : verifyMandatoryField : Mandatory message displayed
+2021-06-16 17:50:14,438 :INFO : verifyMandatoryField : Mandatory message displayed
+2021-06-16 17:50:42,319 :INFO : verifyMandatoryField : already registered with us message displayed
+2021-06-16 17:51:00,576 :INFO : verify_invalid_details : Special characters are not allowed message displayed
+2021-06-16 17:51:00,599 :INFO : verify_invalid_details : Enter a valid email address message displayed
+2021-06-16 17:51:00,619 :INFO : verify_invalid_details : Enter a valid mobile number message displayed
+2021-06-16 17:51:15,787 :INFO : verify_referralCode : Referral code diplays for not paid registered account
+2021-06-16 17:51:23,302 :INFO : verify_referralCode : Redirected to FB page
+2021-06-16 17:51:28,549 :INFO : verify_referralCode : Referral Code displayed in Refer and Earn Page
+2021-06-16 17:51:41,148 :INFO : verify_processTillkycPage : Password displayed in encrypted form
+2021-06-16 17:51:44,312 :INFO : verify_processTillkycPage : Password displayed on view
+2021-06-16 17:51:59,352 :INFO : verify_processTillkycPage : liters per month value displayed
+2021-06-16 17:51:59,471 :INFO : verify_processTillkycPage : Actualprice 400,6,2400
+2021-06-16 17:52:05,906 :INFO : verify_processTillkycPage : Username displayed correctly in installation address page
+2021-06-16 17:52:05,906 :INFO : verify_processTillkycPage : Email displayed correctly in installation address page
+2021-06-16 17:52:05,906 :INFO : verify_processTillkycPage : Mobile number displayed correctly in installation address page
+2021-06-16 17:52:16,314 :INFO : verify_processTillkycPage : Enter valid code message displayed
+2021-06-16 17:52:46,392 :INFO : verify_processTillkycPage : Reveiew and Pay page displayed
+2021-06-16 17:52:55,477 :INFO : verify_processTillkycPage : Displayed correct total pay amount
+2021-06-16 17:53:12,061 :INFO : verify_processTillkycPage : KYC page displayed
+2021-06-16 17:53:26,306 :INFO : upload_KYCDoc : KYC page displayed
+2021-06-16 17:53:41,277 :INFO : login_invalidcredentials : Invalid username and password message displayed
+2021-06-16 17:53:42,319 :INFO : login_invalidcredentials : Invalid username and password message displayed
+2021-06-16 17:53:43,328 :INFO : login_invalidcredentials : Invalid username and password message displayed
+2021-06-16 17:53:57,714 :INFO : verify_ForgotPassword_Invalid : Please provide correct email id alert message displayed
+2021-06-16 17:53:58,315 :INFO : verify_ForgotPassword_Invalid : Please provide correct email id alert message displayed
+2021-06-16 17:54:11,409 :INFO : verify_ForgotPassword_valid : OTP Verification page displayed
+2021-06-16 17:54:11,501 :INFO : verify_ForgotPassword_valid : Please enter the otp message displayed
+2021-06-16 17:54:11,512 :INFO : verify_ForgotPassword_valid : Please enter the new password message not displayed
+2021-06-16 17:54:26,319 :INFO : verify_CustomerDashboard : Username displayed
+2021-06-16 17:54:26,339 :INFO : verify_CustomerDashboard : Email displayed
+2021-06-16 17:54:26,359 :INFO : verify_CustomerDashboard : Phone No displayed
+2021-06-16 17:54:26,402 :INFO : verify_CustomerDashboard : Address displayed
+2021-06-16 17:54:26,460 :INFO : verify_CustomerDashboard : City displayed
+2021-06-16 17:54:26,491 :INFO : verify_CustomerDashboard : State displayed
+2021-06-16 17:54:26,515 :INFO : verify_CustomerDashboard : Pincode displayed
+2021-06-16 17:54:34,560 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
+2021-06-16 17:55:01,046 :INFO : verify_ReferAndEarn : invite page and message displayed
+2021-06-16 17:55:06,127 :INFO : verify_ReferAndEarn : Pass
+2021-06-16 17:55:06,214 :INFO : verify_ReferAndEarn : referral Code are same from Customer dashboard and invite page
+2021-06-16 17:55:06,575 :INFO : verify_ReferAndEarn : Tooltip displayed for Copy Icon
+2021-06-16 17:55:06,670 :INFO : verify_ReferAndEarn : Copied: BF0ID2
+2021-06-16 17:55:12,894 :INFO : verify_ReferAndEarn : Whatsapp opened
+2021-06-16 17:55:16,023 :INFO : verify_ReferAndEarn : FB page displayed
+2021-06-16 17:55:16,200 :INFO : verify_ReferAndEarn : How does it work popup displayed
+2021-06-16 17:55:18,179 :INFO : verify_ReferAndEarn : TC page displayed
+2021-06-16 17:55:45,832 :INFO : verify_LeaderBoard : LeaderBoard displayed
+2021-06-16 17:55:50,911 :INFO : verify_LeaderBoard : Leaderboard displayed for the current month
+2021-06-16 17:56:11,139 :INFO : verify_PlanDetails : Renew Plan link redirected to plan page
+2021-06-16 17:56:21,252 :INFO : verify_SilverPlanPrice : verify plan price for Silver
+2021-06-16 17:56:29,797 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan details Page
+2021-06-16 17:56:30,399 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan details Page
+2021-06-16 17:56:31,012 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan details Page
+2021-06-16 17:56:33,785 :INFO : verify_SilverPlanPrice : month 12 and Price is matching in Plan Page
+2021-06-16 17:56:33,826 :INFO : verify_SilverPlanPrice : month 6 and Price is matching in Plan Page
+2021-06-16 17:56:33,867 :INFO : verify_SilverPlanPrice : month 1 and price is matching in Plan Page
+2021-06-16 17:56:47,561 :INFO : verify_GoldPlanPrice : verify plan price for Gold
+2021-06-16 17:56:56,193 :INFO : verify_GoldPlanPrice : month 12 and Price is matching in Plan details Page
+2021-06-16 17:56:56,897 :INFO : verify_GoldPlanPrice : month 6 and Price is matching in Plan details Page
+2021-06-16 17:56:57,526 :INFO : verify_GoldPlanPrice : month 1 and price is matching in Plan details Page
+2021-06-16 17:57:01,433 :INFO : verify_GoldPlanPrice : month 12 and Price is matching in Plan Page
+2021-06-16 17:57:01,474 :INFO : verify_GoldPlanPrice : month 6 and Price is matching in Plan Page
+2021-06-16 17:57:01,515 :INFO : verify_GoldPlanPrice : month 1 and price is matching in Plan Page
+2021-06-16 17:57:14,091 :INFO : verify_PlatinumPlanPrice : verify plan price for Platinum
+2021-06-16 17:57:23,470 :INFO : verify_PlatinumPlanPrice : month 12 and Price is matching in Plan details Page
+2021-06-16 17:57:24,166 :INFO : verify_PlatinumPlanPrice : month 6 and Price is matching in Plan details Page
+2021-06-16 17:57:24,757 :INFO : verify_PlatinumPlanPrice : month 1 and price is matching in Plan details Page
+2021-06-16 17:57:28,399 :INFO : verify_PlatinumPlanPrice : month 12 and Price is matching in Plan Page
+2021-06-16 17:57:28,446 :INFO : verify_PlatinumPlanPrice : month 6 and Price is matching in Plan Page
+2021-06-16 17:57:28,485 :INFO : verify_PlatinumPlanPrice : month 1 and price is matching in Plan Page
+2021-06-16 17:57:41,560 :INFO : verify_TitaniumPlanPrice : verify plan price for Titanium
+2021-06-16 17:57:50,017 :INFO : verify_TitaniumPlanPrice : month 12 and Price is matching in Plan details Page
+2021-06-16 17:57:50,611 :INFO : verify_TitaniumPlanPrice : month 6 and Price is matching in Plan details Page
+2021-06-16 17:57:51,180 :INFO : verify_TitaniumPlanPrice : month 1 and price is matching in Plan details Page
+2021-06-16 17:57:53,785 :INFO : verify_TitaniumPlanPrice : month 12 and Price is matching in Plan Page
+2021-06-16 17:57:53,830 :INFO : verify_TitaniumPlanPrice : month 6 and Price is matching in Plan Page
+2021-06-16 17:57:53,871 :INFO : verify_TitaniumPlanPrice : month 1 and price is matching in Plan Page
+2021-06-16 17:58:07,132 :INFO : verify_SilverChangePlan : Check for the Silver Plan change
+2021-06-16 17:58:25,972 :INFO : verify_SilverChangePlan : Amount displayed correctly
+2021-06-16 17:58:35,384 :INFO : verify_SilverChangePlan : Recharge History displayed
+2021-06-16 17:58:35,405 :INFO : verify_SilverChangePlan : Recharge date displayed
+2021-06-16 17:58:35,427 :INFO : verify_SilverChangePlan : Amount displayed
+2021-06-16 17:58:48,326 :INFO : verify_SilverChangePlan : Amount displayed correctly
+2021-06-16 17:58:58,064 :INFO : verify_SilverChangePlan : Recharge History displayed
+2021-06-16 17:58:58,093 :INFO : verify_SilverChangePlan : Recharge date displayed
+2021-06-16 17:58:58,115 :INFO : verify_SilverChangePlan : Amount displayed
+2021-06-16 17:59:11,870 :INFO : verify_SilverChangePlan : Amount displayed correctly
+2021-06-16 17:59:20,983 :INFO : verify_SilverChangePlan : Recharge History displayed
+2021-06-16 17:59:21,005 :INFO : verify_SilverChangePlan : Recharge date displayed
+2021-06-16 17:59:21,026 :INFO : verify_SilverChangePlan : Amount displayed
+2021-06-16 17:59:30,391 :INFO : verify_GoldChangePlan : Check for the Gold Plan change
+2021-06-16 17:59:48,796 :INFO : verify_GoldChangePlan : Amount displayed correctly
+2021-06-16 17:59:58,136 :INFO : verify_GoldChangePlan : Recharge History displayed
+2021-06-16 17:59:58,158 :INFO : verify_GoldChangePlan : Recharge date displayed
+2021-06-16 17:59:58,179 :INFO : verify_GoldChangePlan : Amount displayed
+2021-06-16 18:00:10,411 :INFO : verify_GoldChangePlan : Amount displayed correctly
+2021-06-16 18:00:20,893 :INFO : verify_GoldChangePlan : Recharge History displayed
+2021-06-16 18:00:20,921 :INFO : verify_GoldChangePlan : Recharge date displayed
+2021-06-16 18:00:20,942 :INFO : verify_GoldChangePlan : Amount displayed
+2021-06-16 18:00:35,172 :INFO : verify_GoldChangePlan : Amount displayed correctly
+2021-06-16 18:00:44,864 :INFO : verify_GoldChangePlan : Recharge History displayed
+2021-06-16 18:00:44,895 :INFO : verify_GoldChangePlan : Recharge date displayed
+2021-06-16 18:00:44,917 :INFO : verify_GoldChangePlan : Amount displayed
+2021-06-16 18:00:55,036 :INFO : verify_PlatinumChangePlan : Check for the Platinum Plan change
+2021-06-16 18:01:13,543 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
+2021-06-16 18:01:23,317 :INFO : verify_PlatinumChangePlan : Recharge History displayed
+2021-06-16 18:01:23,339 :INFO : verify_PlatinumChangePlan : Recharge date displayed
+2021-06-16 18:01:23,360 :INFO : verify_PlatinumChangePlan : Amount displayed
+2021-06-16 18:01:36,215 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
+2021-06-16 18:01:46,071 :INFO : verify_PlatinumChangePlan : Recharge History displayed
+2021-06-16 18:01:46,110 :INFO : verify_PlatinumChangePlan : Recharge date displayed
+2021-06-16 18:01:46,135 :INFO : verify_PlatinumChangePlan : Amount displayed
+2021-06-16 18:01:58,723 :INFO : verify_PlatinumChangePlan : Amount displayed correctly
+2021-06-16 18:02:09,020 :INFO : verify_PlatinumChangePlan : Recharge History displayed
+2021-06-16 18:02:09,041 :INFO : verify_PlatinumChangePlan : Recharge date displayed
+2021-06-16 18:02:09,063 :INFO : verify_PlatinumChangePlan : Amount displayed
+2021-06-16 18:02:38,436 :INFO : verify_TitaniumChangePlan : Check for the Titanium Plan change
+2021-06-16 18:03:01,316 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
+2021-06-16 18:03:11,273 :INFO : verify_TitaniumChangePlan : Recharge History displayed
+2021-06-16 18:03:11,306 :INFO : verify_TitaniumChangePlan : Recharge date displayed
+2021-06-16 18:03:11,332 :INFO : verify_TitaniumChangePlan : Amount displayed
+2021-06-16 18:03:25,451 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
+2021-06-16 18:03:36,094 :INFO : verify_TitaniumChangePlan : Recharge History displayed
+2021-06-16 18:03:36,116 :INFO : verify_TitaniumChangePlan : Recharge date displayed
+2021-06-16 18:03:36,138 :INFO : verify_TitaniumChangePlan : Amount displayed
+2021-06-16 18:03:48,546 :INFO : verify_TitaniumChangePlan : Amount displayed correctly
+2021-06-16 18:03:58,729 :INFO : verify_TitaniumChangePlan : Recharge History displayed
+2021-06-16 18:03:58,751 :INFO : verify_TitaniumChangePlan : Recharge date displayed
+2021-06-16 18:03:58,772 :INFO : verify_TitaniumChangePlan : Amount displayed
+2021-06-16 18:04:15,192 :INFO : verify_changePassword : Password cannot be same message displayed
+2021-06-16 18:04:15,928 :INFO : verify_changePassword : Password reset successful message displayed
+2021-06-16 18:04:25,742 :INFO : verify_changePassword : Password changed successfully
+2021-06-16 18:04:50,515 :INFO : verify_diffPWD : Mandatory and error message displayed
+2021-06-16 18:05:09,265 :INFO : verify_signupWithRefCode : referral benefits message displayed
+2021-06-16 18:05:58,630 :INFO : verify_signupWithRefCode : Discount applied
+2021-06-16 18:06:13,689 :INFO : verify_signupWithRefCode : Discount not applied
+2021-06-16 18:06:27,894 :INFO : verify_ReferralHistory : Referral History page displayed
+2021-06-16 18:06:30,756 :INFO : verify_ReferralHistory : Redirected to FB page
+2021-06-16 18:06:44,839 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
+2021-06-16 18:06:56,273 :INFO : verify_PremiumPlan : Premium not Activated
+2021-06-16 18:06:56,469 :INFO : verify_PremiumPlan : Month displayed
+2021-06-16 18:06:56,527 :INFO : verify_PremiumPlan : Amount displayed
+2021-06-16 18:07:11,778 :INFO : verify_PremiumPlan : Desposit displayed
+2021-06-16 18:07:59,048 :INFO : subsribe_premiumPlan : Plan name displayed
+2021-06-16 18:08:03,129 :INFO : subsribe_premiumPlan : Displayed correct total pay amount
+2021-06-16 18:16:20,677 :INFO : verify_CustomerDashboard : Username displayed
+2021-06-16 18:16:20,752 :INFO : verify_CustomerDashboard : Email displayed
+2021-06-16 18:16:20,774 :INFO : verify_CustomerDashboard : Phone No displayed
+2021-06-16 18:16:20,795 :INFO : verify_CustomerDashboard : Address displayed
+2021-06-16 18:16:20,819 :INFO : verify_CustomerDashboard : City displayed
+2021-06-16 18:16:20,849 :INFO : verify_CustomerDashboard : State displayed
+2021-06-16 18:16:20,881 :INFO : verify_CustomerDashboard : Pincode displayed
+2021-06-16 18:16:30,473 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
+2021-06-16 18:17:18,239 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
+2021-06-16 18:21:26,792 :INFO : verify_CustomerDashboard : Username displayed
+2021-06-16 18:21:26,816 :INFO : verify_CustomerDashboard : Email displayed
+2021-06-16 18:21:26,836 :INFO : verify_CustomerDashboard : Phone No displayed
+2021-06-16 18:21:26,859 :INFO : verify_CustomerDashboard : Address displayed
+2021-06-16 18:21:26,890 :INFO : verify_CustomerDashboard : City displayed
+2021-06-16 18:21:26,914 :INFO : verify_CustomerDashboard : State displayed
+2021-06-16 18:21:26,995 :INFO : verify_CustomerDashboard : Pincode displayed
+2021-06-16 18:21:32,460 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
+2021-06-16 18:23:39,077 :INFO : verify_CustomerDashboard : Username displayed
+2021-06-16 18:23:39,099 :INFO : verify_CustomerDashboard : Email displayed
+2021-06-16 18:23:39,120 :INFO : verify_CustomerDashboard : Phone No displayed
+2021-06-16 18:23:39,142 :INFO : verify_CustomerDashboard : Address displayed
+2021-06-16 18:23:39,162 :INFO : verify_CustomerDashboard : City displayed
+2021-06-16 18:23:39,186 :INFO : verify_CustomerDashboard : State displayed
+2021-06-16 18:23:39,209 :INFO : verify_CustomerDashboard : Pincode displayed
+2021-06-16 18:23:43,231 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
+2021-06-16 18:24:33,553 :INFO : verify_CustomerDashboard : Username displayed
+2021-06-16 18:24:33,625 :INFO : verify_CustomerDashboard : Email displayed
+2021-06-16 18:24:33,650 :INFO : verify_CustomerDashboard : Phone No displayed
+2021-06-16 18:24:33,673 :INFO : verify_CustomerDashboard : Address displayed
+2021-06-16 18:24:33,696 :INFO : verify_CustomerDashboard : City displayed
+2021-06-16 18:24:33,720 :INFO : verify_CustomerDashboard : State displayed
+2021-06-16 18:24:33,744 :INFO : verify_CustomerDashboard : Pincode displayed
+2021-06-16 18:24:43,558 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
+2021-06-16 18:30:38,690 :INFO : verify_CustomerDashboard : Username displayed
+2021-06-16 18:30:38,718 :INFO : verify_CustomerDashboard : Email displayed
+2021-06-16 18:30:38,744 :INFO : verify_CustomerDashboard : Phone No displayed
+2021-06-16 18:30:38,770 :INFO : verify_CustomerDashboard : Address displayed
+2021-06-16 18:30:38,794 :INFO : verify_CustomerDashboard : City displayed
+2021-06-16 18:30:38,817 :INFO : verify_CustomerDashboard : State displayed
+2021-06-16 18:30:38,843 :INFO : verify_CustomerDashboard : Pincode displayed
+2021-06-16 18:30:46,801 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
+2021-06-16 18:33:58,194 :INFO : verify_CustomerDashboard : Username displayed
+2021-06-16 18:33:58,215 :INFO : verify_CustomerDashboard : Email displayed
+2021-06-16 18:33:58,237 :INFO : verify_CustomerDashboard : Phone No displayed
+2021-06-16 18:33:58,258 :INFO : verify_CustomerDashboard : Address displayed
+2021-06-16 18:33:58,281 :INFO : verify_CustomerDashboard : City displayed
+2021-06-16 18:33:58,302 :INFO : verify_CustomerDashboard : State displayed
+2021-06-16 18:33:58,330 :INFO : verify_CustomerDashboard : Pincode displayed
+2021-06-16 18:34:02,740 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
+2021-06-16 18:34:48,730 :INFO : verify_CustomerDashboard : Username displayed
+2021-06-16 18:34:48,755 :INFO : verify_CustomerDashboard : Email displayed
+2021-06-16 18:34:48,782 :INFO : verify_CustomerDashboard : Phone No displayed
+2021-06-16 18:34:48,799 :INFO : verify_CustomerDashboard : Address displayed
+2021-06-16 18:34:48,818 :INFO : verify_CustomerDashboard : City displayed
+2021-06-16 18:34:48,835 :INFO : verify_CustomerDashboard : State displayed
+2021-06-16 18:34:48,851 :INFO : verify_CustomerDashboard : Pincode displayed
+2021-06-16 18:34:52,546 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
+2021-06-16 18:46:26,093 :INFO : verify_CustomerDashboard : Username displayed
+2021-06-16 18:46:26,115 :INFO : verify_CustomerDashboard : Email displayed
+2021-06-16 18:46:26,138 :INFO : verify_CustomerDashboard : Phone No displayed
+2021-06-16 18:46:26,156 :INFO : verify_CustomerDashboard : Address displayed
+2021-06-16 18:46:26,172 :INFO : verify_CustomerDashboard : City displayed
+2021-06-16 18:46:26,192 :INFO : verify_CustomerDashboard : State displayed
+2021-06-16 18:46:26,210 :INFO : verify_CustomerDashboard : Pincode displayed
+2021-06-16 18:46:29,311 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
+2021-06-16 18:49:13,458 :INFO : verify_CustomerDashboard : Username displayed
+2021-06-16 18:49:13,489 :INFO : verify_CustomerDashboard : Email displayed
+2021-06-16 18:49:13,516 :INFO : verify_CustomerDashboard : Phone No displayed
+2021-06-16 18:49:13,538 :INFO : verify_CustomerDashboard : Address displayed
+2021-06-16 18:49:13,559 :INFO : verify_CustomerDashboard : City displayed
+2021-06-16 18:49:13,579 :INFO : verify_CustomerDashboard : State displayed
+2021-06-16 18:49:13,597 :INFO : verify_CustomerDashboard : Pincode displayed
+2021-06-16 18:49:17,742 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
+2021-06-16 18:50:42,229 :INFO : verify_CustomerDashboard : Username displayed
+2021-06-16 18:50:42,251 :INFO : verify_CustomerDashboard : Email displayed
+2021-06-16 18:50:42,278 :INFO : verify_CustomerDashboard : Phone No displayed
+2021-06-16 18:50:42,295 :INFO : verify_CustomerDashboard : Address displayed
+2021-06-16 18:50:42,312 :INFO : verify_CustomerDashboard : City displayed
+2021-06-16 18:50:42,329 :INFO : verify_CustomerDashboard : State displayed
+2021-06-16 18:50:42,345 :INFO : verify_CustomerDashboard : Pincode displayed
+2021-06-16 18:50:45,807 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
+2021-06-16 18:55:04,810 :INFO : verify_CustomerDashboard : Username displayed
+2021-06-16 18:55:04,843 :INFO : verify_CustomerDashboard : Email displayed
+2021-06-16 18:55:04,868 :INFO : verify_CustomerDashboard : Phone No displayed
+2021-06-16 18:55:04,890 :INFO : verify_CustomerDashboard : Address displayed
+2021-06-16 18:55:04,915 :INFO : verify_CustomerDashboard : City displayed
+2021-06-16 18:55:04,934 :INFO : verify_CustomerDashboard : State displayed
+2021-06-16 18:55:04,955 :INFO : verify_CustomerDashboard : Pincode displayed
+2021-06-16 18:55:08,534 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
+2021-06-16 18:59:16,709 :INFO : verify_CustomerDashboard : Username displayed
+2021-06-16 18:59:16,733 :INFO : verify_CustomerDashboard : Email displayed
+2021-06-16 18:59:16,758 :INFO : verify_CustomerDashboard : Phone No displayed
+2021-06-16 18:59:16,788 :INFO : verify_CustomerDashboard : Address displayed
+2021-06-16 18:59:16,809 :INFO : verify_CustomerDashboard : City displayed
+2021-06-16 18:59:16,829 :INFO : verify_CustomerDashboard : State displayed
+2021-06-16 18:59:16,851 :INFO : verify_CustomerDashboard : Pincode displayed
+2021-06-16 18:59:20,086 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
+2021-06-16 18:59:57,757 :INFO : verify_CustomerDashboard : Username displayed
+2021-06-16 18:59:57,782 :INFO : verify_CustomerDashboard : Email displayed
+2021-06-16 18:59:57,805 :INFO : verify_CustomerDashboard : Phone No displayed
+2021-06-16 18:59:57,830 :INFO : verify_CustomerDashboard : Address displayed
+2021-06-16 18:59:57,852 :INFO : verify_CustomerDashboard : City displayed
+2021-06-16 18:59:57,876 :INFO : verify_CustomerDashboard : State displayed
+2021-06-16 18:59:57,896 :INFO : verify_CustomerDashboard : Pincode displayed
+2021-06-16 19:00:01,283 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
+2021-06-17 11:36:12,982 :INFO : verify_CustomerDashboard : Username displayed
+2021-06-17 11:36:13,060 :INFO : verify_CustomerDashboard : Email displayed
+2021-06-17 11:36:13,108 :INFO : verify_CustomerDashboard : Phone No displayed
+2021-06-17 11:36:13,193 :INFO : verify_CustomerDashboard : Address displayed
+2021-06-17 11:36:13,220 :INFO : verify_CustomerDashboard : City displayed
+2021-06-17 11:36:13,249 :INFO : verify_CustomerDashboard : State displayed
+2021-06-17 11:36:13,279 :INFO : verify_CustomerDashboard : Pincode displayed
+2021-06-17 11:36:18,817 :INFO : verify_CustomerDashboard : Redirected to WhatsApp page
+2021-06-17 13:05:26,408 :INFO : verify_referredUNInReferralHistory : Referred username displayed in History
+2021-06-17 13:05:26,444 :INFO : verify_referredUNInReferralHistory : Correct free water liter displayed
+2021-06-17 13:05:26,478 :INFO : verify_referredUNInReferralHistory : Voucher count displayed
+2021-06-17 13:06:39,394 :INFO : verify_referredUNInReferralHistory : Redirected to WhatsApp page
+2021-06-17 15:14:41,209 :INFO : verify_AddMoreltr : You have to subscribe the plan first, then only you can add more liters.
+2021-06-17 15:15:31,555 :INFO : verify_AddMoreltr : You have to subscribe the plan first, then only you can add more liters.
+2021-06-17 15:15:31,555 :INFO : verify_AddMoreltr : Subscribe plan first message not displayed
+2021-06-17 19:49:17,834 :INFO : verify_SubcribedPremiumPlan : Plan name displayed
+2021-06-17 19:49:17,889 :INFO : verify_SubcribedPremiumPlan : Plan Amount displayed

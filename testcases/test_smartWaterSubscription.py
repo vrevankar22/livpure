@@ -44,7 +44,7 @@ class TestSmartWaterSubscription(smartWaterSubscriptionPage):
 # py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_upload_KYCDoc
     @mark.depends(on=['verify_processTillkycPage'])
     def test_upload_KYCDoc(self):
-        self.upload_KYCDoc(readData(excel,'SignUp',2,2),readData(excel,'SignUp',2,5))
+        self.upload_KYCDoc(readData(excel,'SignUp',2,2),readData(excel,'SignUp',2,5),readData(excel,'SignUp',2,16))
 
 # py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_login_invalidcredentials
     def test_login_invalidcredentials(self):
@@ -138,8 +138,38 @@ class TestSmartWaterSubscription(smartWaterSubscriptionPage):
     # bug in this, edit it after the fix
     @mark.depends(on=['test_verify_signupWithRefCode','test_verify_ReferralHistory'])
     def test_verify_referredUNInReferralHistory(self):
-        self.verify_referredUNInReferralHistory(readData(excel,'SignUp',15,1),readData(excel,'SignUp',15,3),
-                                                readData(excel,'SignUp',25,1),readData(excel,'SignUp',18,2))
+        self.verify_referredUNInReferralHistory(readData(excel,'SignUp',15,1),readData(excel,'SignUp',15,3),readData(excel,'SignUp',25,1),
+                                                readData(excel,'SignUp',25,2),readData(excel,'SignUp',25,4),readData(excel,'SignUp',18,2))
+
+# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_AddMoreltr
+    def test_verify_AddMoreltr(self):
+        self.verify_AddMoreltr(readData(excel,'SignUp',25,2),readData(excel,'SignUp',25,3))
+
+# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_AddMoreltrwithRO
+    @mark.skip
+    def test_verify_AddMoreltrwithRO(self):
+        self.verify_AddMoreltrwithRO(readData(excel,'SignUp',15,1),readData(excel,'SignUp',15,3))
+
+# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_PremiumPlan
+    def test_verify_PremiumPlan(self):
+        self.verify_PremiumPlan(readData(excel,'SignUp',30,1),readData(excel,'SignUp',30,2),readData(excel,'SignUp',30,3))
+
+# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_subsribe_premiumPlan
+    @mark.depends(on=['test_verify_PremiumPlan'])
+    def test_subsribe_premiumPlan(self):
+        self.subsribe_premiumPlan(readData(excel,'SignUp',30,8),readData(excel,'SignUp',30,2), readData(excel,'SignUp',30,3),readData(excel,'SignUp',30,4))
+
+# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_SubcribedPremiumPlan
+    def test_verify_SubcribedPremiumPlan(self):
+        self.verify_SubcribedPremiumPlan(readData(excel,'SignUp',30,9),readData(excel,'SignUp',30,8),
+                                         readData(excel,'SignUp',18,2),readData(excel,'SignUp',18,1),readData(excel,'SignUp',30,2))
+
+# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_SubcribedPremiumPlan
+    def test_verify_renewPremiumPlan(self):
+        self.verify_renewPremiumPlan(readData(excel,'SignUp',30,9),readData(excel,'SignUp',30,8))
+
+
+
 
 
 
