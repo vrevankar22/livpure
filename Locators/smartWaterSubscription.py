@@ -97,6 +97,13 @@ class SignUpPage:
     updateNowBtn = (By.XPATH,"//a[text()='Update Now']")
     proceedToPayBtn = (By.XPATH,"//a[text()='Proceed to Pay']")
 
+    premiumplan = (By.XPATH,"//strong[text()='Premium Plan']")
+    rechargePrePlan = (By.XPATH,"//button[@id='premiumplan']//span[contains(text(),'Recharge Plan')]")
+
+
+# Recharge History
+    rechargeHisTab = (By.XPATH,"//ul[@class='account-tabs']//a[text()='Recharge History']")
+
 # Change Password
     changePWDTab = (By.XPATH,"//a[text()='Change Password']")
     oldPWD = (By.XPATH,"//input[@name='password']")

@@ -1,0 +1,3 @@
+[32mINFO    [0m verify_invalid_details:smartWaterSubscriptionPage.py:155 Special characters are not allowed message displayed
+[32mINFO    [0m verify_invalid_details:smartWaterSubscriptionPage.py:159 Enter a valid email address message displayed
+[32mINFO    [0m verify_invalid_details:smartWaterSubscriptionPage.py:163 Enter a valid mobile number message displayed

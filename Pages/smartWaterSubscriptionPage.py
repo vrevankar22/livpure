@@ -275,8 +275,8 @@ class smartWaterSubscriptionPage(BaseClass):
         assert int(finalPay) == finalValue, "Incorrect Total Pay Amount"
         log.info("Displayed correct total pay amount")
         # Edit installtion address - Need to write code
-        time.sleep(5)
-        self.click(SignUpPage.payBtn)
+        time.sleep(10)
+        self.click1(SignUpPage.payBtn)
         window_before = self.driver.window_handles[0]
         self.driver.switch_to.frame(0)
         self.click1(SignUpPage.netBanking)
@@ -308,9 +308,14 @@ class smartWaterSubscriptionPage(BaseClass):
         mobiletxt = self.driver.find_element(By.XPATH, "//div[@class='mobileVerify verifyCommon']//div[4]").text
         assert expectedText.casefold() == mobiletxt.casefold(), 'Nothing Entered message not displayed'
         log.info('Nothing Entered message displyed for mobile')
+        self.driver.refresh()
+        time.sleep(7)
         self.clickAndSendText(SignUpPage.emailOTP,'5678')
+        time.sleep(10)
         self.clickAndSendText(SignUpPage.mobileOTP,'8769')
+        time.sleep(5)
         self.click1(SignUpPage.verifyBtn)
+        time.sleep(5)
         expectedOTPText = 'Wrong OTP Entered'
         emailOTPtxt = self.driver.find_element(By.XPATH, "//div[@class='emailVerify verifyCommon']//div[4]").text
         assert expectedOTPText.casefold() == emailOTPtxt.casefold(),'Wrong OTP Entered message not displayed'
@@ -318,8 +323,12 @@ class smartWaterSubscriptionPage(BaseClass):
         mobileOTPtxt = self.driver.find_element(By.XPATH,"//div[@class='mobileVerify verifyCommon']//div[4]").text
         assert expectedOTPText.casefold() == mobileOTPtxt.casefold(),'Wrong OTP Entered message not displayed'
         log.info('Wrong OTP Entered message displyed for mobile')
-        self.click(SignUpPage.permanentAdd)
-        flatNo = self.getText(SignUpPage.flattextbox)
+        self.click1(SignUpPage.permanentAdd)
+        time.sleep(5)
+        self.click((By.XPATH,"//input[@name='flatNo']"))
+        flatNo = self.driver.find_element(By.XPATH,"//input[@name='flatNo']").text
+        log.info(flatNo)
+        time.sleep(5)
         assert flatNo == str(flatNum),'Address not displayed on checking permanent address checkbox'
         log.info('Address displayed on checking permanent address checkbox')
         self.click(SignUpPage.addressSubmit)
@@ -1329,6 +1338,22 @@ class smartWaterSubscriptionPage(BaseClass):
         assert 'Unlimited water' == planliter, 'liter not displayed'
         assert self.driver.find_element(By.XPATH,"//div[@class='planPrice'][text()='₹ "+str(planprice)+"']").is_displayed(),'Plan amount not displayed'
         log.info('Plan Amount displayed')
+        self.click(SignUpPage.rechargeHisTab)
+        # Get the current date
+        currentDate = date.today()
+        cd = currentDate.strftime("%d-%m-%Y")
+        # Get the recharge date from history
+        rechargeDate = self.driver.find_element(By.XPATH,"(//div[@class='history-box border-right']//ul//li[1])[1]").text
+        rdt = rechargeDate.split(':')[-1]
+        date1 = rdt.strip()
+        assert cd == date1, 'Rechrage date not displayed'
+        log.info('Recharge date displayed')
+        # Get the recharge date from history and match with plan amount
+        rechargeAmt = self.driver.find_element(By.XPATH,"(//div[@class='history-box border-right']//ul//li[2])[1]").text
+        rAmt = rechargeAmt.split(':')[-1]
+        amt = rAmt.strip()
+        assert planprice == int(amt), 'Amount not displayed'
+        log.info('Amount displayed')
 
 # verify renew premium plan
     def verify_renewPremiumPlan(self,email,password):
@@ -1336,8 +1361,7 @@ class smartWaterSubscriptionPage(BaseClass):
         self.login(email,password)
         self.click(SignUpPage.planDetailsTab)
         self.click(SignUpPage.renewplanLink)
-
-
+        # Bug in this - Complete after fixing bug
 
 
 
