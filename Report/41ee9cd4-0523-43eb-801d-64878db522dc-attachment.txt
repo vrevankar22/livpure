@@ -1,0 +1,3 @@
+[32mINFO    [0m verify_changePassword:smartWaterSubscriptionPage.py:1005 Password cannot be same message displayed
+[32mINFO    [0m verify_changePassword:smartWaterSubscriptionPage.py:1013 Password reset successful message displayed
+[32mINFO    [0m verify_changePassword:smartWaterSubscriptionPage.py:1020 Password changed successfully

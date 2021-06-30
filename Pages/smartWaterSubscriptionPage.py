@@ -17,9 +17,13 @@ class smartWaterSubscriptionPage(BaseClass):
         self.send_keys(SignUpPage.loginPWD, password)
         self.click(SignUpPage.submitLoginBtn)
 
+    def smartWatersub(self):
+        self.driver.find_element(By.XPATH,"//a[text()='Smart Water Subscription']").click()
+
 # Verify All menu link without sign up and login into the account
     def verify_menu_link(self,liter,voucher,extraVoucher):
         log = self.getLogger()
+        self.smartWatersub()
         self.click(SignUpPage.menu_planLink)
         self.click1(SignUpPage.menu_proceedToPay)
         assert self.driver.find_element(By.XPATH,"//a[text()='Sign Up']").is_displayed(),'SignUp page not displayed'
@@ -46,18 +50,17 @@ class smartWaterSubscriptionPage(BaseClass):
         # need to verify refer and earn
         self.click(SignUpPage.menu_ReferEarnLink)
         try:
-            self.driver.find_element(By.XPATH, "(//img[@alt='LivpureSmart Whatapp Icon'])[1]").click()
+            self.click(SignUpPage.popUpWhatsapp)
             window_after1 = self.driver.window_handles[1]
             self.driver.switch_to.window(window_after1)
-            fbTitle = self.driver.title
-            assert 'Facebook' in fbTitle, 'Does not Redirect to FB page'
-            log.info('Redirected to FB page')
+            assert self.driver.find_element(By.XPATH,"//a[text()='Sign Up']").is_displayed(), 'SignUp page not displayed'
+            log.info('Sign Up page displayed')
             self.driver.close()
             self.driver.switch_to.window(window_before)
-            self.click((By.XPATH,"//span[@class='close1']"))
         except NoSuchElementException:
             log.info('This smart electric Scooter refer now pop up message not displayed')
         time.sleep(5)
+        self.click1(SignUpPage.closePopup)
         self.driver.find_element(By.XPATH,"//p[@class='bannerPara']//b[contains(.,'"+str(liter)+"L free water*')]").is_displayed()
         self.driver.find_element(By.XPATH,"//p[@class='bannerPara']//b[contains(.,'"+str(voucher)+" Shopping Voucher')]").is_displayed()
         self.driver.find_element(By.XPATH,"(//b[contains(.,'"+str(extraVoucher)+"')])[1]").is_displayed()
@@ -71,6 +74,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Sign up with valid details
     def SignUp(self,username,email,mobile,password):
         log = self.getLogger()
+        self.smartWatersub()
         username = "Test_" + self.random_generatorString()
         email = self.random_generator() + "@gmail.com"
         mobile = "95" + self.random_generatordigits()
@@ -116,6 +120,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # verify mandtory field and sign up with already existed email address
     def verifyMandatoryField(self,username,email,mobile,password):
         log = self.getLogger()
+        self.smartWatersub()
         self.click(SignUpPage.subscribeBtn)
         time.sleep(5)
         self.click1(SignUpPage.submitSignUpBtn)
@@ -143,6 +148,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Subscribe with name-spl charcater, invalid email address, invalid mobile number
     def verify_invalid_details(self):
         log = self.getLogger()
+        self.smartWatersub()
         self.click(SignUpPage.subscribeBtn)
         self.clickAndSendText(SignUpPage.yourNameTxtBox, "name@$")
         self.clickAndSendText(SignUpPage.emailTxtBox,"test@gmailcom")
@@ -165,6 +171,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Verify referral code diplays for not paid registered account
     def verify_referralCode(self,email,password,voucher):
         log = self.getLogger()
+        self.smartWatersub()
         self.login(email,password)
         # verify Referral code diplays for not paid registered account - In Customer dashboard
         self.click(SignUpPage.menu_profileLink)
@@ -182,9 +189,9 @@ class smartWaterSubscriptionPage(BaseClass):
             window_before = self.driver.window_handles[0]
             window_after1 = self.driver.window_handles[1]
             self.driver.switch_to.window(window_after1)
-            fbTitle = self.driver.title
-            assert 'Facebook' in fbTitle, 'Does not Redirect to FB page'
-            log.info('Redirected to FB page')
+            whatsAppTitle = self.driver.title
+            assert 'WhatsApp' in whatsAppTitle, 'Does not Redirect to WhatsApp page'
+            log.info('Redirected to WhatsApp page')
             self.driver.close()
             self.driver.switch_to.window(window_before)
             self.click((By.XPATH, "//span[@class='close1']"))
@@ -201,6 +208,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Login, select the plan, update the installation address - Do not upload KYC Doc
     def verify_processTillkycPage(self,username,password,ltr_month,email,mobile,flatNo,street,pinCode):
         log = self.getLogger()
+        self.smartWatersub()
         self.click(SignUpPage.loginBtn)
         self.send_keys(SignUpPage.loginUN, email)
         self.send_keys(SignUpPage.loginPWD, password)
@@ -296,6 +304,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Upload KYC document
     def upload_KYCDoc(self,email,password,flatNum):
         log = self.getLogger()
+        self.smartWatersub()
         self.login(email,password)
         kycpage = self.driver.find_element(By.XPATH,"//p[@class='thanksinfo']").text
         assert 'KYC' in kycpage, 'kyc page not displayed'
@@ -325,23 +334,25 @@ class smartWaterSubscriptionPage(BaseClass):
         log.info('Wrong OTP Entered message displyed for mobile')
         self.click1(SignUpPage.permanentAdd)
         time.sleep(5)
-        self.click((By.XPATH,"//input[@name='flatNo']"))
+        '''self.click((By.XPATH,"//input[@name='flatNo']"))
         flatNo = self.driver.find_element(By.XPATH,"//input[@name='flatNo']").text
         log.info(flatNo)
         time.sleep(5)
         assert flatNo == str(flatNum),'Address not displayed on checking permanent address checkbox'
-        log.info('Address displayed on checking permanent address checkbox')
+        log.info('Address displayed on checking permanent address checkbox')'''
         self.click(SignUpPage.addressSubmit)
         assert self.driver.find_element(By.XPATH,"//i[text()='please verify your mobile number and email id']").is_displayed()
         self.click(SignUpPage.menu_profileLink)
         self.driver.find_element(By.XPATH,"//span[contains(.,'Kindly upload your eKYC documents to process your order!')]").is_displayed()
         self.click(SignUpPage.uploadkycBtn)
+        time.sleep(5)
         # Need to complete kyc - Pending due to OTP
 
 
 # Login into the account with invalid credentials
     def login_invalidcredentials(self,email,password):
         log = self.getLogger()
+        self.smartWatersub()
         self.click(SignUpPage.loginBtn)
         # Invalid email and Valid Password
         self.send_keys(SignUpPage.loginUN,"Test@gmail.com")
@@ -368,6 +379,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # verify Forgot password link with inalid email id/mobile number
     def verify_ForgotPassword_Invalid(self):
         log = self.getLogger()
+        self.smartWatersub()
         self.click(SignUpPage.loginBtn)
         self.click(SignUpPage.forgotPWD)
         self.clickAndSendText(SignUpPage.emailIdField,"missing@gmail.com")
@@ -384,6 +396,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # verify Forgot password link with inalid email id/mobile number
     def verify_ForgotPassword_valid(self,email):
         log = self.getLogger()
+        self.smartWatersub()
         self.click(SignUpPage.loginBtn)
         self.click(SignUpPage.forgotPWD)
         self.clickAndSendText(SignUpPage.emailIdField,email)
@@ -400,6 +413,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Login into the account and verify the customer Dashboard
     def verify_CustomerDashboard(self,email,password,username,PhNo,Address,City,State,Pincode,fbiD,fbpwd):
         log = self.getLogger()
+        self.smartWatersub()
         self.login(email,password)
         assert self.driver.find_element(By.XPATH,"//h2[text()='Welcome "+username+"']").is_displayed(),'Username not displayed'
         log.info('Username displayed')
@@ -423,16 +437,16 @@ class smartWaterSubscriptionPage(BaseClass):
         window_before = self.driver.window_handles[0]
         self.click(SignUpPage.whatsappicon)
         window_After = self.driver.window_handles[1]
-        self.driver.switch_to_window(window_After)
+        self.driver.switch_to.window(window_After)
         whatsapp = self.driver.title
         assert whatsapp == 'WhatsApp', 'Not redirected to WhatsApp page'
         log.info('Redirected to WhatsApp page')
         self.driver.close()
-        self.driver.switch_to_window(window_before)
+        self.driver.switch_to.window(window_before)
         time.sleep(5)
         self.click(SignUpPage.facebookicon)
         window_After1 = self.driver.window_handles[1]
-        self.driver.switch_to_window(window_After1)
+        self.driver.switch_to.window(window_After1)
         self.send_keys(SignUpPage.fbID,fbiD)
         self.send_keys(SignUpPage.fbPwd,fbpwd)
         self.click(SignUpPage.fbLogin)
@@ -440,7 +454,7 @@ class smartWaterSubscriptionPage(BaseClass):
         assert RCode in fbtext,'Referral code not displayed on inviting to FB'
         log.info('Referral code displayed on inviting to FB')
         self.driver.close()
-        self.driver.switch_to_window(window_before)
+        self.driver.switch_to.window(window_before)
         self.click(SignUpPage.knowMore)
         assert self.driver.find_element(By.XPATH,"//button[text()='Invite']"), 'invite page not displayed'
         log.info('invite page displayed')
@@ -448,7 +462,7 @@ class smartWaterSubscriptionPage(BaseClass):
         self.click(SignUpPage.invitelink)
         # Pending to verify fb page
         window_After2 = self.driver.window_handles[1]
-        self.driver.switch_to_window(window_After2)
+        self.driver.switch_to.window(window_After2)
         FBtitle = self.driver.title
         assert 'Facebook' in FBtitle, 'FB not opened'
         log.info('FB page displayed')
@@ -456,6 +470,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # verify refer and Earn
     def verify_ReferAndEarn(self,email,password,referRs,refCode,liter):
         log = self.getLogger()
+        self.smartWatersub()
         self.login(email,password)
         self.click(SignUpPage.referEarnBtn)
         self.driver.find_element(By.XPATH,"(//b[contains(.,'"+str(liter)+"L free water*')])[1]").is_displayed()
@@ -482,19 +497,19 @@ class smartWaterSubscriptionPage(BaseClass):
         window_before = self.driver.window_handles[0]
         self.click(SignUpPage.inviteWhatsapp)
         window_after = self.driver.window_handles[1]
-        self.driver.switch_to_window(window_after)
+        self.driver.switch_to.window(window_after)
         assert self.driver.find_element(By.XPATH,"//div[text()='WhatsApp Web']").is_displayed(),'Whatapp not opened'
         log.info('Whatsapp opened')
         self.driver.close()
-        self.driver.switch_to_window(window_before)
+        self.driver.switch_to.window(window_before)
         self.click(SignUpPage.inviteFB)
         window_After1 = self.driver.window_handles[1]
-        self.driver.switch_to_window(window_After1)
+        self.driver.switch_to.window(window_After1)
         FBtitle = self.driver.title
         assert 'Facebook' in FBtitle, 'FB not opened'
         log.info('FB page displayed')
         self.driver.close()
-        self.driver.switch_to_window(window_before)
+        self.driver.switch_to.window(window_before)
         self.click(SignUpPage.howdoesitwork)
         assert self.driver.find_element(By.XPATH,"//div[@class='popup bgOuter']").is_displayed(),'How does it work popup not displayed'
         log.info('How does it work popup displayed')
@@ -505,6 +520,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Verify LeaderBoard page
     def verify_LeaderBoard(self,email,password):
         log = self.getLogger()
+        self.smartWatersub()
         self.login(email,password)
         time.sleep(5)
         self.click(SignUpPage.referEarnBtn)
@@ -524,6 +540,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Login into the account and verify the subscribed Plan details
     def verify_PlanDetails(self,email,password):
         log = self.getLogger()
+        self.smartWatersub()
         self.login(email, password)
         self.click(SignUpPage.planDetailsTab)
         # Need to verify plan details here from the subscription box
@@ -536,6 +553,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Verify the price of the silver plan in plan details tab and menu plan
     def verify_SilverPlanPrice(self,email,password,month12,month6,month1,price12,price6,price1):
         log = self.getLogger()
+        self.smartWatersub()
         log.info("verify plan price for Silver")
         self.login(email, password)
         time.sleep(5)
@@ -585,6 +603,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Verify the price of the plan in plan details tab
     def verify_GoldPlanPrice(self,email,password,month12,month6,month1,price12,price6,price1):
         log = self.getLogger()
+        self.smartWatersub()
         log.info("verify plan price for Gold")
         self.login(email, password)
         time.sleep(5)
@@ -634,6 +653,8 @@ class smartWaterSubscriptionPage(BaseClass):
 # Verify the price of the plan in plan details tab
     def verify_PlatinumPlanPrice(self,email,password,month12,month6,month1,price12,price6,price1):
         log = self.getLogger()
+        self.smartWatersub()
+        self.smartWatersub()
         log.info("verify plan price for Platinum")
         self.login(email, password)
         time.sleep(5)
@@ -732,6 +753,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Login into the account and change the plan and verify it in Recharge History tab
     def verify_SilverChangePlan(self,email,password):
         log = self.getLogger()
+        self.smartWatersub()
         log.info("Check for the Silver Plan change")
         self.login(email, password)
         for a in range(1,4):
@@ -771,9 +793,9 @@ class smartWaterSubscriptionPage(BaseClass):
             self.click1(SignUpPage.sbibank)
             self.click1(SignUpPage.paymentBtn)
             window_after = self.driver.window_handles[1]
-            self.driver.switch_to_window(window_after)
+            self.driver.switch_to.window(window_after)
             self.click(SignUpPage.successBtn)
-            self.driver.switch_to_window(window_before1)
+            self.driver.switch_to.window(window_before1)
             time.sleep(5)
             assert self.driver.find_element(By.XPATH,"//h2[text()='Recharge Details']").is_displayed(),'Recharge History not displayed'
             log.info('Recharge History displayed')
@@ -798,6 +820,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Login into the account and change the plan and verify it in Recharge History tab
     def verify_GoldChangePlan(self,email,password):
         log = self.getLogger()
+        self.smartWatersub()
         log.info("Check for the Gold Plan change")
         self.login(email, password)
         for a in range(4,7):
@@ -836,9 +859,9 @@ class smartWaterSubscriptionPage(BaseClass):
             self.click1(SignUpPage.sbibank)
             self.click1(SignUpPage.paymentBtn)
             window_after = self.driver.window_handles[1]
-            self.driver.switch_to_window(window_after)
+            self.driver.switch_to.window(window_after)
             self.click(SignUpPage.successBtn)
-            self.driver.switch_to_window(window_before1)
+            self.driver.switch_to.window(window_before1)
             time.sleep(5)
             assert self.driver.find_element(By.XPATH,"//h2[text()='Recharge Details']").is_displayed(),'Recharge History not displayed'
             log.info('Recharge History displayed')
@@ -863,6 +886,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Login into the account and change the plan and verify it in Recharge History tab
     def verify_PlatinumChangePlan(self,email,password):
         log = self.getLogger()
+        self.smartWatersub()
         log.info("Check for the Platinum Plan change")
         self.login(email, password)
         for a in range(7,10):
@@ -902,9 +926,9 @@ class smartWaterSubscriptionPage(BaseClass):
             self.click1(SignUpPage.sbibank)
             self.click1(SignUpPage.paymentBtn)
             window_after = self.driver.window_handles[1]
-            self.driver.switch_to_window(window_after)
+            self.driver.switch_to.window(window_after)
             self.click(SignUpPage.successBtn)
-            self.driver.switch_to_window(window_before1)
+            self.driver.switch_to.window(window_before1)
             time.sleep(5)
             assert self.driver.find_element(By.XPATH,"//h2[text()='Recharge Details']").is_displayed(),'Recharge History not displayed'
             log.info('Recharge History displayed')
@@ -929,6 +953,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Login into the account and change the plan and verify it in Recharge History tab
     def verify_TitaniumChangePlan(self,email,password):
         log = self.getLogger()
+        self.smartWatersub()
         log.info("Check for the Titanium Plan change")
         self.login(email, password)
         for a in range(10,13):
@@ -968,9 +993,9 @@ class smartWaterSubscriptionPage(BaseClass):
             self.click1(SignUpPage.sbibank)
             self.click1(SignUpPage.paymentBtn)
             window_after = self.driver.window_handles[1]
-            self.driver.switch_to_window(window_after)
+            self.driver.switch_to.window(window_after)
             self.click(SignUpPage.successBtn)
-            self.driver.switch_to_window(window_before1)
+            self.driver.switch_to.window(window_before1)
             time.sleep(5)
             assert self.driver.find_element(By.XPATH,"//h2[text()='Recharge Details']").is_displayed(),'Recharge History not displayed'
             log.info('Recharge History displayed')
@@ -995,6 +1020,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Verify change password
     def verify_changePassword(self,email,password):
         log = self.getLogger()
+        self.smartWatersub()
         self.login(email, password)
         self.click(SignUpPage.changePWDTab)
         self.send_keys(SignUpPage.oldPWD,password)
@@ -1023,6 +1049,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # verify with different password in new and confirm password text box and mandatory field
     def verify_diffPWD(self,email,password):
         log = self.getLogger()
+        self.smartWatersub()
         self.login(email, password)
         self.click(SignUpPage.changePWDTab)
         time.sleep(5)
@@ -1051,6 +1078,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Sign up account with referral code and verify Rs 100 discount applied on plan
     def verify_signupWithRefCode(self,refCode,referUN):
         log = self.getLogger()
+        self.smartWatersub()
         username = "Test_" + self.random_generatorString()
         XLUtils.writeData(excel,'SignUp',25,1,username)
         email = self.random_generator() + "@gmail.com"
@@ -1118,9 +1146,9 @@ class smartWaterSubscriptionPage(BaseClass):
         self.click1(SignUpPage.sbibank)
         self.click1(SignUpPage.paymentBtn)
         window_after = self.driver.window_handles[1]
-        self.driver.switch_to_window(window_after)
+        self.driver.switch_to.window(window_after)
         self.click(SignUpPage.successBtn)
-        self.driver.switch_to_window(window_before1)
+        self.driver.switch_to.window(window_before1)
         time.sleep(5)
         # also verify referral code can be applied for one time
         self.click(SignUpPage.menu_profileLink)
@@ -1150,6 +1178,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Verify Referral History page
     def verify_ReferralHistory(self,email,password,amount):
         log = self.getLogger()
+        self.smartWatersub()
         self.login(email, password)
         self.click(SignUpPage.menu_profileLink)
         self.click(SignUpPage.referEarnBtn)
@@ -1158,8 +1187,7 @@ class smartWaterSubscriptionPage(BaseClass):
         log.info('Referral History page displayed')
         self.click(SignUpPage.inviteNowBtn)
         window_after = self.driver.window_handles[1]
-        self.driver.switch_to_window(window_after)
-        # need to verify facebook page
+        self.driver.switch_to.window(window_after)
         fbTitle = self.driver.title
         assert 'Facebook' in fbTitle,'Does not Redirect to FB page'
         log.info('Redirected to FB page')
@@ -1167,6 +1195,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # verify the referred username displays in the Referral History tab
     def verify_referredUNInReferralHistory(self,email,password,refName,refemail,refMobile,liter):
         log = self.getLogger()
+        self.smartWatersub()
         self.login(email,password)
         # verify username, email address, phone number in referral history from customer dashboard
         self.click(SignUpPage.refHistoryBtn)
@@ -1209,12 +1238,13 @@ class smartWaterSubscriptionPage(BaseClass):
         assert whatsapp == 'WhatsApp', 'Not redirected to WhatsApp page'
         log.info('Redirected to WhatsApp page')
         self.driver.close()
-        self.driver.switch_to_window(window_before)
+        self.driver.switch_to.window(window_before)
         self.click((By.XPATH,"(//b[@class='phoNum'][text()='"+refName+"']//following::div[@class='shareAct']//img[@alt='Livpuresmart Call Icon'])[1]"))
 
 # verify Add more liter without mapping RO to account
     def verify_AddMoreltr(self,email,password):
         log = self.getLogger()
+        self.smartWatersub()
         self.login(email,password)
         self.click(SignUpPage.menu_profileLink)
         self.click(SignUpPage.addmoreltrTab)
@@ -1226,10 +1256,12 @@ class smartWaterSubscriptionPage(BaseClass):
 # verify Add more liter after mapping RO to account
     def verify_AddMoreltrwithRO(self,email,password):
         self.login(email,password)
+        self.smartWatersub()
 
 # Verify details of the premium plan
     def verify_PremiumPlan(self,month,value,depositAmount):
         log = self.getLogger()
+        self.smartWatersub()
         self.click(SignUpPage.menu_planLink)
         assert self.driver.find_element(By.XPATH,"//div[@data-tier='silver'][contains(.,'Silver')]").is_displayed(),'Premium Activated'
         log.info("Premium not Activated")
@@ -1267,6 +1299,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # subscribe premium plan
     def subsribe_premiumPlan(self,password,planAmt,depositAmt,finalValue):
         log = self.getLogger()
+        self.smartWatersub()
         self.click(SignUpPage.menu_planLink)
         self.click(SignUpPage.premiumBth)
         self.click1(SignUpPage.premiumProceedToPay)
@@ -1319,16 +1352,19 @@ class smartWaterSubscriptionPage(BaseClass):
         self.driver.switch_to.window(window_after)
         time.sleep(5)
         self.click(SignUpPage.successBtn)
+        time.sleep(10)
         # complete the OTP and KYC manually
 
 # verify subscribed premium plan details in plan details Tab
     def verify_SubcribedPremiumPlan(self,email,password,liter,referRs,planprice):
         log = self.getLogger()
+        self.smartWatersub()
         self.login(email,password)
+        self.click(SignUpPage.menu_profileLink)
         # verify free water and voucher
         self.driver.find_element(By.XPATH, "(//b[contains(.,'"+str(liter)+"L free water*')])[1]").is_displayed()
         # Bug in this
-        #self.driver.find_element(By.XPATH, "(//b[contains(.,'₹ "+str(referRs)+" Shopping Voucher')])[1]").is_displayed()
+        self.driver.find_element(By.XPATH, "(//b[contains(.,'₹ "+str(referRs)+" Shopping Voucher')])[1]").is_displayed()
         # verify plan details
         self.click(SignUpPage.planDetailsTab)
         planname = self.getText(SignUpPage.subscribedName)
@@ -1355,13 +1391,7 @@ class smartWaterSubscriptionPage(BaseClass):
         assert planprice == int(amt), 'Amount not displayed'
         log.info('Amount displayed')
 
-# verify renew premium plan
-    def verify_renewPremiumPlan(self,email,password):
-        log = self.getLogger()
-        self.login(email,password)
-        self.click(SignUpPage.planDetailsTab)
-        self.click(SignUpPage.renewplanLink)
-        # Bug in this - Complete after fixing bug
+
 
 
 

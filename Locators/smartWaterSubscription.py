@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 
 class SignUpPage:
 # Fill Sign Up Details
-    subscribeBtn = (By.XPATH, "//a[@class='btn subscribe-now']")
+    subscribeBtn = (By.XPATH,"//button[@class='btn subscribe-now']")
     signUpBtn = (By.XPATH, "//a[text()='Sign Up']")
     yourNameTxtBox = (By.XPATH, "//input[@name='name']")
     emailTxtBox = (By.XPATH, "//input[@name='email']")
@@ -127,9 +127,13 @@ class SignUpPage:
     desktop_ApplePS = (By.XPATH,"//div[@class='appLinks_Zero desktopOnly']//img[@alt='Apple Play Store']")
 
     menu_ReferEarnLink = (By.XPATH,"//ul[@class='menu-list']//a[text()='Refer & Earn']")
+    popUpWhatsapp = (By.XPATH,"(//img[@alt='LivpureSmart Whatapp Icon'])[1]")
+    closePopup = (By.XPATH,"(//img[@alt='Livpuresmart mdi_close Icon'])[1]")
+    loginPage = (By.XPATH,"//a[@href='#login']")
     menu_invitenow = (By.XPATH,"//h2[text()='Refer Friends & Earn']//following-sibling::a[text()='Invite Now']")
 
     menu_profileLink = (By.XPATH,"//ul[@class='menu-list']//a[text()='Profile']")
+
 
 # upload KYC page
     uploadkycBtn = (By.XPATH,"//a[contains(.,'Upload Ekyc')]")

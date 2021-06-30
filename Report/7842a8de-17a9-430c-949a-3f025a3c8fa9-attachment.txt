@@ -1,0 +1,1 @@
+[32mINFO    [0m verify_PayAmountByreLogin:premiumSubscriptionPage.py:355 Premium Activated

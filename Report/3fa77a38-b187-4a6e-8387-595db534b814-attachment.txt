@@ -1,0 +1,2 @@
+[32mINFO    [0m verify_LeaderBoard:smartWaterSubscriptionPage.py:514 LeaderBoard displayed
+[32mINFO    [0m verify_LeaderBoard:smartWaterSubscriptionPage.py:520 Leaderboard displayed for the current month

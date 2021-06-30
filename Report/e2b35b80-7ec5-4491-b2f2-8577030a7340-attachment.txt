@@ -1,0 +1,2 @@
+[32mINFO    [0m verify_ForgotPassword_Invalid:smartWaterSubscriptionPage.py:376 Please provide correct email id alert message displayed
+[32mINFO    [0m verify_ForgotPassword_Invalid:smartWaterSubscriptionPage.py:381 Please provide correct email id alert message displayed

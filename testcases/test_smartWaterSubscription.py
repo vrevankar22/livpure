@@ -160,13 +160,12 @@ class TestSmartWaterSubscription(smartWaterSubscriptionPage):
         self.subsribe_premiumPlan(readData(excel,'SignUp',30,8),readData(excel,'SignUp',30,2), readData(excel,'SignUp',30,3),readData(excel,'SignUp',30,4))
 
 # py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_SubcribedPremiumPlan
+    @mark.depends(on=['test_subsribe_premiumPlan'])
     def test_verify_SubcribedPremiumPlan(self):
-        self.verify_SubcribedPremiumPlan(readData(excel,'SignUp',30,9),readData(excel,'SignUp',30,8),
+        self.verify_SubcribedPremiumPlan(readData(excel,'SignUp',30,6),readData(excel,'SignUp',30,8),
                                          readData(excel,'SignUp',18,2),readData(excel,'SignUp',18,1),readData(excel,'SignUp',30,2))
 
-# py.test testcases/test_smartWaterSubscription.py::TestSmartWaterSubscription::test_verify_SubcribedPremiumPlan
-    def test_verify_renewPremiumPlan(self):
-        self.verify_renewPremiumPlan(readData(excel,'SignUp',30,9),readData(excel,'SignUp',30,8))
+
 
 
 

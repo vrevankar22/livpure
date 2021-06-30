@@ -1,0 +1,5 @@
+[32mINFO    [0m verify_menu_link:smartWaterSubscriptionPage.py:26 Sign Up page displayed
+[32mINFO    [0m verify_menu_link:smartWaterSubscriptionPage.py:36 Google Play store opened
+[32mINFO    [0m verify_menu_link:smartWaterSubscriptionPage.py:43 App store opened
+[32mINFO    [0m verify_menu_link:smartWaterSubscriptionPage.py:53 Sign Up page displayed
+[32mINFO    [0m verify_menu_link:smartWaterSubscriptionPage.py:68 Redirected to FB page

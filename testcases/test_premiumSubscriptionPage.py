@@ -4,9 +4,10 @@ from pytest import mark
 
 class TestPremiumSubscription(premiumSubscriptionPage):
 
+
 # py.test testcases/test_premiumSubscriptionPage.py::TestPremiumSubscription::test_verify_premiumLandingPage
     def test_verify_premiumLandingPage(self):
-        self.verify_premiumLandingPage(readData(excel,'SignUp',30,3),readData(excel,'SignUp',30,2))
+        self.verify_premiumLandingPage(readData(excel,'SignUp',30,3),readData(excel,'SignUp',30,2),readData(excel,'SignUp',31,2))
 
 # py.test testcases/test_premiumSubscriptionPage.py::TestPremiumSubscription::test_verify_PremiumPlan
     def test_verify_PremiumPlan(self):
@@ -30,4 +31,19 @@ class TestPremiumSubscription(premiumSubscriptionPage):
 # py.test testcases/test_premiumSubscriptionPage.py::TestPremiumSubscription::test_verify_signupPremPlanWithRefCode
     def test_verify_signupPremPlanWithRefCode(self):
         self.verify_signupPremPlanWithRefCode(readData(excel,'SignUp',30,9),readData(excel,'SignUp',30,2),readData(excel,'SignUp',30,3))
+
+# py.test testcases/test_premiumSubscriptionPage.py::TestPremiumSubscription::test_verify_planByLogginOut
+    def test_verify_planByLogginOut(self):
+        self.verify_planByLogginOut()
+
+# py.test testcases/test_premiumSubscriptionPage.py::TestPremiumSubscription::test_verify_PayAmountByreLogin
+    def test_verify_PayAmountByreLogin(self):
+        self.verify_PayAmountByreLogin(readData(excel,'SignUp',31,6),readData(excel,'SignUp',31,8))
+
+
+
+
+
+
+
 

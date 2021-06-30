@@ -1,0 +1,13 @@
+[32mINFO    [0m verify_SilverChangePlan:smartWaterSubscriptionPage.py:734 Check for the Silver Plan change
+[32mINFO    [0m verify_SilverChangePlan:smartWaterSubscriptionPage.py:763 Amount displayed correctly
+[32mINFO    [0m verify_SilverChangePlan:smartWaterSubscriptionPage.py:778 Recharge History displayed
+[32mINFO    [0m verify_SilverChangePlan:smartWaterSubscriptionPage.py:788 Recharge date displayed
+[32mINFO    [0m verify_SilverChangePlan:smartWaterSubscriptionPage.py:795 Amount displayed
+[32mINFO    [0m verify_SilverChangePlan:smartWaterSubscriptionPage.py:763 Amount displayed correctly
+[32mINFO    [0m verify_SilverChangePlan:smartWaterSubscriptionPage.py:778 Recharge History displayed
+[32mINFO    [0m verify_SilverChangePlan:smartWaterSubscriptionPage.py:788 Recharge date displayed
+[32mINFO    [0m verify_SilverChangePlan:smartWaterSubscriptionPage.py:795 Amount displayed
+[32mINFO    [0m verify_SilverChangePlan:smartWaterSubscriptionPage.py:763 Amount displayed correctly
+[32mINFO    [0m verify_SilverChangePlan:smartWaterSubscriptionPage.py:778 Recharge History displayed
+[32mINFO    [0m verify_SilverChangePlan:smartWaterSubscriptionPage.py:788 Recharge date displayed
+[32mINFO    [0m verify_SilverChangePlan:smartWaterSubscriptionPage.py:795 Amount displayed

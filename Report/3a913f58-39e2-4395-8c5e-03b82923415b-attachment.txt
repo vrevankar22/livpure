@@ -1,0 +1,2 @@
+[32mINFO    [0m verify_AddMoreltr:smartWaterSubscriptionPage.py:1222 You have to subscribe the plan first, then only you can add more liters.
+[32mINFO    [0m verify_AddMoreltr:smartWaterSubscriptionPage.py:1224 Subscribe plan first message not displayed

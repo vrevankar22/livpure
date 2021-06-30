@@ -1,0 +1,3 @@
+[32mINFO    [0m verify_signupWithRefCode:smartWaterSubscriptionPage.py:1078 referral benefits message displayed
+[32mINFO    [0m verify_signupWithRefCode:smartWaterSubscriptionPage.py:1111 Discount applied
+[32mINFO    [0m verify_signupWithRefCode:smartWaterSubscriptionPage.py:1147 Discount not applied

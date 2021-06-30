@@ -1,0 +1,3 @@
+[32mINFO    [0m upload_KYCDoc:smartWaterSubscriptionPage.py:301 KYC page displayed
+[32mINFO    [0m upload_KYCDoc:smartWaterSubscriptionPage.py:306 Nothing Entered message displyed for email
+[32mINFO    [0m upload_KYCDoc:smartWaterSubscriptionPage.py:309 Nothing Entered message displyed for mobile

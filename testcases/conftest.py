@@ -15,7 +15,6 @@ def setup(request):
     driver = webdriver.Chrome(executable_path="D:\driver\chromedriver.exe",options=chrome_option)
     driver.implicitly_wait(10)
     driver.get(url)
-    #driver.find_element(By.XPATH,"//a[text()='Smart Water Subscription']").click()
     request.cls.driver = driver
     yield
     driver.quit()

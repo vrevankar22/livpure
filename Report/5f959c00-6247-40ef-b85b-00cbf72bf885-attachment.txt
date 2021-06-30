@@ -1,0 +1,4 @@
+[32mINFO    [0m verify_PremiumPlan:smartWaterSubscriptionPage.py:1235 Premium not Activated
+[32mINFO    [0m verify_PremiumPlan:smartWaterSubscriptionPage.py:1243 Month displayed
+[32mINFO    [0m verify_PremiumPlan:smartWaterSubscriptionPage.py:1250 Amount displayed
+[32mINFO    [0m verify_PremiumPlan:smartWaterSubscriptionPage.py:1262 Desposit displayed
