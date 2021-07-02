@@ -533,7 +533,7 @@ class smartWaterSubscriptionPage(BaseClass):
         cm = date.today()
         cmonth = cm.strftime("%b")
         monthtxt = self.driver.find_element(By.XPATH,"//div[@id='Pmonths']").text
-        assert cmonth.casefold() == monthtxt.casefold(), 'Leaderboard not displayed for the current month'
+        assert cmonth.upper() == monthtxt, 'Leaderboard not displayed for the current month'
         log.info('Leaderboard displayed for the current month')
 
 
@@ -654,7 +654,6 @@ class smartWaterSubscriptionPage(BaseClass):
     def verify_PlatinumPlanPrice(self,email,password,month12,month6,month1,price12,price6,price1):
         log = self.getLogger()
         self.smartWatersub()
-        self.smartWatersub()
         log.info("verify plan price for Platinum")
         self.login(email, password)
         time.sleep(5)
@@ -704,6 +703,7 @@ class smartWaterSubscriptionPage(BaseClass):
 # Verify the price of the plan in plan details tab
     def verify_TitaniumPlanPrice(self,email,password,month12,month6,month1,price12,price6,price1):
         log = self.getLogger()
+        self.smartWatersub()
         log.info("verify plan price for Titanium")
         self.login(email, password)
         time.sleep(5)

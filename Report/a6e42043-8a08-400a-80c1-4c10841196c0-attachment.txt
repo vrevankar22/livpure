@@ -1,0 +1,4 @@
+[32mINFO    [0m verify_premiumLandingPage:premiumSubscriptionPage.py:29 Monthly charge displayed
+[32mINFO    [0m verify_premiumLandingPage:premiumSubscriptionPage.py:43 Sign Up displayed
+[32mINFO    [0m verify_premiumLandingPage:premiumSubscriptionPage.py:48 redirected to steps
+[32mINFO    [0m verify_premiumLandingPage:premiumSubscriptionPage.py:58 login page displayed

@@ -1,2 +1,0 @@
-[32mINFO    [0m verify_ReferralHistory:smartWaterSubscriptionPage.py:1157 Referral History page displayed
-[32mINFO    [0m verify_ReferralHistory:smartWaterSubscriptionPage.py:1164 Redirected to FB page

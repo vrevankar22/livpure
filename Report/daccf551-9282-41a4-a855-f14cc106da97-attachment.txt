@@ -1,0 +1,5 @@
+[32mINFO    [0m verify_PremiumPlan:premiumSubscriptionPage.py:78 month displayed
+[32mINFO    [0m verify_PremiumPlan:premiumSubscriptionPage.py:84 1 Month displayed
+[32mINFO    [0m verify_PremiumPlan:premiumSubscriptionPage.py:87 Price per month displayed
+[32mINFO    [0m verify_PremiumPlan:premiumSubscriptionPage.py:93 Amount displayed
+[32mINFO    [0m verify_PremiumPlan:premiumSubscriptionPage.py:105 Desposit displayed

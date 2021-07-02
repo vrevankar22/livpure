@@ -1,2 +1,0 @@
-[32mINFO    [0m verify_processTillkycPage:smartWaterSubscriptionPage.py:208 Password displayed in encrypted form
-[32mINFO    [0m verify_processTillkycPage:smartWaterSubscriptionPage.py:213 Password displayed on view

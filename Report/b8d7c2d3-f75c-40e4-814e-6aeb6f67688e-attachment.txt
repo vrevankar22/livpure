@@ -1,0 +1,3 @@
+[32mINFO    [0m verify_referralCode:smartWaterSubscriptionPage.py:183 Referral code diplays for not paid registered account
+[32mINFO    [0m verify_referralCode:smartWaterSubscriptionPage.py:194 Redirected to WhatsApp page
+[32mINFO    [0m verify_referralCode:smartWaterSubscriptionPage.py:206 Referral Code displayed in Refer and Earn Page

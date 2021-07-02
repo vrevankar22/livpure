@@ -1,2 +1,0 @@
-[32mINFO    [0m subsribe_premiumPlan:smartWaterSubscriptionPage.py:1299 Plan name displayed
-[32mINFO    [0m subsribe_premiumPlan:smartWaterSubscriptionPage.py:1309 Displayed correct total pay amount

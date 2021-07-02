@@ -1,1 +1,0 @@
-[32mINFO    [0m verify_PlanDetails:smartWaterSubscriptionPage.py:533 Renew Plan link redirected to plan page

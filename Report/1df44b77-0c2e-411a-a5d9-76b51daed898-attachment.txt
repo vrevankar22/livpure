@@ -1,9 +1,0 @@
-[32mINFO    [0m verify_ReferAndEarn:smartWaterSubscriptionPage.py:464 invite page and message displayed
-[32mINFO    [0m verify_ReferAndEarn:smartWaterSubscriptionPage.py:468 Pass
-[32mINFO    [0m verify_ReferAndEarn:smartWaterSubscriptionPage.py:472 referral Code are same from Customer dashboard and invite page
-[32mINFO    [0m verify_ReferAndEarn:smartWaterSubscriptionPage.py:477 Tooltip displayed for Copy Icon
-[32mINFO    [0m verify_ReferAndEarn:smartWaterSubscriptionPage.py:480 Copied: BF0ID2
-[32mINFO    [0m verify_ReferAndEarn:smartWaterSubscriptionPage.py:486 Whatsapp opened
-[32mINFO    [0m verify_ReferAndEarn:smartWaterSubscriptionPage.py:494 FB page displayed
-[32mINFO    [0m verify_ReferAndEarn:smartWaterSubscriptionPage.py:499 How does it work popup displayed
-[32mINFO    [0m verify_ReferAndEarn:smartWaterSubscriptionPage.py:502 TC page displayed

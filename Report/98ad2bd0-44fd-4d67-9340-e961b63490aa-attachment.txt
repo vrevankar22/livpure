@@ -1,0 +1,5 @@
+[32mINFO    [0m verify_SubcribedPremiumPlan:premiumSubscriptionPage.py:187 Plan name displayed
+[32mINFO    [0m verify_SubcribedPremiumPlan:premiumSubscriptionPage.py:191 Plan Amount displayed
+[32mINFO    [0m verify_SubcribedPremiumPlan:premiumSubscriptionPage.py:202 Recharge date displayed
+[32mINFO    [0m verify_SubcribedPremiumPlan:premiumSubscriptionPage.py:208 Amount displayed
+[32mINFO    [0m verify_SubcribedPremiumPlan:premiumSubscriptionPage.py:218 This smart electric Scooter refer now pop up message not displayed

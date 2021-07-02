@@ -1,0 +1,3 @@
+[32mINFO    [0m verify_signupPremPlanWithRefCode:premiumSubscriptionPage.py:285 Discount applied to plan amount
+[32mINFO    [0m verify_signupPremPlanWithRefCode:premiumSubscriptionPage.py:297 Discount applied
+[32mINFO    [0m verify_signupPremPlanWithRefCode:premiumSubscriptionPage.py:315 Amount displayed with Discount

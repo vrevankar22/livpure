@@ -1,0 +1,8 @@
+[32mINFO    [0m verify_CustomerDashboard:smartWaterSubscriptionPage.py:419 Username displayed
+[32mINFO    [0m verify_CustomerDashboard:smartWaterSubscriptionPage.py:421 Email displayed
+[32mINFO    [0m verify_CustomerDashboard:smartWaterSubscriptionPage.py:423 Phone No displayed
+[32mINFO    [0m verify_CustomerDashboard:smartWaterSubscriptionPage.py:425 Address displayed
+[32mINFO    [0m verify_CustomerDashboard:smartWaterSubscriptionPage.py:427 City displayed
+[32mINFO    [0m verify_CustomerDashboard:smartWaterSubscriptionPage.py:429 State displayed
+[32mINFO    [0m verify_CustomerDashboard:smartWaterSubscriptionPage.py:431 Pincode displayed
+[32mINFO    [0m verify_CustomerDashboard:smartWaterSubscriptionPage.py:443 Redirected to WhatsApp page

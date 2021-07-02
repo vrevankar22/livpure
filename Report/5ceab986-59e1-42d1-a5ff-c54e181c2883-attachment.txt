@@ -1,1 +1,0 @@
-[32mINFO    [0m verify_diffPWD:smartWaterSubscriptionPage.py:1048 Mandatory and error message displayed

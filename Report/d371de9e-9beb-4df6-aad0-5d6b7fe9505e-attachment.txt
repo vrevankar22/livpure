@@ -1,0 +1,1 @@
+[32mINFO    [0m verify_TitaniumPlanPrice:smartWaterSubscriptionPage.py:707 verify plan price for Titanium

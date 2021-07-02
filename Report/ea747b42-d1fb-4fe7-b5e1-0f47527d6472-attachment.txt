@@ -1,0 +1,4 @@
+[32mINFO    [0m verify_SubcribedPremiumPlan:smartWaterSubscriptionPage.py:1372 Plan name displayed
+[32mINFO    [0m verify_SubcribedPremiumPlan:smartWaterSubscriptionPage.py:1376 Plan Amount displayed
+[32mINFO    [0m verify_SubcribedPremiumPlan:smartWaterSubscriptionPage.py:1386 Recharge date displayed
+[32mINFO    [0m verify_SubcribedPremiumPlan:smartWaterSubscriptionPage.py:1392 Amount displayed

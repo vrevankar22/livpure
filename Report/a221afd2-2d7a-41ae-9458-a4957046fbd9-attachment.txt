@@ -1,0 +1,3 @@
+[32mINFO    [0m verify_ForgotPassword_valid:smartWaterSubscriptionPage.py:405 OTP Verification page displayed
+[32mINFO    [0m verify_ForgotPassword_valid:smartWaterSubscriptionPage.py:408 Please enter the otp message displayed
+[32mINFO    [0m verify_ForgotPassword_valid:smartWaterSubscriptionPage.py:410 Please enter the new password message not displayed

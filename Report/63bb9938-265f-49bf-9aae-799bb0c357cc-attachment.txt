@@ -1,0 +1,3 @@
+[32mINFO    [0m verify_PayAmountByreLogin:premiumSubscriptionPage.py:367 Premium deactivated
+[32mINFO    [0m verify_PayAmountByreLogin:premiumSubscriptionPage.py:394 total payable amount displayed
+[32mINFO    [0m verify_PayAmountByreLogin:premiumSubscriptionPage.py:413 Amount displayed

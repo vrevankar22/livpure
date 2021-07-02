@@ -1,2 +1,0 @@
-[32mINFO    [0m verify_renewPremiumPlan:premiumSubscriptionPage.py:227 Premium plan page displayed
-[32mINFO    [0m verify_renewPremiumPlan:premiumSubscriptionPage.py:237 Displayed correct total pay amount

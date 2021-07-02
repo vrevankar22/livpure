@@ -1,0 +1,5 @@
+[32mINFO    [0m upload_KYCDoc:smartWaterSubscriptionPage.py:311 KYC page displayed
+[32mINFO    [0m upload_KYCDoc:smartWaterSubscriptionPage.py:316 Nothing Entered message displyed for email
+[32mINFO    [0m upload_KYCDoc:smartWaterSubscriptionPage.py:319 Nothing Entered message displyed for mobile
+[32mINFO    [0m upload_KYCDoc:smartWaterSubscriptionPage.py:331 Wrong OTP Entered message displyed for email
+[32mINFO    [0m upload_KYCDoc:smartWaterSubscriptionPage.py:334 Wrong OTP Entered message displyed for mobile

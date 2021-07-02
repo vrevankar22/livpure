@@ -1,1 +1,0 @@
-[32mINFO    [0m verify_PremiumPlan:premiumSubscriptionPage.py:74 Premium Activated

@@ -1,0 +1,13 @@
+[32mINFO    [0m verify_GoldChangePlan:smartWaterSubscriptionPage.py:824 Check for the Gold Plan change
+[32mINFO    [0m verify_GoldChangePlan:smartWaterSubscriptionPage.py:853 Amount displayed correctly
+[32mINFO    [0m verify_GoldChangePlan:smartWaterSubscriptionPage.py:867 Recharge History displayed
+[32mINFO    [0m verify_GoldChangePlan:smartWaterSubscriptionPage.py:877 Recharge date displayed
+[32mINFO    [0m verify_GoldChangePlan:smartWaterSubscriptionPage.py:884 Amount displayed
+[32mINFO    [0m verify_GoldChangePlan:smartWaterSubscriptionPage.py:853 Amount displayed correctly
+[32mINFO    [0m verify_GoldChangePlan:smartWaterSubscriptionPage.py:867 Recharge History displayed
+[32mINFO    [0m verify_GoldChangePlan:smartWaterSubscriptionPage.py:877 Recharge date displayed
+[32mINFO    [0m verify_GoldChangePlan:smartWaterSubscriptionPage.py:884 Amount displayed
+[32mINFO    [0m verify_GoldChangePlan:smartWaterSubscriptionPage.py:853 Amount displayed correctly
+[32mINFO    [0m verify_GoldChangePlan:smartWaterSubscriptionPage.py:867 Recharge History displayed
+[32mINFO    [0m verify_GoldChangePlan:smartWaterSubscriptionPage.py:877 Recharge date displayed
+[32mINFO    [0m verify_GoldChangePlan:smartWaterSubscriptionPage.py:884 Amount displayed

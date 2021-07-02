@@ -1,0 +1,11 @@
+[32mINFO    [0m verify_processTillkycPage:smartWaterSubscriptionPage.py:217 Password displayed in encrypted form
+[32mINFO    [0m verify_processTillkycPage:smartWaterSubscriptionPage.py:222 Password displayed on view
+[32mINFO    [0m verify_processTillkycPage:smartWaterSubscriptionPage.py:231 liters per month value displayed
+[32mINFO    [0m verify_processTillkycPage:smartWaterSubscriptionPage.py:241 Actualprice 400,6,2400
+[32mINFO    [0m verify_processTillkycPage:smartWaterSubscriptionPage.py:249 Username displayed correctly in installation address page
+[32mINFO    [0m verify_processTillkycPage:smartWaterSubscriptionPage.py:251 Email displayed correctly in installation address page
+[32mINFO    [0m verify_processTillkycPage:smartWaterSubscriptionPage.py:253 Mobile number displayed correctly in installation address page
+[32mINFO    [0m verify_processTillkycPage:smartWaterSubscriptionPage.py:259 Enter valid code message displayed
+[32mINFO    [0m verify_processTillkycPage:smartWaterSubscriptionPage.py:275 Reveiew and Pay page displayed
+[32mINFO    [0m verify_processTillkycPage:smartWaterSubscriptionPage.py:284 Displayed correct total pay amount
+[32mINFO    [0m verify_processTillkycPage:smartWaterSubscriptionPage.py:301 KYC page displayed

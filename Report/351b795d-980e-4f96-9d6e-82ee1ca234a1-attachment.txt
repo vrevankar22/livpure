@@ -1,7 +1,0 @@
-[32mINFO    [0m verify_GoldPlanPrice:smartWaterSubscriptionPage.py:587 verify plan price for Gold
-[32mINFO    [0m verify_GoldPlanPrice:smartWaterSubscriptionPage.py:605 month 12 and Price is matching in Plan details Page
-[32mINFO    [0m verify_GoldPlanPrice:smartWaterSubscriptionPage.py:607 month 6 and Price is matching in Plan details Page
-[32mINFO    [0m verify_GoldPlanPrice:smartWaterSubscriptionPage.py:609 month 1 and price is matching in Plan details Page
-[32mINFO    [0m verify_GoldPlanPrice:smartWaterSubscriptionPage.py:625 month 12 and Price is matching in Plan Page
-[32mINFO    [0m verify_GoldPlanPrice:smartWaterSubscriptionPage.py:627 month 6 and Price is matching in Plan Page
-[32mINFO    [0m verify_GoldPlanPrice:smartWaterSubscriptionPage.py:629 month 1 and price is matching in Plan Page

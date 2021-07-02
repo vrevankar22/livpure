@@ -1,4 +1,0 @@
-[32mINFO    [0m SignUp:smartWaterSubscriptionPage.py:84 SignUp page selected by default
-[32mINFO    [0m SignUp:smartWaterSubscriptionPage.py:102 Password displayed in encrypted form
-[32mINFO    [0m SignUp:smartWaterSubscriptionPage.py:106 Password displayed on view
-[32mINFO    [0m SignUp:smartWaterSubscriptionPage.py:112 Signed Up successfully

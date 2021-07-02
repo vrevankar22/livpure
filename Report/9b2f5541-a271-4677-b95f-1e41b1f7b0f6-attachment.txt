@@ -1,0 +1,3 @@
+[32mINFO    [0m login_invalidcredentials:smartWaterSubscriptionPage.py:363 Invalid username and password message displayed
+[32mINFO    [0m login_invalidcredentials:smartWaterSubscriptionPage.py:370 Invalid username and password message displayed
+[32mINFO    [0m login_invalidcredentials:smartWaterSubscriptionPage.py:377 Invalid username and password message displayed

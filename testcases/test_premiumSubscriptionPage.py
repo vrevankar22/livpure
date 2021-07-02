@@ -4,10 +4,9 @@ from pytest import mark
 
 class TestPremiumSubscription(premiumSubscriptionPage):
 
-
 # py.test testcases/test_premiumSubscriptionPage.py::TestPremiumSubscription::test_verify_premiumLandingPage
     def test_verify_premiumLandingPage(self):
-        self.verify_premiumLandingPage(readData(excel,'SignUp',30,3),readData(excel,'SignUp',30,2),readData(excel,'SignUp',31,2))
+        self.verify_premiumLandingPage(readData(excel,'SignUp',30,3))
 
 # py.test testcases/test_premiumSubscriptionPage.py::TestPremiumSubscription::test_verify_PremiumPlan
     def test_verify_PremiumPlan(self):

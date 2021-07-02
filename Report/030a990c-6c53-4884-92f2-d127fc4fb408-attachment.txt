@@ -1,0 +1,6 @@
+[32mINFO    [0m verifyMandatoryField:smartWaterSubscriptionPage.py:130 Mandatory message displayed
+[32mINFO    [0m verifyMandatoryField:smartWaterSubscriptionPage.py:130 Mandatory message displayed
+[32mINFO    [0m verifyMandatoryField:smartWaterSubscriptionPage.py:130 Mandatory message displayed
+[32mINFO    [0m verifyMandatoryField:smartWaterSubscriptionPage.py:130 Mandatory message displayed
+[32mINFO    [0m verifyMandatoryField:smartWaterSubscriptionPage.py:130 Mandatory message displayed
+[32mINFO    [0m verifyMandatoryField:smartWaterSubscriptionPage.py:146 already registered with us message displayed

@@ -1,2 +1,0 @@
-[32mINFO    [0m verify_SubcribedPremiumPlan:premiumSubscriptionPage.py:184 Plan name displayed
-[32mINFO    [0m verify_SubcribedPremiumPlan:premiumSubscriptionPage.py:188 Plan Amount displayed

@@ -1,0 +1,1 @@
+[32mINFO    [0m verify_LeaderBoard:smartWaterSubscriptionPage.py:531 LeaderBoard displayed

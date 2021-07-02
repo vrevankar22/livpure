@@ -1,0 +1,4 @@
+[32mINFO    [0m verify_referredUNInReferralHistory:smartWaterSubscriptionPage.py:1209 Referred username displayed in History
+[32mINFO    [0m verify_referredUNInReferralHistory:smartWaterSubscriptionPage.py:1224 Correct free water liter displayed
+[32mINFO    [0m verify_referredUNInReferralHistory:smartWaterSubscriptionPage.py:1230 Voucher count displayed
+[32mINFO    [0m verify_referredUNInReferralHistory:smartWaterSubscriptionPage.py:1239 Redirected to WhatsApp page

@@ -1,0 +1,2 @@
+[32mINFO    [0m subsribe_premiumPlan:premiumSubscriptionPage.py:143 Plan name displayed
+[32mINFO    [0m subsribe_premiumPlan:premiumSubscriptionPage.py:153 Displayed correct total pay amount

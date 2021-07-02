@@ -1,7 +1,0 @@
-[32mINFO    [0m verify_TitaniumPlanPrice:smartWaterSubscriptionPage.py:685 verify plan price for Titanium
-[32mINFO    [0m verify_TitaniumPlanPrice:smartWaterSubscriptionPage.py:703 month 12 and Price is matching in Plan details Page
-[32mINFO    [0m verify_TitaniumPlanPrice:smartWaterSubscriptionPage.py:705 month 6 and Price is matching in Plan details Page
-[32mINFO    [0m verify_TitaniumPlanPrice:smartWaterSubscriptionPage.py:707 month 1 and price is matching in Plan details Page
-[32mINFO    [0m verify_TitaniumPlanPrice:smartWaterSubscriptionPage.py:723 month 12 and Price is matching in Plan Page
-[32mINFO    [0m verify_TitaniumPlanPrice:smartWaterSubscriptionPage.py:725 month 6 and Price is matching in Plan Page
-[32mINFO    [0m verify_TitaniumPlanPrice:smartWaterSubscriptionPage.py:727 month 1 and price is matching in Plan Page

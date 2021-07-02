@@ -21,22 +21,12 @@ class premiumSubscriptionPage(BaseClass):
         self.driver.get("https://lps-dev.rpsapi.in/ro-subscription/premium")
 
 # verify premium landing page
-    def verify_premiumLandingPage(self,depositAmt,charge,month):
+    def verify_premiumLandingPage(self,month):
         log = self.getLogger()
         self.premiumPage()
         monthly = self.getText(premiumPage.monthly)
         assert month in monthly,'Monthly charge not displayed'
         log.info('Monthly charge displayed')
-        '''depo = self.getText(premiumPage.securityDeposit)
-        deposit = ''
-        for i in depo:
-            if i.isdigit():
-                deposit = deposit + i
-        assert int(deposit) == depositAmt,'Deposit Amount not displayed'
-        log.info('Deposit Amount displayed')
-        monthCharge = self.getText(premiumPage.monthlyCharge)
-        assert str(charge) in monthCharge, 'Monthly charge not displayed'
-        log.info('Monthly charge displayed')'''
         time.sleep(5)
         self.click(premiumPage.subscribeNow1)
         assert self.driver.find_element(By.XPATH,"//a[text()='Sign Up']"),'Sign Up not displayed'

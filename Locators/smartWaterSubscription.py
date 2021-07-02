@@ -53,6 +53,7 @@ class SignUpPage:
     altmobileNo = (By.XPATH,"//input[@name='alternatePhNo']")
     altmobileNumBox = (By.XPATH,"//span[@class='show-alternate']")
     saveAndContinueBtn = (By.XPATH,"//div//button[@type='submit']//span[contains(text(),'Save & Continue')]")
+    editaddress = (By.XPATH,"//span[contains(text(),'Edit')]")
 
     totalPayAmount = (By.XPATH,"//span[contains(text(),'Payable Amount')]//span[@class='success--text pay-amount']")
     payBtn = (By.XPATH,"(//span[contains(@class,'v-btn__content')][contains(text(),'Pay')])[1]")

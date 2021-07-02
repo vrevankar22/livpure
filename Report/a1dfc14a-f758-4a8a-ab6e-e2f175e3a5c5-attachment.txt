@@ -1,7 +1,0 @@
-[32mINFO    [0m verify_PlatinumPlanPrice:smartWaterSubscriptionPage.py:637 verify plan price for Platinum
-[32mINFO    [0m verify_PlatinumPlanPrice:smartWaterSubscriptionPage.py:655 month 12 and Price is matching in Plan details Page
-[32mINFO    [0m verify_PlatinumPlanPrice:smartWaterSubscriptionPage.py:657 month 6 and Price is matching in Plan details Page
-[32mINFO    [0m verify_PlatinumPlanPrice:smartWaterSubscriptionPage.py:659 month 1 and price is matching in Plan details Page
-[32mINFO    [0m verify_PlatinumPlanPrice:smartWaterSubscriptionPage.py:675 month 12 and Price is matching in Plan Page
-[32mINFO    [0m verify_PlatinumPlanPrice:smartWaterSubscriptionPage.py:677 month 6 and Price is matching in Plan Page
-[32mINFO    [0m verify_PlatinumPlanPrice:smartWaterSubscriptionPage.py:679 month 1 and price is matching in Plan Page

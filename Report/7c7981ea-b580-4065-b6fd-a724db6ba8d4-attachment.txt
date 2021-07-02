@@ -1,0 +1,13 @@
+[32mINFO    [0m verify_TitaniumChangePlan:smartWaterSubscriptionPage.py:957 Check for the Titanium Plan change
+[32mINFO    [0m verify_TitaniumChangePlan:smartWaterSubscriptionPage.py:986 Amount displayed correctly
+[32mINFO    [0m verify_TitaniumChangePlan:smartWaterSubscriptionPage.py:1001 Recharge History displayed
+[32mINFO    [0m verify_TitaniumChangePlan:smartWaterSubscriptionPage.py:1011 Recharge date displayed
+[32mINFO    [0m verify_TitaniumChangePlan:smartWaterSubscriptionPage.py:1018 Amount displayed
+[32mINFO    [0m verify_TitaniumChangePlan:smartWaterSubscriptionPage.py:986 Amount displayed correctly
+[32mINFO    [0m verify_TitaniumChangePlan:smartWaterSubscriptionPage.py:1001 Recharge History displayed
+[32mINFO    [0m verify_TitaniumChangePlan:smartWaterSubscriptionPage.py:1011 Recharge date displayed
+[32mINFO    [0m verify_TitaniumChangePlan:smartWaterSubscriptionPage.py:1018 Amount displayed
+[32mINFO    [0m verify_TitaniumChangePlan:smartWaterSubscriptionPage.py:986 Amount displayed correctly
+[32mINFO    [0m verify_TitaniumChangePlan:smartWaterSubscriptionPage.py:1001 Recharge History displayed
+[32mINFO    [0m verify_TitaniumChangePlan:smartWaterSubscriptionPage.py:1011 Recharge date displayed
+[32mINFO    [0m verify_TitaniumChangePlan:smartWaterSubscriptionPage.py:1018 Amount displayed
